@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       viewBox="0 0 1280 800" style="enable-background:new 0 0 1280 800; top: 70%;" xml:space="preserve">
+          <defs>
+            <pattern id="paper" patternUnits="userSpaceOnUse" height="200" width="200">
+<!--            <pattern id="paper" patternUnits="userSpaceOnUse" height="200" width="200" patternTransform="rotate(8 0 0)">-->
+              <image x="0" y="0" height="200" width="200" xlink:href="paper.png"></image>
+            </pattern>
+          </defs>
+          <polygon id="XMLID_50_" points="0,0 1280,110.068 1280,800 0,800 " fill="url(#paper)"/>
+        </svg>

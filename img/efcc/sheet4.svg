@@ -5,7 +5,7 @@
           <defs>
             <pattern id="paper" patternUnits="userSpaceOnUse" height="200" width="200">
 <!--            <pattern id="paper" patternUnits="userSpaceOnUse" height="200" width="200" patternTransform="rotate(8 0 0)">-->
-              <image x="0" y="0" height="200" width="200" xlink:href="paper.png"></image>
+              <image x="0" y="0" height="200" width="200" xlink:href="paperWhite.png"></image>
             </pattern>
           </defs>
           <polygon id="XMLID_50_" points="0,0 1280,110.068 1280,800 0,800 " fill="url(#paper)"/>

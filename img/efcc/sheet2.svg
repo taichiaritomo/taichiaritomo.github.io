@@ -5,7 +5,7 @@
           <defs>
 <!--            <pattern id="paper" patternUnits="userSpaceOnUse" height="200" width="200" patternTransform="rotate(14 0 0)">-->
             <pattern id="paper" patternUnits="userSpaceOnUse" height="200" width="200">  
-              <image x="0" y="0" height="200" width="200" xlink:href="paper.png"></image>
+              <image x="0" y="0" height="200" width="200" xlink:href="paperLight.png"></image>
             </pattern>
           </defs>
           <g id="XMLID_29_">

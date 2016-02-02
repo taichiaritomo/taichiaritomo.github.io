@@ -38,8 +38,8 @@ function debounce(func, wait, immediate) {
 };
 
 // Scroll back to the top on reload
-$(window).on('beforeunload', function() {
-  $("#color-bg").css("display", "none");
+$(window).on('unload', function() {
+//  $("#color-bg").css("display", "none");
   $(window).scrollTop(0);
 });
 

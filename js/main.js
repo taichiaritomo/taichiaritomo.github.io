@@ -201,7 +201,7 @@ function loop(){
     }
 
 //    $("#icongrid").css("top", ((y+2000)/(h+2000))*37 + "%"); // icongrid parallax
-    if (y < 1.5*h) $("#color-bg").css("top", y/10 + "px");
+    if (y < 1.5*h) $("#color-bg").css("top", y/12 + "px");
 //    if (y > 1.5*h) $("#footer-bg").css("top", (y - (docH - h))/10 + "px"); 
     if (y > 0.5*h) $("#tonysbigrun .info").css("bottom", ((y-h)/10 + "px"));
     if (y > 1.5*h) $("#efcc .info").css("bottom", ((y-2*h)/10 - 30 + "px"));

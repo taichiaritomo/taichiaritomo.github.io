@@ -50,48 +50,6 @@ var d = document,
     y = d.body.height;
 
 
-//var menuOpen = true;
-//$('#page-tracker').click(function() {
-//  console.log('click received');
-//  if (menuOpen) {
-//    var menuWidth = $('#menu').css('width');
-//    menuWidth = menuWidth.substring(0, menuWidth.length - 2);
-//    console.log(menuWidth);
-//    $('#menu').css('left', (-menuWidth + 44) + 'px');
-//  }
-//  else {
-//    $('#menu').css('left', '0');
-//  }
-//  menuOpen = !menuOpen
-//});
-
-///* array of page anchors */
-//var workTags = ["soundcloud", "tonysbigrun", "tedxrutgers", "efcc", "illustrations"],
-//    workIDs  = {soundcloud: 0, tonysbigrun: 1, tedxrutgers: 2, efcc: 3, illustrations: 4};
-//
-///* array of section tiles in the menu */
-//var work_tiles = document.getElementsByClassName('work_tile');
-//for (i = 0; i < work_tiles.length; i++) {
-//  work_tiles[i].addEventListener("click", function(e) { openSection(e); });
-//}
-//
-//function openSection(event) {
-//  console.log("Jump to section: " + event.toElement.classList[1]);
-//  d.querySelector("#work").style.width = w + "px";
-//  event.toElement.style.height = h + "px";
-//  location.hash = "#" + event.toElement.classList[1];
-////  console.log("openSection " + "sectionIndex");
-////  d.querySelector("#work").style.width = w + "px";
-////  console.log(work_tiles);
-////  console.log(sectionIndex);
-////  work_tiles[sectionIndex].style.height = h + "px";
-//}
-
-
-
-
-
-
 /************************** INFO *****************************/
 
 
@@ -118,6 +76,23 @@ Initialize_SectionData();
 // Recalculate section data when resized
 /** DEBOUNCE(RESIZE) --> sldkfjlskdjf */
 
+var resize_debouncer = debounce( function() {
+        Initialize_SectionData();
+    }, 250);
+
+window.addEventListener("resize", resize_debouncer);
+
+//var debouncedLayout = debounce(function() {
+//  layout();
+//}, 250);
+//
+////// Recalculate layout on resize
+//$(window).resize(function() {
+//  h = $(window).height();
+//  w = $(window).width();
+//  docH = $(document).height();
+//  debouncedLayout();
+//});
 
 
 
@@ -192,12 +167,17 @@ console.log(videos);
 
 for (var i = 0; i < videos.length; i++) {
     var v = videos[i].element;
-    v.addEventListener("ended", function(event) {
-        v.currentTime = 0;
-        if (checkMostlyVisible(v)) {
-            v.play();
+//    v.addEventListener("ended", function(event) {
+//        v.currentTime = 0;
+//        if (checkMostlyVisible(v)) {
+//            v.play();
+//        }
+//    });
+    v.addEventListener("playing") {
+        if (!checkMostlyVisible(v)) {
+            v.pause()
         }
-    });
+    }
 }
 
 

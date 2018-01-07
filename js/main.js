@@ -167,17 +167,17 @@ console.log(videos);
 
 for (var i = 0; i < videos.length; i++) {
     var v = videos[i].element;
-//    v.addEventListener("ended", function(event) {
-//        v.currentTime = 0;
-//        if (checkMostlyVisible(v)) {
-//            v.play();
-//        }
-//    });
-    v.addEventListener("playing", function(event) {
-        if (!checkMostlyVisible(v)) {
-            v.pause();
+    v.addEventListener("ended", function(event) {
+        v.currentTime = 0;
+        if (checkMostlyVisible(v)) {
+            v.play();
         }
     });
+//    v.addEventListener("playing", function(event) {
+//        if (!checkMostlyVisible(v)) {
+//            v.pause();
+//        }
+//    });
 }
 
 

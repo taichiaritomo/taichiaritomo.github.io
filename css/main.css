@@ -125,6 +125,7 @@ body {
     height: 90vh;
     margin: 0 auto;
     object-fit: contain;
+    object-position: 50% 50%;
 }
 
 .section_info {

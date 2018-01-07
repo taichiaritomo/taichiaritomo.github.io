@@ -54,10 +54,11 @@ var d = document,
 
 
 // Object that stores each section's y position in the document
-var SectionData = [];
+var SectionData = new Array();
 
 // Calculates each section's y position in the document
 function Initialize_SectionData() {
+    SectionData = new Array();
     var section_elements = document.getElementsByTagName("section");
     for (var i = 0; i < section_elements.length; i++) {
         var rect = section_elements[i].getBoundingClientRect(),
@@ -77,6 +78,7 @@ Initialize_SectionData();
 /** DEBOUNCE(RESIZE) --> sldkfjlskdjf */
 
 var resize_debouncer = debounce( function() {
+        console.log("debounce!");
         Initialize_SectionData();
     }, 250);
 

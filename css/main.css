@@ -171,6 +171,10 @@ span.info_date {
     .section_info {
         font-size: 16px;
     }
+    
+    span.highlight {
+        box-shadow: 2px 1px 0 #fff, 2px -1px 0 #fff, -2px -1px 0 #fff, -2px 1px 0 #fff;
+    }
 }
 
 #sc-go_image_checkout {

@@ -182,6 +182,10 @@ sc_video_1.addEventListener("canplay", function(event) {
     document.querySelector("#loading_sc-go").classList.add("hidden");
 });
 
+if (sc_video_1.readyState > 3) {
+    document.querySelector("#loading_sc-go").classList.add("hidden");
+}
+
 
 
 

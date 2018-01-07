@@ -54,7 +54,6 @@ body {
     background-repeat: no-repeat;
     margin-left: 40px;
     padding-left: 30px;
-/*    backgorund-image: url(../img/landing/dm_color.png);*/
     cursor: pointer;
 }
 
@@ -126,6 +125,21 @@ body {
     margin: 0 auto;
     object-fit: contain;
     object-position: 50% 50%;
+}
+
+.video_loading_notification {
+    position: absolute;
+    left: calc(50% - 40px);
+    width: 80px;
+    font-size: 16px;
+    padding: 2px 4px;
+    background-color: #000;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.video_loading_notification.hidden {
+    display: none;
 }
 
 .section_info {

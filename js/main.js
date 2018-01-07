@@ -173,10 +173,14 @@ for (var i = 0; i < videos.length; i++) {
             v.play();
         }
     });
-    v.addEventListener("canplay", function(event) {
+    v.addEventListener("playing", function(event) {
         v.nextElementSibling.classList.add("hidden");
     });
 }
+
+videos[0].element.addEventListener("playing", function(event) {
+    document.querySelector("#loading_sc-go").classList.add("hidden");
+});
 
 
 

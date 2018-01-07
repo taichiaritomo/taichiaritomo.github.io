@@ -94,9 +94,11 @@ body {
     margin: 0 auto;
     width: 90%;
     height: 90%;
-    background-image: url(../img/_site/kiss.gif);
-    background-size: contain;
     background-position: center center;
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size:contain;
+    background-size: contain;
 }
 
 #landing-name {
@@ -214,74 +216,4 @@ span.info_date {
 .display_image {
     width: 100%;
     height: 100vh;
-}
-
-#menu_rotate {
-    margin-left: 16px;
-    width: 100vh;
-    display: flex;
-    transform: rotate(90deg);
-    transform-origin: 9px 9px;
-}
-
-.menu_item {
-    margin: 0 5px 0 5px;
-}
-
-#menu_rotate #at-rutgers {
-    margin-left: 152px;
-}
-
-#menu_rotate #at-soundcloud {
-    margin-left: 15px;
-}
-
-#menu_rotate #ht-illustration {
-    margin-left: 55px;
-}
-
-#menu_rotate #ht-web {
-    margin-left: 50px;
-}
-
-#landing {}
-
-#landing_bg-sketch {
-    background: url("../img/landing/dm_sketch.png");
-    background-size: 100vw;
-    background-position: center 0;
-    position: relative;
-    width: 100vw;
-    height: 89.0625vw;
-    /*  overflow: hidden;*/
-}
-
-#landing_bg-color {
-    background: url("../img/landing/dm_color.png");
-    background-size: 100vw;
-    background-position: center 0%;
-    width: 100vw;
-    height: 89.0625vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    /*  opacity: 0;*/
-    
-    transition: opacity 1s;
-}
-
-footer {
-    background: url("../img/landing/dm_footer.png");
-    background-size: 100vw;
-    background-position: center 42%;
-    width: 100%;
-    height: 90px;
-    display: flex;
-}
-
-#footer_text {
-    color: white;
-    margin: 0 auto;
-    align-self: center;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }

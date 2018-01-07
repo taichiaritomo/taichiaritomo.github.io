@@ -173,11 +173,11 @@ for (var i = 0; i < videos.length; i++) {
 //            v.play();
 //        }
 //    });
-    v.addEventListener("playing") {
+    v.addEventListener("playing", function(event) {
         if (!checkMostlyVisible(v)) {
-            v.pause()
+            v.pause();
         }
-    }
+    });
 }
 
 

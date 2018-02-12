@@ -196,8 +196,8 @@ span.info_date {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -213,8 +213,8 @@ span.info_date {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;

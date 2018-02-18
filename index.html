@@ -29,19 +29,25 @@
     <![endif]-->
     
     
+    <!-- Loading -->
+    <div id="loading-container">
+        <div id="loading">Loading</div>
+    </div>
+    
     <!-- Menu -->
     <div id="menu-container">
         <div id="menu-aligner">
             <div id="menu">
-<!--
-                <div id="button_all">
-                    ALL
-                </div>
--->
                 <div id="button_info">
-                    <strong>SHOW INFO</strong>
+                    SHOW INFO
                 </div>
             </div>
+        </div>
+    </div>
+    
+    <div id="name-container">
+        <div id="name">
+                TAICHI ARITOMO &#10020;
         </div>
     </div>
     
@@ -53,12 +59,11 @@
         <div class="section_info" id="info_me">
             <div class="section_info_aligner">
                 <span class="highlight">
-                    My name is Taichi Aritomo.<br><br>
-                    This is a portfolio of some of my visual and interactive work.
-                    <br><br>
-                    taichi.aritomo @ gmail.com
-                    <br><br>
-                    <span style="color: #999">site designed & built by me, Jan 2018</span>
+                    I'm a designer and illustrator currently studying
+                    computer science and mathematics at Rutgers University.<br><br>
+                    This is some of my visual and interactive work.<br><br>
+                    taichi.aritomo @ gmail.com<br><br>
+                    <span style="color: #999">Website last updated Feb 2018</span>
                 </span>
             </div>
         </div>
@@ -88,6 +93,31 @@
     </section>
     -->
     
+    <section id="lookas">
+        <div class="section_display">
+            <div class="section_image" style="background-image: url(../img/lookas/lookas.gif)"></div>
+            <div class="button_demo"><a target="_blank" href="http://taichi.pink/lookas/">DEMO!</a></div>
+        </div>
+        <div class="section_info" id="info_tedxrutgers">
+            <div class="section_info_aligner">
+                <span class="highlight">
+                    This tool continuously processes text (left) as an image and generates its <em>saliency map</em> (right). The intensity of white
+                    corresponds to the likelihood that a human viewer will gaze at that
+                    point first, according to a <a target="_blank" href="https://www.researchgate.net/publication/221364530_Saliency_Detection_A_Spectral_Residual_Approach">computer vision algorithm</a>
+                    that models visual saliency.
+                    <br><br>
+                    I made this tool with the hypothesis that it could help us better
+                    understand our audience's experience when they see the information
+                    we design.
+                    Built during a research seminar on applying computer science to urban issues, 
+                    namely information accessibility.
+                    <br><br>
+                    <span class="info_date">Mar 2017 - May 2017</div>
+                </span>
+            </div>
+        </div>
+    </section>
+    
     <section id="section_tedxrutgers">
         <div class="section_display">
             <div class="section_image" style="background-image: url(../img/tedxrutgers/Puddle_shadow.png)"></div>
@@ -113,26 +143,6 @@
             </div>
         </div>
     </section>
-    
-    <section id="section_fukrik">
-        <div class="section_display">
-            <div class="section_image" style="background-image: url(../img/fukrik/kid_mini.png)"></div>
-        </div>
-        <div class="section_info" id="info_fukrik">
-            <div class="section_info_aligner">
-                <span class="highlight">
-                    Illustrated artwork for music by <a href="http://soundcloud.com/rikiya-aritomo" target="_blank">Boonchi</a>.
-                    <br><br>
-                    The word "KID" in the background pattern reflects
-                    the title of the song for which this was made.
-                    <br><br>
-                    <span class="info_date">Aug 2017</span>
-                </span>
-            </div>
-        </div>
-    </section>
-    
-    
     
 <!--
     <section id="section_lookas">
@@ -167,6 +177,8 @@
                     <br><br>
                     To help users understand the benefits of a SoundCloud Go subscription,
                     I worked on animated icons and interactive prototypes for the post-purchase tour.
+                    <br><br>
+                    <span class="info_date">Jun 2016 - Dec 2016</div>
                 </span>
             </div>
         </div>
@@ -189,6 +201,8 @@
                     I worked with the product team to map billing logic and user-flows
                     for SoundCloud's various subscription offerings, and designed interfaces
                     for payment and subscription management.
+                    <br><br>
+                    <span class="info_date">Jun 2016 - Dec 2016</div>
                 </span>
             </div>
         </div>
@@ -210,49 +224,50 @@
                     ad experiences for the 175M-user website and app.
                     <br><br>
                     I designed app-install and video ad formats for the mobile app.
-                    Here is a demo of the interactive prototype I built for video ads
-                    to demonstrate audio playback handoff.
+                    Here is a video of the interactive prototype I built
+                    to demonstrate how video ads would handle audio playback handoff.
+                    <br><br>
+                    <span class="info_date">Jun 2016 - Dec 2016</div>
                 </span>
             </div>
         </div>
     </section>
     
-<!--
-    <section id="section_soundcloud">
+    <section id="section_fukrik">
         <div class="section_display">
-            </div>
-        
-        <div class="section_display">
-            <video class="section_video" id="video_sc-ad" data-object-fit="contain" preload="auto" loop muted playsinline>
-                <source src="img/sc/sc-ad.mp4" type="video/mp4" data-object-fit="contain">
-                Your browser does not support playback for this html5 video.
-            </video>
-            <div class="video_loading_notification" id="loading-sc-ad">LOADING</div>
+            <div class="section_image" style="background-image: url(../img/fukrik/kid_mini.png)"></div>
         </div>
-        <div class="section_info" id="info_soundcloud">
+        <div class="section_info" id="info_fukrik">
             <div class="section_info_aligner">
                 <span class="highlight">
-                    Snapshots of subscription and advertising experiences
-                    on <a href="http://soundcloud.com" target="_blank">SoundCloud</a>, an online music platform with
-                    175M users.
+                    Illustrated artwork for music by <a href="http://soundcloud.com/rikiya-aritomo" target="_blank">Boonchi</a>.
                     <br><br>
-                    As a product design intern,
-                    I worked on SoundCloud's subscription and ad products,
-                    including the post-purchase tour, UIs for subscription purchase and management,
-                    and new ad-formats for the mobile app.
+                    The word "KID" in the background pattern reflects
+                    the title of the song for which this was made.
                     <br><br>
-                    I also worked on payment and billing logic,
-                    user-flows mapping possible entries and errors in the subscription process, prototypes for
-                    usability testing, and animated iconography to communicate the products' value propositions.
-                    <br><br>
-                    For more about my work here, feel free to reach out.
-                    <br><br>
-                    <span class="info_date">Jun 2016 - Dec 2016</span>
+                    <span class="info_date">Aug 2017</span>
                 </span>
             </div>
         </div>
     </section>
--->
+    
+    <section id="section_digital-miracles">
+        <div class="section_display">
+            <div class="section_image" style="background-image: url(../img/digital-miracles/digital-miracles.png)">
+            </div>
+        </div>
+        
+        <div class="section_info" id="info_soundcloud">
+            <div class="section_info_aligner">
+                <span class="highlight">Hoping for...</span>
+                    <br><br>
+                    <span class="info_date">Mar 2016</div>
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <div id="button_top">&#8676;TOP</div>
     
 <!--
     <section id="section_tonysbigrun">

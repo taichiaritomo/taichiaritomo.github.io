@@ -1,3 +1,8 @@
+window.onload = function () {
+    document.querySelector("#loading-container").style.display = "none";
+};
+
+
 /************************* UTILITY AND POLYFILLS *****************************/
 
 // Detect request animation frame
@@ -123,13 +128,13 @@ function toggleInfo() {
         var currentSectionInfo = SectionData[currentSectionIndex].element.querySelector(".section_info");
         currentSectionInfo.classList.add("visible");
         lastSectionIndex = currentSectionIndex;
-        button_info.innerHTML = "<strong>HIDE INFO</strong>"
+        button_info.innerHTML = "HIDE INFO"
     }
     // Hide info for last displayed section
     else {
         SectionData[lastSectionIndex].element.querySelector(".section_info").classList.remove("visible");
         lastSectionIndex = null;
-        button_info.innerHTML = "<strong>SHOW INFO</strong>"
+        button_info.innerHTML = "SHOW INFO"
     }
     showInfo = !showInfo;
 }
@@ -137,6 +142,9 @@ function toggleInfo() {
 button_info.addEventListener("click", toggleInfo);
 
 
+button_top.addEventListener("click", function() {
+    window.scrollTo(0,0);
+});
 
 
 /************* VIDEO **************/

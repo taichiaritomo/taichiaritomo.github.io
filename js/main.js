@@ -2,6 +2,38 @@ window.onload = function () {
     document.querySelector("#loading-container").style.display = "none";
 };
 
+/************************* section: Lookas ***********************/
+
+var lookas_example_images = [
+    "img/lookas/lookas.gif",
+    "img/lookas/lookas_2.gif",
+    "img/lookas/lookas_3.gif",
+    "img/lookas/lookas_4.gif"
+];
+var lookas_image_preload = [];
+// Pre-loading images
+for (var i = 0; i < 4; i++) {
+    var x = new Image();
+    x.src = lookas_example_images[i];
+    lookas_image_preload[i] = x;
+}
+
+var lookas_example_buttons = document.querySelector("#section_lookas").getElementsByClassName("section_image_switch");
+var lookas_example_current = 0;
+function lookas_example_select(num) {
+    lookas_example_buttons[lookas_example_current].classList.remove("selected");
+    lookas_example_buttons[num].classList.add("selected");
+    document.querySelector("#section_lookas .section_image").style.backgroundImage = "url(" + lookas_example_images[num] + ")";
+    lookas_example_current = num;
+}
+
+for (var i = 0; i < 4; i++) {
+    lookas_example_buttons[i].addEventListener("click", function(e) {
+        var buttonNum = parseInt(e.target.innerHTML) - 1;
+        lookas_example_select(buttonNum);
+    });
+}
+
 
 /************************* UTILITY AND POLYFILLS *****************************/
 
@@ -244,8 +276,6 @@ function loop(){
         }
         
         // Video Auto-play Logic
-        
-        
         scroll( loop );
         
         for (var i = 0; i < 2; i++) {

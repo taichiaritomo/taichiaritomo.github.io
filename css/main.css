@@ -173,7 +173,7 @@ body {
 .section_image {
     position: relative;
     width: 90%;
-    height: 90vh;
+    height: 90%;
     margin: 0 auto;
     z-index: 10;
     background-size: contain;
@@ -186,7 +186,7 @@ body {
     align-items: center;
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: 0;
 }
 
 #section_lookas .section_image_switch {
@@ -215,7 +215,7 @@ body {
 #section_lookas .button_demo {
     position: absolute;
     right: 0;
-    bottom: -10px;
+    bottom: 0;
     cursor: pointer;
 /*    z-index: 10;*/
 }

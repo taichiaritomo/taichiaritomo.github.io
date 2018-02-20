@@ -215,9 +215,13 @@ body {
 #section_lookas .button_demo {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -20px;
     cursor: pointer;
 /*    z-index: 10;*/
+}
+
+#section_lookas .button_demo:hover {
+    opacity: 0.5;
 }
 
 .section_video {

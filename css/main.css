@@ -235,13 +235,12 @@ body {
 
 .video_loading_notification {
     position: absolute;
-    left: calc(50% - 40px);
-    width: 80px;
-    font-size: 16px;
+    left: calc(50% - 100px);
+    width: 200px;
     padding: 2px 4px;
-    background-color: #000;
-    color: #fff;
     margin: 0 auto;
+    text-align: center;
+    animation: flash-animation 1s infinite;
 }
 
 .video_loading_notification.hidden {

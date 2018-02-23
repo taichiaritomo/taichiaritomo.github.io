@@ -6,12 +6,8 @@ window.onload = function () {
 var myName = document.querySelector("#name");
 var myPic = document.querySelector("#landing-pro-pic");
 myName.addEventListener("mouseover", function(e) {
-    console.log("HI");
     myPic.style.left = (window.innerWidth * (e.clientX - myName.getBoundingClientRect().x) / myPic.clientWidth) + "px";
-//    console.log((30 + (window.innerWidth - 60) * e.clientX / myPic.clientWidth) + "px");
     myPic.style.top = (window.innerHeight * (e.clientY - myName.getBoundingClientRect().y) / myPic.clientHeight - 200) + "px";
-//    console.log(window.innerHeight * (e.clientY - myName.getBoundingClientRect().y)/myPic.clientHeight);
-//    console.log((window.innerHeight * (e.clientY / myPic.clientHeight)) + "px");
 });
 
 

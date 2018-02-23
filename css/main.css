@@ -355,6 +355,10 @@ span.info_date {
         margin-top: -130px;
         text-align: center;
     }
+    
+    .large-only {
+        display: none;
+    }
 }
 
 #sc-go_image_checkout {

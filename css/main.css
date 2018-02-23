@@ -76,12 +76,30 @@ body {
 #name {
     position: fixed;
     bottom: -8px;
-    left: 10px;
+    left: 0px;
     width: 250px;
-    transform: rotate(-90deg) translate(-0%, 0%);
+    transform: rotate(-90deg) translate(-10px, 0%);
     transform-origin: 0 0;
+    padding-top: 10px;
     color: #FA5F83;
     z-index: 5;
+    cursor: default;
+}
+
+#landing-pro-pic {
+    position: fixed;
+    top: 200px;
+    left: 200px;
+    z-index: 10;
+    display: none;
+    height: 200px;
+    width: 200px;
+    background-image: url("../img/site/taichi.jpg");
+    background-size: contain;
+}
+
+#name-container:hover #landing-pro-pic {
+    display: block;
 }
 
 /*
@@ -143,6 +161,7 @@ body {
     max-width: 960px;
     margin-top: -50px;
     text-align: center;
+    z-index: 3;
 }
 
 .vertical-only {
@@ -318,8 +337,9 @@ span.info_date {
     }
     
     #name {
-        left: 2px;     /* Space from left edge */
+        padding-top: 2px;
         bottom: -17px;
+        transform: rotate(-90deg) translate(-2px, 0%);
     }
     
     .vertical-only {
@@ -332,7 +352,7 @@ span.info_date {
     }
     
     #footer_email {
-        margin-top: -100px;
+        margin-top: -130px;
         text-align: center;
     }
 }

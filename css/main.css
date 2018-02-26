@@ -94,7 +94,7 @@ body {
     position: fixed;
     top: 200px;
     left: 200px;
-    z-index: 10;
+    z-index: 20;
     display: none;
     height: 200px;
     width: 200px;

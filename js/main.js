@@ -14,7 +14,7 @@ myName.addEventListener("mouseover", function(e) {
 /************************* section: Lookas ***********************/
 
 var lookas_example_images = [
-    "img/lookas/lookas.gif",
+    "img/lookas/lookas_0.jpg",
     "img/lookas/lookas_2.gif",
     "img/lookas/lookas_3.gif",
     "img/lookas/lookas_4.gif"

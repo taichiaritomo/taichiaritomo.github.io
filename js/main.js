@@ -273,6 +273,10 @@ for (var i = 0; i < videos.length; i++) {
     });
 }
 
+if (sc_video_2.readyState > 3) {
+    document.querySelector("#loading_sc-ad").classList.add("hidden");
+}
+
 //sc_video_1.addEventListener("canplay", function(event) {
 //    document.querySelector("#loading_sc-go").classList.add("hidden");
 //});

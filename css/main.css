@@ -434,34 +434,4 @@ body {
     height: 18px;
     border-radius: 9px;
 }
-    
-    
-    #menu {
-        padding-top: 2px; /* Space from right edge */
-    }
-    
-    #name {
-        padding-top: 2px;
-        transform: rotate(-90deg) translate(-2px, 0%);
-    }
-    
-    .vertical-only {
-        display: inline;
-    }
-    
-    #button_top {
-        right: 2px;
-        margin-top: -103px;
-    }
-    
-/*
-    #footer_email {
-        margin-top: -155px;
-        text-align: center;
-    }
-*/
-    
-    .large-only {
-        display: none;
-    }
 }

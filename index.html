@@ -15,8 +15,69 @@
     <link rel="stylesheet" href="css/main.css">
 
 </head>
-
+    
+    <!-- ABOUT -->
+    <div id="about-container">
+        <div id="about">
+            Taichi Aritomo
+            is a visual designer and illustrator.
+            He is studying computer science and mathematics,
+            graduating <i>summa cum laude</i> with a BA from
+            Rutgers University in 2018.
+            <br><br>
+            Contact:<br>
+            &#116;&#097;&#105;&#099;&#104;&#105;&#046;&#097;&#114;&#105;&#116;&#111;&#109;&#111;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;<br><br>
+            <span class="gray">Website built by Taichi. Typeface by <a href="http://authentic.website/sans">Authentic</a>. Last updated Apr 2018.</span>
+        </div>
+    </div>
+    
 <body>
+    
+    <!-- LOADING OVERLAY -->
+    <div id="loading-overlay">
+        <div id="loading-graphic">
+            <div class="loading-graphic-letter" id="loading-graphic-L">L</div>
+            <div class="loading-graphic-letter" id="loading-graphic-O">O</div>
+            <div class="loading-graphic-letter" id="loading-graphic-A">A</div>
+            <div class="loading-graphic-letter" id="loading-graphic-D">D</div>
+            <div class="loading-graphic-letter" id="loading-graphic-I">I</div>
+            <div class="loading-graphic-letter" id="loading-graphic-N">N</div>
+            <div class="loading-graphic-letter" id="loading-graphic-G">G</div>
+            <div class="loading-graphic-letter" id="loading-graphic-star">&middot;</div>
+        </div>
+    </div>
+    
+    <!-- SELECTOR (ABOUT / HOME) -->
+    <div id="selectors">
+        <div class="selector" id="selector-about">
+            <svg width="100%" height="100%" viewBox="0 0 96 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path id="selector_T_PATH" d="M95,39 L95,1 L1,1 L1,39 L17,39 L17,79 L79,79 L79,39 L95,39 Z" stroke="#000000" fill="none" stroke-width="2"></path>
+                <text id="ABOUT" font-family="AUTHENTICSans-Regular, AUTHENTIC Sans" font-size="24" font-weight="normal" fill="#000000">
+                    <tspan x="5.7" y="30">ABOUT</tspan>
+                </text>
+            </svg>
+        </div>
+        <div class="selector" id="selector-home">
+            <svg width="100%" height="100%" viewBox="0 0 96 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path id="selector_A_PATH" d="M95,30.5542476 L48,1.17924764 L1,30.5542476 L1,79 L39,79 L39,49 L57,49 L57,79 L95,79 L95,30.5542476 Z" stroke="#000000" fill="none" stroke-width="2"></path>
+                <text id="HO-Copy" transform="translate(32.047921, 33.980084) rotate(-32.000000) translate(-32.047921, -33.980084) " font-family="AUTHENTICSans-Regular, AUTHENTIC Sans" font-size="24" font-weight="normal" letter-spacing="-0.144000009" fill="#000000">
+                    <tspan x="13.855921" y="40.9800835">HO</tspan>
+                </text>
+                <text id="ME-Copy" transform="translate(65.623897, 35.715124) rotate(32.000000) translate(-65.623897, -35.715124) " font-family="AUTHENTICSans-Regular, AUTHENTIC Sans" font-size="24" font-weight="normal" letter-spacing="-0.144000009" fill="#000000">
+                    <tspan x="47.9478969" y="42.7151239">ME</tspan>
+                </text>
+            </svg>
+        </div>
+    </div>
+    
+    <!-- MAIN HEADER -->
+    <div id="header-container">
+        <div class="my-name">Taichi Aritomo</div>
+<!--        <div id="header-locale">NYC 20:08<span id="header-locale-time"></span></div>-->
+    </div>
+    
+    <div id="content-container">
+    
     <!-- Old IE Message -->
     <!--[if lt IE 9]>
     <p class="browserupgrade">
@@ -26,278 +87,233 @@
     <![endif]-->
     
     
-    <!-- Loading -->
-    <div id="loading-container">
-        <div id="loading">Loading</div>
-    </div>
     
-    <!-- Menu -->
-    <div id="menu-container">
-        <div id="menu-aligner">
-            <div id="menu">
-                <div id="button_info">
-                    SHOW INFO
-                </div>
-            </div>
+    <!-- BODY -->
+    
+    <!-- CARD: Kiss -->
+    <div class="card" id="card_kiss">
+        <div class="card-title">Rhythms <span class="gray">Jun 2017</span></div>
+        <div class="card-feature">
+            
         </div>
     </div>
     
-    <div id="name-container">
-        <div id="name">
-            <span id="first-name">TAICHI </span>
-            <span id="last-name">ARITOMO</span>
-            <span id="name-icon">&#10020;</span>
+    <!-- CARD: Look.as -->
+    <div class="card" id="lookas">
+        <div class="card-title">Research on typography and perception <span class="gray">May 2017</span></div>
+        <div class="card-feature" id="">
+            <img class="card-feature-image"
+                 src="../img/lookas/lookas_0.jpg"
+                 alt="Lookas, an experimental design tool that tells you how text information stands out visually as parts of a whole."
+            />
         </div>
-        <div id="landing-pro-pic"></div>
-    </div>
-    
-    <!-- Landing page -->
-    <section id="landing">
-        <div class="section_display">
-            <div id="landing-image" style="background-image: url(../img/site/kissOptimized.gif)">
-            </div>
-        </div>
-        <div class="section_info" id="info_me">
-            <div class="section_info_aligner">
-                <span class="highlight">
-                    I'm a designer and illustrator, currently studying
-                    computer science and mathematics at Rutgers University.
-                    This is some of my visual and interactive work.<br><br>
-                    <span style="color: #999">Website built by me<br>Typeface from <a href="http://authentic.website/sans" target="_blank">Authentic</a><br>Last updated Feb 2018</span>
-                </span>
-            </div>
-        </div>
-    </section>
-    <section id="section_lookas">
-        <div class="section_display">
-            <div class="section_image" alt="Lookas, an experimental design tool that tells you how text information stands out visually as parts of a whole." style="background-image: url(../img/lookas/lookas_0.jpg)">
-                <div class="section_image_switch-container">
+        <div class="card-options">
+            <div class="empty"></div>
+            <div class="section_image_switch-container">
                     <div class="section_image_switch selected">1</div>
                     <div class="section_image_switch">2</div>
                     <div class="section_image_switch">3</div>
                     <div class="section_image_switch">4</div>
-                </div>
-                <div class="button_demo">
-                    &#10047;
-                    <a target="_blank" href="http://taichi.pink/lookas/"><i>Demo!</i></a>
-                    &#10047;
-                </div>
             </div>
-        </div>
-        <div class="section_info" id="info_tedxrutgers">
-            <div class="section_info_aligner">
-                <span class="highlight">
-                    How do size, form, and color interact and compete as parts of a whole?
-                    This tool is an attempt to describe these relationships explicitly.
-                    <br><br>
-                    It continuously processes text (left) as an image and generates its <em>saliency map</em> (right).
-                    The intensity of white corresponds to the likelihood
-                    that a human viewer will gaze at that point first, according to a
-                    <a target="_blank" href="https://www.researchgate.net/publication/221364530_Saliency_Detection_A_Spectral_Residual_Approach">computer vision algorithm</a>
-                    that models visual attention.
-                    <br><br>
-                    Built with Javascript<br>
-                    <span class="info_date">Mar 2017 - May 2017</div>
-                </span>
+            <div class="button_demo">
+                <!--&#10047;-->
+                <a target="_blank" href="http://taichi.pink/lookas/"><i>Demo!</i></a>
+                <!--&#10047;-->
             </div>
+            <div class="more_info">More info</div>
+            <div class="empty"></div>
         </div>
-    </section>
+        <div class="card-info">
+            How do size, form, and color interact and compete as parts of a whole?
+            This tool is an attempt to describe these relationships explicitly.
+            <br><br>
+            It continuously processes text (left) as an image and generates its <em>saliency map</em> (right).
+            The intensity of white corresponds to the likelihood
+            that a human viewer will gaze at that point first, according to a
+            <a target="_blank" href="https://www.researchgate.net/publication/221364530_Saliency_Detection_A_Spectral_Residual_Approach">computer vision algorithm</a>
+            that models visual attention.
+<!--
+            <br><br>
+            Built with Javascript<br>
+-->
+        </div>
+    </div>
+        
+    <!-- CARD -->
+    <div class="card" id="soundcloud-interfaces">
+        <div class="card-title">Payment and Subscription Interfaces for SoundCloud <span class="gray">Aug 2016</span></div>
+        <div class="card-feature" id="">
+            <img class="card-feature-image" id="sc_payment"
+                 src="../img/sc/sc_checkout.jpg"
+                 alt="Screenshots of SoundCloud's payment interface on desktop web."
+            />
+            <img class="card-feature-image" id="sc_subscriptions"
+                 src="../img/sc/sc_subscriptions.jpg"
+                 alt="Screenshot of SoundCloud's subscription management interface on desktop web."
+            />
+                 
+        </div>
+        <div class="card-options" id="">
+            <div class="empty"></div>
+            <div class="more_info">More info</div>
+            <div class="empty"></div>
+        </div>
+        <div class="card-info" id="">
+<!--
+            As a product design intern at SoundCloud, I worked on subscription and
+            ad experiences for the 175M-user website and app.
+            <br><br>
+-->
+            When SoundCloud was expanding its subscription products, I worked with
+            the product team to map the new multi-tiered billing logic and possible user-flows.
+            For the expansion I re-designed interfaces for payment and subscription management.
+            Responding to feedback from user-testing and community forums,
+            the designs were aimed to make billing and cancellation more transparent.
+<!--
+            <br><br>
+            UI designed in Sketch<br>
+-->
+        </div>
+    </div>
     
-    <section id="section_tedxrutgers">
-        <div class="section_display">
-            <div class="section_image" style="background-image: url(../img/tedxrutgers/puddle.jpg); filter: drop-shadow(0px 0px 2px rgba(0,0,0,0.2));"></div>
-        </div>
-        <div class="section_info" id="info_tedxrutgers">
-            <div class="section_info_aligner">
-                <span class="highlight">
-                    <a href="http://tedxrutgers.com" target="_blank">TEDxRutgers</a>
-                    is a student-run organization that hosts an annual TEDx
-                    conference and other smaller events open to the community.
-                    <br><br>
-                    This was one of the posters made for the 2017 Conference theme, <em>footnotes</em>.
-                    It was a challenge to represent a conference with perspectives as broad as TED,
-                    without confining it to specific examples of tech, entertainment, or design.
-                    Following the theme's premise, we wanted to illustrate the process of engaging with
-                    something to appreciate it more closely, like we often did as kids.
-                    <br><br>
-                    Digitally painted in Photoshop<br>
-                    <span class="info_date">Aug 2017</div>
-                </span>
-            </div>
-        </div>
-    </section>
-    
-    <section id="section_tedxrutgers">
-        <div class="section_display">
-            <div class="section_image" style="background-image: url(../img/tedxrutgers/black.jpg)"></div>
-        </div>
-        <div class="section_info" id="info_tedxrutgers">
-            <div class="section_info_aligner">
-                <span class="highlight">
-                    <a href="http://tedxrutgers.com" target="_blank">TEDxRutgers</a>
-                    is a student-run organization that hosts an annual TEDx
-                    conference and other smaller events open to the community.
-                    <br><br>
-                    This poster was made to display TED and TEDxRutgers' broader goal of promoting
-                    "ideas worth spreading." The <em>idea</em> and the <em>work</em>
-                    are depicted through invented objects that symbolize them.
-                    <br><br>
-                    Digitally painted in Photoshop<br>
-                    <span class="info_date">Sep 2017</div>
-                </span>
-            </div>
-        </div>
-    </section>
-    
-    <section id="section_tedxrutgers">
-        <div class="section_display">
-            <div class="section_image" style="background-image: url(../img/tedxrutgers/tedx_join.jpg)"></div>
-        </div>
-        <div class="section_info" id="info_tedxrutgers">
-            <div class="section_info_aligner">
-                <span class="highlight">
-                    <a href="http://tedxrutgers.com" target="_blank">TEDxRutgers</a>
-                    is a student-run organization that hosts an annual TEDx
-                    conference and other smaller events open to the community.
-                    <br><br>
-                    This illustration was originally part of an "infographic"
-                    locating TEDxRutgers as one of thousands of TEDx communities across
-                    the world. It lent itself well for a poster to attract new members of
-                    the organizing committee, as prospective members would be joining a
-                    broadly connected organization.
-                    <br><br>
-                    Modeled in Rhino and post-processed in Photoshop<br>
-                    <span class="info_date">Aug 2016</div>
-                </span>
-            </div>
-        </div>
-    </section>
-    
-    <section id="section_soundcloud_subs">
-        <div class="section_display">
-            <div class="section_image">
-                <div id="sc-go_image_checkout" style="background-image: url(../img/sc/sc_checkout.jpg)"></div>
-                <div id="sc-go_image_subscriptions" style="background-image: url(../img/sc/sc_subscriptions.jpg)"></div>
-            </div>
-        </div>
-        <div class="section_info" id="info_soundcloud">
-            <div class="section_info_aligner">
-                <span class="highlight">
-                    As a product design intern at SoundCloud, I worked on subscription and
-                    ad experiences for the 175M-user website and app.
-                    <br><br>
-                    When SoundCloud was expanding its subscription products, I worked with
-                    the product team to map the new billing logic and user-flows.
-                    I re-designed interfaces for payment and subscription management,
-                    and occassionally shipped front-end code. Responding to user feedback,
-                    the designs were aimed to make billing and cancellation more transparent.
-                    <br><br>
-                    UI designed in Sketch<br>
-                    <span class="info_date">Jun 2016 - Dec 2016</div>
-                </span>
-            </div>
-        </div>
-    </section>
-    
-    <section id="section_soundcloud_ads">
-        <div class="section_display">
-            <video class="section_video" id="video_sc-ad" data-object-fit="contain" preload="auto" loop muted playsinline>
+    <!-- CARD -->
+    <div class="card" id="soundcloud-ads">
+        <div class="card-title">Mobile Ad Formats for SoundCloud <span class="gray">Dec 2016</span></div>
+        <div class="card-feature" id="">
+            <video id="video_sc-ad" data-object-fit="contain" preload="auto" loop muted playsinline>
                 <source src="img/sc/sc-ad.mp4" type="video/mp4" data-object-fit="contain">
                 Your browser does not support playback for this html5 video.
             </video>
-            <div class="video_loading_notification" id="loading-sc-ad">Loading Video</div>
+            <div class="video_loading_notification" id="loading-sc-ad">Buffering Video</div>
         </div>
-        
-        <div class="section_info" id="info_soundcloud">
-            <div class="section_info_aligner">
-                <span class="highlight">
-                    As a product design intern at SoundCloud, I worked on subscription and
-                    ad experiences for the 175M-user website and app.
-                    <br><br>
-                    I designed some of the necessary evils of SoundCloud's mobile app—new
-                    ads in the stream.
-                    This is the prototype I built 
-                    to demonstrate how users would interact with video ads, and how 
-                    they would handle audio playback handoff. For a music app,
-                    it was important that the listening experience would work
-                    seamlessly with the ad. You can <a href="http://share.framerjs.com/549pahj0uuzx/">demo it</a>
-                    to see how music is faded and resumed
-                    as the video is activated and closed.
-                    <br><br>
-                    UI designed in Sketch and prototyped in FramerJS<br>
-                    <span class="info_date">Jun 2016 - Dec 2016</div>
-                </span>
-            </div>
+        <div class="card-options" id="">
+            <div class="empty"></div>
+            <div class="more_info">More info</div>
+            <div class="empty"></div>
         </div>
-    </section>
-  
-  <section id="section_soundcloud_onboard">
-        <div class="section_display">
-            <video class="section_video" id="video_sc-go-onboarding" data-object-fit="contain" preload="auto" loop muted playsinline>
-                <source src="img/sc/sc-go-onboarding.mp4" type="video/mp4">
-                Your browser does not support playback for this html5 video.
-            </video>
-            <div class="video_loading_notification" id="loading_sc-go">Loading Video</div>
+        <div class="card-info" id="">
+            I designed some of the necessary evils of SoundCloud's mobile app—new
+            ads in the stream.
+            This is the Framer prototype I built 
+            to demonstrate how users would interact with video ads, and how 
+            they would handle audio playback handoff. For a music app,
+            it was important that the listening experience would transfer seamlessly
+            with ads. You can <a href="http://share.framerjs.com/549pahj0uuzx/">demo it</a>
+            to see how music is faded and resumed as the video is activated and closed.
+<!--
+            <br><br>
+            UI designed in Sketch and prototyped in FramerJS<br>
+-->
         </div>
-        
-        <div class="section_info" id="info_soundcloud">
-            <div class="section_info_aligner">
-                <span class="highlight">
-                    As a product design intern at SoundCloud, I worked on subscription and
-                    ad experiences for the 175M-user website and app.
-                    <br><br>
-                    To help users understand the benefits of a SoundCloud Go subscription,
-                    I worked on animated icons and interactive prototypes for a post-purchase tour. The animations referenced marketing iconography and UI elements to tie together the purchasing experience from beginning to end.
-                    <br><br>
-                    Animations made in AfterEffects, UI prototyped and tested in FramerJS<br>
-                    <span class="info_date">Jun 2016 - Dec 2016</div>
-                </span>
-            </div>
-        </div>
-    </section>
+    </div>
     
-    <section id="section_fukrik">
-        <div class="section_display">
-            <div class="section_image" style="background-image: url(../img/fukrik/kid_mini.jpg)"></div>
-        </div>
-        <div class="section_info" id="info_fukrik">
-            <div class="section_info_aligner">
-                <span class="highlight">
-                    Illustrated artwork for music by <a href="http://soundcloud.com/boonchi" target="_blank">Boonchi</a>.
-                    <br><br>
-                    The word "KID" in the background <em>cloud-camo</em> reflects
-                    the title of the song for which this was made.
-                    <br><br>
-                    Digitally painted in Photoshop<br>
-                    <span class="info_date">Aug 2017</span>
-                </span>
-            </div>
-        </div>
-    </section>
+    <!-- CARD -->
+    <div class="card" id="retail-chain-reactions">
+        <div class="card-title">Illustration for research on urban development <span class="gray">Apr 2018</span></div>
+        <div class="card-feature" id=""></div>
+        <div class="card-options" id=""></div>
+        <div class="card-info" id=""></div>
+    </div>
     
-    <section id="section_digital-miracles">
-        <div class="section_display">
-            <div class="section_image" style="background-image: url(../img/digital-miracles/digital-miracles.jpg)">
-            </div>
+    
+    <!-- CARD -->
+    <div class="card" id="tedxrutgers-footnotes">
+        <div class="card-title">TEDxRutgers conference poster <span class="gray">Aug 2017</span></div>
+        <div class="card-feature" id="">
+            <img class="card-feature-image"
+                 src="../img/tedxrutgers/puddle.jpg"
+                 alt="A poster for TEDxRutgers' 2017 Conference, footnotes. Three panels. The first contains a girl jumping in a puddle in a park. The second is a closeup of her boots in the water. The third is a closeup of the water droplets."
+                 style="filter: drop-shadow(0px 0px 2px rgba(0,0,0,0.2));"
+            />
+                 
         </div>
-        
-        <div class="section_info" id="info_digital-miracles">
-            <div class="section_info_aligner">
-                <span class="highlight">
-                    Thanks for stopping by.<br>
-                    Let's get together and make some...
-                </span>
-            </div>
+        <div class="card-options" id="">
+            <div class="empty"></div>
+            <div class="more_info">More info</div>
+            <div class="empty"></div>
         </div>
-    </section>
+        <div class="card-info" id="">
+            <a href="http://tedxrutgers.com" target="_blank">TEDxRutgers</a>
+            is a student-run organization that hosts an annual TEDx
+            conference and other smaller events open to the community. This is one of the posters made for the 2017 Conference.
+            We didn't want to represent a conference with perspectives as broad as TED in a way
+            that would confine it to specific examples of tech, entertainment, or design.
+            So, following the theme of <em>footnotes</em>, we chose to illustrate the process of engaging with
+            something to appreciate it more closely, like we often did as kids.
+<!--
+            <br><br>
+            Digitally painted in Photoshop<br>
+-->
+        </div>
+    </div>
+    
+    
+    <!-- CARD -->
+    <div class="card" id="tedxrutgers-outreach">
+        <div class="card-title">TEDxRutgers outreach poster <span class="gray">Mar 2016</span></div>
+        <div class="card-feature" id="">
+            <img class="card-feature-image"
+                 src="../img/tedxrutgers/tedx_join.jpg"
+                 alt="A poster for TEDxRutgers' Outreach. A globe, where the land is a cluster of clovers, and flowers are sprouting where the cities would be."
+            />     
+        </div>
+    </div>
+    
+    <!-- CARD -->
+    <div class="card" id="boonchi">
+        <div class="card-title">Illustration for <a href="http://soundcloud.com/boonchi">Boonchi</a> <span class="gray">Aug 2017</span></div>
+        <div class="card-feature" id="">
+            <img class="card-feature-image"
+                 src="../img/fukrik/kid_mini.jpg"
+                 alt="A baby with a lollipop head."
+            />
+        </div>
+        <div class="card-options" id="">
+        </div>
+    </div>
+    
+    <!-- CARD -->
+    <div class="card" id="digital-miracles">
+        <div class="card-title">Thanks for stopping by. :) Let's make</div>
+        <div class="card-feature" id="">
+            <img class="card-feature-image"
+                 src="../img/digital-miracles/digital-miracles.jpg"
+                 alt="A baby with a lollipop head."
+            />
+        </div>
+        <div class="card-options" id="">
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
     
     <div id="footer_email">
-        &#116;&#097;&#105;&#099;&#104;&#105;&#046;&#097;&#114;&#105;&#116;&#111;&#109;&#111;<span class="vertical-only"><br></span>&#064;<span class="vertical-only"><br></span>&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
+        &#116;&#097;&#105;&#099;&#104;&#105;&#046;&#097;&#114;&#105;&#116;&#111;&#109;&#111;
+<!--
+        <span class="vertical-only"><br>
+        </span>
+        <span class="vertical-only"><br></span>
+-->
+        &#064;
+        <!-- -->
+        &#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
+<!--
         <span class="vertical-only"><br></span>
         <span class="large-only">&middot;</span>
-        <a href="https://soundcloud.com/teecheeweewee" target="_blank">&#9835;</a>
+-->
     </div>
-    <div id="button_top">&#8676;TOP</div>
+<!--    <div id="button_top">&#8676;TOP</div>-->
+        
+    </div>
+    
     <!-- Javascript -->
     <script src="js/plugins.min.js"></script>
     <!-- Polyfill for object-fit CSS property for images and videos in IE/Edge -->

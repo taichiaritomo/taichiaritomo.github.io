@@ -1,14 +1,36 @@
 window.onload = function () {
-    document.querySelector("#loading-container").style.display = "none";
+    document.querySelector("#loading-overlay").style.display = "none";
 };
 
 /************************* name - show pic ***********************/
-var myName = document.querySelector("#name");
-var myPic = document.querySelector("#landing-pro-pic");
-myName.addEventListener("mouseover", function(e) {
-    myPic.style.left = (window.innerWidth * (e.clientX - myName.getBoundingClientRect().x) / myPic.clientWidth) + "px";
-    myPic.style.top = (window.innerHeight * (e.clientY - myName.getBoundingClientRect().y) / myPic.clientHeight - 200) + "px";
-});
+//var myName = document.querySelector("#name");
+//var myPic = document.querySelector("#landing-pro-pic");
+//myName.addEventListener("mouseover", function(e) {
+//    myPic.style.left = (window.innerWidth * (e.clientX - myName.getBoundingClientRect().x) / myPic.clientWidth) + "px";
+//    myPic.style.top = (window.innerHeight * (e.clientY - myName.getBoundingClientRect().y) / myPic.clientHeight - 200) + "px";
+//});
+
+
+var selector_about = document.querySelector("#selector-about");
+var selector_home = document.querySelector("#selector-home");
+var about_container = document.querySelector("#about-container");
+var content_container = document.querySelector("#content-container");
+selector_home.classList.add("current");
+selector_about.onclick = function() {
+    console.log("About");
+    var about_width = about_container.clientWidth;
+    about_container.classList.add("displayed");
+    selector_about.classList.add("current");
+    selector_home.classList.remove("current");
+    content_container.classList.add("shifted");
+};
+selector_home.onclick = function() {
+    var about_width = about_container.clientWidth;
+    about_container.classList.remove("displayed");
+    selector_about.classList.remove("current");
+    selector_home.classList.add("current");
+    content_container.classList.remove("shifted");
+}
 
 
 /************************* section: Lookas ***********************/
@@ -27,12 +49,12 @@ for (var i = 0; i < 4; i++) {
     lookas_image_preload[i] = x;
 }
 
-var lookas_example_buttons = document.querySelector("#section_lookas").getElementsByClassName("section_image_switch");
+var lookas_example_buttons = document.querySelector("#lookas").getElementsByClassName("section_image_switch");
 var lookas_example_current = 0;
 function lookas_example_select(num) {
     lookas_example_buttons[lookas_example_current].classList.remove("selected");
     lookas_example_buttons[num].classList.add("selected");
-    document.querySelector("#section_lookas .section_image").style.backgroundImage = "url(" + lookas_example_images[num] + ")";
+    document.querySelector("#lookas .card-feature-image").src = lookas_example_images[num];
     lookas_example_current = num;
 }
 
@@ -99,36 +121,39 @@ var d = document,
 /************************** INFO *****************************/
 
 
-// Object that stores each section's y position in the document
-var SectionData = new Array();
+//// Object that stores each section's y position in the document
+//var SectionData = new Array();
+//
+//// Calculates each section's y position in the document
+//function Initialize_SectionData() {
+//    SectionData = new Array();
+//    var section_elements = document.getElementsByTagName("section");
+//    for (var i = 0; i < section_elements.length; i++) {
+//        var rect = section_elements[i].getBoundingClientRect(),
+//            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//        SectionData.push({
+//            element: section_elements[i],
+//            y: rect.top + pY() - (0.4*window.innerHeight)
+//        });
+//    }
+//    console.log("Section Data: ");
+//    console.log(SectionData);
+//}
+//
+//Initialize_SectionData();
+//
+//// Recalculate section data when resized
+///** DEBOUNCE(RESIZE) --> sldkfjlskdjf */
+//
+//var resize_debouncer = debounce( function() {
+//        console.log("debounce!");
+//        Initialize_SectionData();
+//    }, 250);
+//
+//window.addEventListener("resize", resize_debouncer);
 
-// Calculates each section's y position in the document
-function Initialize_SectionData() {
-    SectionData = new Array();
-    var section_elements = document.getElementsByTagName("section");
-    for (var i = 0; i < section_elements.length; i++) {
-        var rect = section_elements[i].getBoundingClientRect(),
-            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        SectionData.push({
-            element: section_elements[i],
-            y: rect.top + pY() - (0.4*window.innerHeight)
-        });
-    }
-    console.log("Section Data: ");
-    console.log(SectionData);
-}
 
-Initialize_SectionData();
 
-// Recalculate section data when resized
-/** DEBOUNCE(RESIZE) --> sldkfjlskdjf */
-
-var resize_debouncer = debounce( function() {
-        console.log("debounce!");
-        Initialize_SectionData();
-    }, 250);
-
-window.addEventListener("resize", resize_debouncer);
 
 //var debouncedLayout = debounce(function() {
 //  layout();
@@ -145,47 +170,66 @@ window.addEventListener("resize", resize_debouncer);
 
 
 // Most recently displayed info element
-var lastSectionIndex;
-var button_info = document.querySelector("#button_info");
-var showInfo = false;
+//var lastSectionIndex;
+//var button_info = document.querySelector("#button_info");
+//var showInfo = false;
+//
+//// Returns the current section in view as an html element
+//function getCurrentSectionIndex() {
+//    var y = pY();
+//    var prev = 0; // counter for previously examined section 
+//    for (var i = 0; i < SectionData.length; i++) {
+//        if (SectionData[i].y >= y) {
+//            break;
+//        }
+//        prev = i;
+//    }
+//    return prev;
+//}
 
-// Returns the current section in view as an html element
-function getCurrentSectionIndex() {
-    var y = pY();
-    var prev = 0; // counter for previously examined section 
-    for (var i = 0; i < SectionData.length; i++) {
-        if (SectionData[i].y >= y) {
-            break;
+
+// Add event-listeners for all "More Info" buttons
+var moreInfoButtons = document.getElementsByClassName("more_info");
+for (var i = 0; i < moreInfoButtons.length; i++) {
+    console.log(i);
+    var moreInfoButton = moreInfoButtons[i];
+    moreInfoButton.addEventListener("click", function(e) {
+        var cardInfo = e.target.parentElement.parentElement.querySelector(".card-info");
+        console.log(cardInfo);
+        if (cardInfo.classList.contains("displayed")) {
+            cardInfo.classList.remove("displayed");
+            e.target.innerHTML = "More info"
+        } else {
+            cardInfo.classList.add("displayed");
+            e.target.innerHTML = "Less info"
         }
-        prev = i;
-    }
-    return prev;
+    });
 }
 
-function toggleInfo() {
-    // Show info for current section
-    if (!showInfo) {
-        var currentSectionIndex = getCurrentSectionIndex();
-        var currentSectionInfo = SectionData[currentSectionIndex].element.querySelector(".section_info");
-        currentSectionInfo.classList.add("visible");
-        lastSectionIndex = currentSectionIndex;
-        button_info.innerHTML = "HIDE INFO"
-    }
-    // Hide info for last displayed section
-    else {
-        SectionData[lastSectionIndex].element.querySelector(".section_info").classList.remove("visible");
-        lastSectionIndex = null;
-        button_info.innerHTML = "SHOW INFO"
-    }
-    showInfo = !showInfo;
-}
-
-button_info.addEventListener("click", toggleInfo);
-
-
-button_top.addEventListener("click", function() {
-    window.scrollTo(0,0);
-});
+//function toggleInfo() {
+//    // Show info for current section
+//    if (!showInfo) {
+//        var currentSectionIndex = getCurrentSectionIndex();
+//        var currentSectionInfo = SectionData[currentSectionIndex].element.querySelector(".section_info");
+//        currentSectionInfo.classList.add("visible");
+//        lastSectionIndex = currentSectionIndex;
+//        button_info.innerHTML = "HIDE INFO"
+//    }
+//    // Hide info for last displayed section
+//    else {
+//        SectionData[lastSectionIndex].element.querySelector(".section_info").classList.remove("visible");
+//        lastSectionIndex = null;
+//        button_info.innerHTML = "SHOW INFO"
+//    }
+//    showInfo = !showInfo;
+//}
+//
+//button_info.addEventListener("click", toggleInfo);
+//
+//
+//button_top.addEventListener("click", function() {
+//    window.scrollTo(0,0);
+//});
 
 
 /************* VIDEO **************/
@@ -206,12 +250,12 @@ button_top.addEventListener("click", function() {
 //});
 
 
-var sc_video_1 = document.querySelector("#video_sc-go-onboarding");
+//var sc_video_1 = document.querySelector("#video_sc-go-onboarding");
 var sc_video_2 = document.querySelector("#video_sc-ad");
 
 var videos = [];
 
-videos.push({element: sc_video_1, autoplayed: false});
+//videos.push({element: sc_video_1, autoplayed: false});
 videos.push({element: sc_video_2, autoplayed: false});
 
 console.log(videos);
@@ -229,13 +273,13 @@ for (var i = 0; i < videos.length; i++) {
     });
 }
 
-sc_video_1.addEventListener("canplay", function(event) {
-    document.querySelector("#loading_sc-go").classList.add("hidden");
-});
-
-if (sc_video_1.readyState > 3) {
-    document.querySelector("#loading_sc-go").classList.add("hidden");
-}
+//sc_video_1.addEventListener("canplay", function(event) {
+//    document.querySelector("#loading_sc-go").classList.add("hidden");
+//});
+//
+//if (sc_video_1.readyState > 3) {
+//    document.querySelector("#loading_sc-go").classList.add("hidden");
+//}
 
 
 
@@ -271,23 +315,23 @@ function loop(){
         lastPosition = y;
         
         // Displayed Info Logic
-        if (showInfo) {
-            var currentSectionIndex = getCurrentSectionIndex();
-            
-            // Change displayed info if section changed
-            if (currentSectionIndex != lastSectionIndex) {
-                SectionData[lastSectionIndex].element.querySelector(".section_info").classList.remove("visible");
-                SectionData[currentSectionIndex].element.querySelector(".section_info").classList.add("visible");
-                lastSectionIndex = currentSectionIndex;
-                
-                console.log("Current Section: " + currentSectionIndex);
-            }
-        }
+//        if (showInfo) {
+//            var currentSectionIndex = getCurrentSectionIndex();
+//            
+//            // Change displayed info if section changed
+//            if (currentSectionIndex != lastSectionIndex) {
+//                SectionData[lastSectionIndex].element.querySelector(".section_info").classList.remove("visible");
+//                SectionData[currentSectionIndex].element.querySelector(".section_info").classList.add("visible");
+//                lastSectionIndex = currentSectionIndex;
+//                
+//                console.log("Current Section: " + currentSectionIndex);
+//            }
+//        }
         
         // Video Auto-play Logic
         scroll( loop );
         
-        for (var i = 0; i < 2; i++) {
+        for (var i = 0; i < videos.length; i++) {
             if (checkMostlyVisible(videos[i].element)) {
                 videos[i].element.play();
             }

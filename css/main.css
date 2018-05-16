@@ -212,6 +212,7 @@ body {
 .card-feature {
     position:relative;
     width: 100%;
+/*    display: flex;*/
 /*    max-height: 100vh;*/
 }
 

@@ -10,7 +10,7 @@
 html {
     font-family: AuthenticSans, 'Helvetica', sans-serif;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 18px;
     line-height: 1.4;
 }
 
@@ -163,6 +163,7 @@ a:hover {
 #about {
     margin-top: 100px;
     padding: 0px 30px 0px 30px;
+    max-width: 500px;
 /*    border-right: 3px black dotted;*/
 }
 
@@ -203,7 +204,7 @@ body {
 }
 
 .card-title {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -234,6 +235,7 @@ body {
 }
 
 .card-options {
+    margin-top: 20px;
     font-size: 18px;
     display: flex;
     justify-content: space-between;
@@ -396,7 +398,7 @@ body {
 
 @media screen and (min-width: 0px) and (max-width: 500px) {
     html {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     #selectors {

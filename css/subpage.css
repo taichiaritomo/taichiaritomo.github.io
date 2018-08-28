@@ -2,18 +2,18 @@
 
 @font-face {
     font-family: AuthenticSans;
-    src: url(../_fonts/AUTHENTIC-Sans.woff);
+    src: url(../fonts/AUTHENTIC-Sans.woff);
 }
 
 @font-face {
   font-family: ManifontGrotesk;
-  src: url(../_fonts/manifontgroteskbold-webfont.woff);
+  src: url(../fonts/manifontgroteskbold-webfont.woff);
   font-weight: 600;
 }
 
 @font-face {
   font-family: ManifontGrotesk;
-  src: url(../_fonts/manifontgroteskbook-webfont.woff);
+  src: url(../fonts/manifontgroteskbook-webfont.woff);
   font-weight: 400;
 }
 

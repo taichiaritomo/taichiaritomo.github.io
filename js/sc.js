@@ -26,15 +26,15 @@ var goToSection = function(section) {
 var animated_icons = [
   {
     offset: 500,
-    src: "../_img/sc/tour/go-plus_animation.gif"
+    src: "../img/sc/tour/go-plus_animation.gif"
   },
   {
     offset: 2500,
-    src: "../_img/sc/tour/ad-free_animation.gif"
+    src: "../img/sc/tour/ad-free_animation.gif"
   },
   {
     offset: 1000,
-    src: "../_img/sc/tour/heart_animation.gif"
+    src: "../img/sc/tour/heart_animation.gif"
   }
 ];
 
@@ -55,22 +55,22 @@ function loadAnimation(i, offset) {
 // CHECKOUT
 
 checkout_variations = {
-  "Purchasing Go" : "../_img/sc/checkout_variations/Go%20Purchase.svg",
-  "Purchasing Go+" : "../_img/sc/checkout_variations/Go+%20Purchase.svg",
+  "Purchasing Go" : "../img/sc/checkout_variations/Go%20Purchase.svg",
+  "Purchasing Go+" : "../img/sc/checkout_variations/Go+%20Purchase.svg",
 //  "Purchasing Go, with free trial" : "../_img/sc/checkout_variations/Go%20Trial.svg",
-  "Purchasing Go+, with free trial" : "../_img/sc/checkout_variations/Go+%20Trial.svg",
+  "Purchasing Go+, with free trial" : "../img/sc/checkout_variations/Go+%20Trial.svg",
 //  "Purchasing Go, with Pro Unlimited Discount" :
 //  "../_img/sc/checkout_variations/Go%20Purchase,%20Pro%20Unlimited.svg",
   "Purchasing Go+, with Pro Unlimited Discount" :
-  "../_img/sc/checkout_variations/Go+%20Purchase,%20Pro%20Unlimited.svg",
+  "../img/sc/checkout_variations/Go+%20Purchase,%20Pro%20Unlimited.svg",
   "Downgrading from Go+ to Go, Saved Credit Card" :
-  "../_img/sc/checkout_variations/Go%20Downgrade,%20Saved%20Card.svg",
+  "../img/sc/checkout_variations/Go%20Downgrade,%20Saved%20Card.svg",
   "Upgrading from Go to Go+, Saved Credit Card" :
-  "../_img/sc/checkout_variations/Go+%20Upgrade,%20Saved%20Card.svg",
+  "../img/sc/checkout_variations/Go+%20Upgrade,%20Saved%20Card.svg",
   "Downgrading from Go+ to Go, New Credit Card" :
-  "../_img/sc/checkout_variations/Go%20Downgrade,%20New%20Card.svg",
+  "../img/sc/checkout_variations/Go%20Downgrade,%20New%20Card.svg",
   "Upgrading from Go to Go+, New Credit Card" :
-  "../_img/sc/checkout_variations/Go+%20Upgrade,%20New%20Card.svg"
+  "../img/sc/checkout_variations/Go+%20Upgrade,%20New%20Card.svg"
 //  "Downgrading from Go+ to Go, Apple App Store" :
 //  "../_img/sc/checkout_variations/Go%20Downgrade,%20Apple%20Error.svg",
 //  "Upgrading from Go to Go+, Apple App Store" :
@@ -91,13 +91,13 @@ setInterval(function() {
 // SUBSCRIPTION SETTINGS
 
 settings_variations = {
-  "No subscription" : "../_img/sc/settings_variations/subscription-settings_none.png",
-  "Go+" : "../_img/sc/settings_variations/subscription-settings_Go+.png",
-  "Go+, Pro Unlimited" : "../_img/sc/settings_variations/subscription-settings_all.png",
+  "No subscription" : "../img/sc/settings_variations/subscription-settings_none.png",
+  "Go+" : "../img/sc/settings_variations/subscription-settings_Go+.png",
+  "Go+, Pro Unlimited" : "../img/sc/settings_variations/subscription-settings_all.png",
   "Go+, Pro Unlimited, Specs" :
-  "../_img/sc/settings_variations/subscription-settings_all_guides.png",
+  "../img/sc/settings_variations/subscription-settings_all_guides.png",
   "Edit payment info" :
-  "../_img/sc/settings_variations/subscription-settings_use-a-different-card.png"
+  "../img/sc/settings_variations/subscription-settings_use-a-different-card.png"
 }
 
 feature_settings_final_img = document.querySelector("#settings_final .big-image");

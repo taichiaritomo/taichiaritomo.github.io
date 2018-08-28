@@ -1,0 +1,38 @@
+#lookas-img-container {
+  width: 720px;
+  margin: 0 auto;
+}
+
+#lookas-img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#section_Distance #distance-img-captions {
+  padding: 0 16px;
+}
+
+#distance-img-container {
+  width: 100%;
+  max-width: 960px;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+#distance-img {
+  width: 100%;
+}
+
+.caption {
+  flex: 1 0;
+  padding-top: 0;
+}
+
+.caption.distance {
+  text-align: center;
+}
+
+.feature-wrapper {
+  width: 720px;
+  margin: 0 auto;
+}

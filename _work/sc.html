@@ -1,0 +1,351 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Selected Work at SoundCloud</title>
+<!--    <meta name="description" content="Taichi Aritomo, Portfolio">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <link rel="apple-touch-icon" href="apple-touch-icon.png">-->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../_css/normalize.min.css">
+    <link rel="stylesheet" href="../_css/helper.min.css">
+    <link rel="stylesheet" href="../_css/subpage.css">
+    <link rel="stylesheet" href="../_css/sc.css">
+
+</head>
+  
+  
+    <div id="back-gradient" onclick="goTo('../index.html')"></div>
+  
+  <body>
+    
+    <div id="main" class="disappear">
+      
+      
+      <section id="section_Contents">
+        <div class="header">
+          <div id="my-name" onclick="goTo('../index.html')">
+            <span id="cross">&#x2715;</span><span id="name">Taichi Aritomo /</span>
+          </div>
+          <br><br>
+          Selected Work at SoundCloud
+        </div>
+        <div class="row contents-summary">
+          <div class="col-3-single">
+            SoundCloud is an online music and audio platform that is used by independent and established creators.
+            <br><br>
+            The work shown here is from an internship that I completed in 2016 on SoundCloud's Monetization team, working on product design across various points of SoundCloud's revenue base.
+          </div>
+          <div class="col-3-double" id="contents">
+            <div id="contents_placeholder">
+              <img src="../_img/sc/contents_placeholder/box.svg"/>
+<!--
+              <div id="contents_placeholder_diagonal1"></div>
+              <div id="contents_placeholder_diagonal2"></div>
+-->
+            </div>
+            <div class="contents_row" onclick="goToSection('#section_RedesigningCheckout')">
+              <span class="contents_number">1</span><br>
+              <span class="contents_label">A clearer checkout experience</span><br>
+              <span class="contents_label-gray">UX & Visual Design</span>
+              <div class="contents_preview">
+                <img src="../_img/sc/checkout_variations.gif"/>
+              </div>
+            </div>
+            <div class="contents_row" onclick="goToSection('#section_ReorganizingSubscription')">
+              <span class="contents_number">2</span><br>
+              <span class="contents_label">One place to manage your subscriptions</span><br>
+              <span class="contents_label-gray">UX, UI, & Visual Design</span>
+              <div class="contents_preview">
+                <img src="../_img/sc/settings_variations.gif"/>
+              </div>
+            </div>
+            <div class="contents_row" onclick="goToSection('#section_VideoAds')">
+              <span class="contents_number">3</span><br>
+              <span class="contents_label">Video Ads in the Feed</span><br>
+              <span class="contents_label-gray">UX, UI & Prototyping</span>
+              <div class="contents_preview">
+                <img src="../_img/sc/video-ad_preview.gif" id="contents_video-ads_preview"/>
+              </div>
+            </div>
+<!--
+            <div class="contents_row" onclick="goToSection('#section_WrappingUp')">
+              <span class="contents_number">4</span><br>
+              <span class="contents_label">Wrapping Up</span><br>
+              <span class="contents_label-gray">Thoughts & Acknowledgements</span>
+              <div class="contents_preview" id="contents_wrapping-up_preview">
+                <img src="../_img/sc/contents_placeholder/envelope.svg"/>
+                &#x2603;
+              </div>
+            </div>
+-->
+          </div>
+      </div>
+      </section>
+      
+      
+      
+      
+      
+      <section id="section_SubscriptionsIntro">
+        <div class="star">✳︎</div>
+        <div class="blurb" id="SubscriptionsOnSoundCloud">
+          <h3>Subscriptions on SoundCloud</h3>
+          <div id="feature-icon-container">
+            <img class="feature-icon" src="../_img/sc/tour/go-plus_animation.gif"/>
+            <img class="feature-icon" src="../_img/sc/tour/ad-free_animation.gif"/>
+            <img class="feature-icon" src="../_img/sc/tour/heart_animation.gif"/>
+          </div>
+          <div class="caption">Animations for a post-purchase tour</div>
+          <p>
+            In 2016, SoundCloud launched SoundCloud Go, a subscription product that allows paying users to disable ads and download their favorite tracks. SoundCloud Go+ adds access to a library of licensed tracks provided by music labels, following a model similar to streaming services like Spotify.
+          </p>
+        </div>
+      </section>
+      
+      
+      
+      
+      <section id="section_RedesigningCheckout">
+        <div class="star">✳︎</div>
+        <h3>Redesigning checkout for SoundCloud Go</h3>
+        
+        <div class="row project-summary">
+          <div class="col-3-single">
+            <h5 class="role">Role</h5>
+            <div>
+              I worked on the redesign of a checkout page for SoundCloud Go, covering the UX writing and early visual designs.
+            </div>
+          </div>
+          <div class="col-3-double">
+            <h5>Context</h5>
+            <div>
+              Pricing and billing for SoundCloud Go can take many forms. <span>
+                In
+                <div class="image-prompt">
+                  <img src="../_img/sc/checkout_preexisting.jpg"/>
+                  the previous checkout page design
+                </div>, the billing information was downplayed visually and written in legal terms. From user tests we learned that people carefully read that information, concerned about how and when their card would be charged.
+              </span>
+              <br><br>
+              Ahead of the launch of SoundCloud Go+, we wanted to create a checkout system that would accommodate new variations in pricing and billing gracefully, while explaining them in clear, natural language.
+            </div> 
+          </div>
+        </div>
+        
+        <div class="row project-feature fillHeight" id="ConditionalCopy">
+          <div class="col-3-single">
+            <h4>Conditional copy modules</h4>
+            <div>
+              The subscription terms can vary by promotions and user-specific conditions. I created small chunks of copy that are combined on the front-end according to those conditions, forming a simple summary.
+            </div>
+          </div>
+          <div class="col-3-double">
+             <img class="big-image" id="ConditionalCopy_img" src="../_img/sc/checkout_copy-modules.svg" type="image/svg+xml"/>
+          </div>
+        </div>
+        
+        <div class="row project-feature fillHeight">
+          <div class="col-3-single">
+            <h4>A layout that accommodates change</h4>
+            <div>
+              We divided the page by content and action—a column for payment information (where you input) and a column for subscription information (where you read).
+              <br><br>
+              We also prepared to launch in other countries, where checkout pages are regulated by regional laws that are difficult to anticipate. Because each column can shrink and grow along its own axis, the layout can gracefully accommodate additional content.
+              <br><br>
+              We referred to SoundCloud's style guide whenever possible and proposed new styles when variations were appropriate for the context. For example, a gray background across all payment forms make inputs easier to find in figure/ground.
+            </div>
+          </div>
+          <div class="col-3-double">
+             <div class="feature" id="checkout_final">
+               <img class="big-image" src="../_img/sc/checkout_variations/Go%20Trial.svg" type="image/svg+xml"/>
+             </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      <section id="section_ReorganizingSubscription">
+        <div class="star">✳︎</div>
+        <h3>Reorganizing subscription management</h3>
+        
+        <div class="row project-summary">
+          <div class="col-3-single">
+            <h5 class="role">Role</h5>
+            <div>
+              I worked on the redesign of a subscription management page on SoundCloud's website, covering the UX, UI, and visual design.
+            </div>
+          </div>
+          <div class="col-3-double">
+            <h5>Context</h5>
+            <div>
+              Ahead of the launch of SoundCloud Go+, we wanted to take the opportunity to make larger revisions to the subscription management page.
+              <br><br>
+              Meeting with product managers and community support specialists, we gathered pain points and nice-to-haves in the subscription managing experience.
+              <div class="image-prompt">
+                <img src="../_img/sc/settings_preexisting.jpg"/>
+                The existing subscriptions page
+              </div> had separate views for SoundCloud Go and another subscription product called SoundCloud Pro. The Go page was always shown by default, so many Pro subscribers had trouble finding the right information.
+            </div> 
+          </div>
+        </div>
+        
+        <div class="row project-feature fillHeight" id="OrganizingIntentions">
+          <div class="col-3-single">
+            <h4>Organizing content by user intentions</h4>
+            <div>
+              Although the views for Go and Pro were separate, each page had the same types of information. We matched each type to some user intention that it responded to, and thought about the form of organization that would best serve those intentions.
+            </div>
+          </div>
+          <div class="col-3-double">
+             <img src="../_img/sc/settings_intentions.svg" type="image/svg+xml"/>
+          </div>
+        </div>
+        
+        <div class="row project-feature fillHeight">
+          <div class="col-3-single">
+            <h4>Putting it all together</h4>
+            <div>
+              We then reorganized the subscription page into one view for managing all of your SoundCloud subscriptions and payments.
+              <br><br>
+              We treated the elements of the previous design with larger type and buttons, while carrying forward new visual ideas from the checkout project. To complement the section labels, I designed new micro-icons that reflect user intentions—a calendar to suggest renewal and expiration, and a receipt to suggest reviewing expenses.
+            </div>
+          </div>
+          <div class="col-3-double">
+            <div class="feature" id="settings_final">
+              <img class="big-image" src="../_img/sc/settings_variations/subscription-settings_use-a-different-card.png"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    
+      
+      <section id="section_VideoAds">
+        <div class="star">✳︎</div>
+        <h3>Video ads in the feed</h3>
+        
+        <div class="row project-summary">
+          <div class="col-3-single">
+            <h5 class="role">Role</h5>
+            <div>
+              I led the design of a new advertising format for SoundCloud's mobile app, covering the UX, UI, and prototyping.
+            </div>
+          </div>
+          <div class="col-3-double">
+            <h5>Context</h5>
+            <div>
+              The feed has a central presence and a universal reach in the app, and video ads maximize profit for space. We wanted to integrate video ads in the feed without disrupting the visual or audio experience of the SoundCloud app.
+            </div> 
+          </div>
+        </div>
+        
+        <div class="row project-feature fillHeight" id="FeedCards">
+          <div class="col-3-single">
+            <h4>A new card for ads</h4>
+            <div>
+              We looked at existing patterns in the feed to design a new ad card format.
+              <br><br>
+              The video player uses interface elements from existing video ads, with the exception of a new button for sound.
+            </div>
+          </div>
+          <div class="col-3-double" id="image-container_feed-cards">
+            <img id="image_feed-cards" src="../_img/sc/video-ad_feedcards.png" type="image/svg+xml"/>
+          </div>
+        </div>
+        
+        <div class="row project-feature fillHeight">
+          <div class="col-3-single">
+            <h4>Mapping UI states and engagement</h4>
+            <div>
+              The level of engagement with an ad instance determines the amount of revenue that SoundCloud receives. I mapped the UI states and ways that user interactions would change engagement with audio and video.
+            </div>
+          </div>
+          <div class="col-3-double">
+            <div class="feature" id="settings_final">
+              <img class="big-image" id="diagram_engagement-states" src="../_img/sc/video-ad_engagement.jpg" type="image/svg+xml"/>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row project-feature fillHeight">
+          <div class="col-3-single">
+            <h4>Designing visual and audio transitions through a prototype</h4>
+            <div>
+              I worked with interactive prototypes in FramerJS to design the transitions between engagement states.
+              <br><br>
+              The prototype allowed me to design and test transitions and rules for video and audio playback. For example, unmuting the ad will fade and pause the music you're listening to; when the ad ends, your music automatically fades back in.
+              <br><br>
+              The sales team and product managers found the prototype useful for presentations, while engineers used it as a reference.
+            </div>
+          </div>
+          <div class="col-3-double">
+            <video id="video_sc-ad" data-object-fit="contain" preload="auto" loop muted playsinline>
+                <source src="../_img/sc/sc-ad.mp4" type="video/mp4" data-object-fit="contain">
+                Your browser does not support playback for this html5 video.
+            </video>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      <section id="section_WrappingUp">
+        <div class="star">✳︎</div>
+        <h3>Wrapping up</h3>
+      
+        <div class="row">
+          <div class="col-3-single">
+            <h5>Retrospective</h5>
+            As a designer working on monetization, I struggled with the natural tension of thinking about user experience while fulfilling a tech corporation's need for revenue.
+            <br><br>
+            There was a lot of pressure to incorporate selling into the user experience wherever possible, and it was challenging to balance those pressures with consideration for SoundCloud's everyday users. Over time, I became comfortable with thinking about selling in terms of appropriateness—how does selling relate to the context? Looking back, these projects taught me a lot about balancing the intentions of the user and the system (in this case, SoundCloud Inc.) in my design decisions.
+          </div>
+
+          <div class="col-3-single">
+            <h5>Acknowledgements</h5>
+            I'm thankful for my product managers—Brittney Gwynn, John Coates, and Jori Bell—and my hiring manager, Catt Small, as I was given a generous amount of guidance and trust throughout my work as an intern.
+            <br><br>
+            On all these projects I worked alongside an amazing product design team consisting of Catt, Shanique Shields, Adelle Charles, and Ashley Hopkins.
+          </div>
+
+          <div class="col-3-single">
+            <h5>Next Up</h5>
+            The challenge of communicating using a limited set of visual styles got me interested in making design decisions based on visual perception. My next project, Look.as, is a research project that carries that interest further.
+          </div>
+        </div>
+      </section>
+      
+      <footer>
+        <div class="row">
+          <div class="col-3-single">
+              <span class="big-link" onclick="goTo('../index.html')">All Work</span>
+            </div>
+            <div class="col-3-single">
+              <span onclick="scrollToTop()" class="big-link">Top</span>
+            </div>
+            <div class="col-3-single">
+              <span class="big-link" onclick="goTo('lookas.html')">Next</span>
+            </div>
+        </div>
+      </footer>
+      
+
+      
+    
+    
+    </div>
+    
+    
+    <!-- Javascript -->
+    <script src="../_js/plugins.min.js"></script>
+    <!-- Polyfill for object-fit CSS property for images and videos in IE/Edge -->
+    <script src="../_js/objectFitPolyfill.min.js"></script>
+    <script src="../_js/subpage.js"></script>
+    <script src="../_js/sc.js"></script>
+  </body>

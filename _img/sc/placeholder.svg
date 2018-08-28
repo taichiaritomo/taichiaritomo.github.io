@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-12" stroke="#888888" x="0.5" y="0.5" width="99" height="99"></rect>
+        <path d="M0.5,0.5 L99.5,99.5" id="Line-5" stroke="#888888" stroke-linecap="round"></path>
+        <path d="M0.5,0.5 L99.5,99.5" id="Line-5" stroke="#888888" stroke-linecap="round" transform="translate(50.000000, 50.000000) scale(-1, 1) translate(-50.000000, -50.000000) "></path>
+    </g>
+</svg>

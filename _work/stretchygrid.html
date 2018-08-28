@@ -1,0 +1,132 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Look.as</title>
+<!--    <meta name="description" content="Taichi Aritomo, Portfolio">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <link rel="apple-touch-icon" href="apple-touch-icon.png">-->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../_css/normalize.min.css">
+    <link rel="stylesheet" href="../_css/helper.min.css">
+    <link rel="stylesheet" href="../_css/subpage.css">
+    <link rel="stylesheet" href="../_css/stretchygrid.css">
+
+</head>
+  
+  <body>
+        
+    <div id="main" class="disappear">
+      <div class="wrapper">
+        <section>
+          <div class="header">
+            <div id="my-name" onclick="goTo('../index.html')">
+              <span id="cross">&#x2715;</span><span id="name">Taichi Aritomo /</span>
+            </div>
+            <br><br>
+            Stretchy Grid
+          </div>
+        </section>
+      </div>
+      <section>
+        <div class="feature-wrapper">
+            <video id="video_stretchy-grid" data-object-fit="contain" preload="auto" loop muted playsinline>
+                <source src="../_img/stretchy-grid/comp1.mp4" type="video/mp4" data-object-fit="contain">
+                Your browser does not support playback for this html5 video.
+            </video>
+        </div>
+        
+          <div class="row">
+            <div class="col-3-single">
+              <p>
+                Grids are powerful, because they establish an initial state to which we can apply and measure changes.
+              </p>
+            </div>
+            <div class="col-3-single">
+              <p>
+                Using p5.js and HTML Canvas, I built an interface for manipulating a regular grid with points of "force".
+              </p>
+            </div>
+            <div class="col-3-single">
+              <p>
+                <a href="http://taichi.pink/deform-grid/" target="_blank"><span class="big-link special">Try it!</span></a>
+              </p>
+            </div>
+          </div>
+        </section>
+            
+      <section>
+        <div class="wrapper">
+          <div class="example-img-container">
+            <img class="example-img" src="../_img/stretchy-grid/daikon-grid.jpg"/>
+            <img class="example-img-2" src="../_img/stretchy-grid/daikon-image.jpg"/>
+          </div>
+          <div class="example-img-container">
+            <img class="example-img" src="../_img/stretchy-grid/cody-grid.jpg"/>
+            <img class="example-img-2" src="../_img/stretchy-grid/cody-image.jpg"/>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+              <section id="section_Algorithm">
+          <div class="row">
+            
+            <div class="col-3-single">
+              <img class="algorithm-img" src="../_img/stretchy-grid/hokkaido-sequential.jpg"/>
+              <span class="caption">1. Sequential - Interpolating displacements</span>
+            </div>
+            <div class="col-3-single">
+              <img class="algorithm-img" src="../_img/stretchy-grid/hokkaido-simultaneous.jpg"/>
+              <span class="caption">2. Simultaneous - Summing displacements</span>
+            </div>
+            <div class="col-3-single">
+              <h5>Technical Information</h5>
+              You can switch between two algorithms that simulate competing forces.
+              <br><br>
+              The first algorithm applies the forces in order, making effects more predictable. The second algorithm applies the forces simultaneously, leading to unexpected results.
+            </div>
+          </div>
+        </section>
+      
+      <section>
+      </section>
+
+      <section>
+        <div class="wrapper">
+          <div class="colophon">
+            Open License images from <a href="http://www1.nhk.or.jp/archives/creative/" target="_blank">NHK Creative Library</a> and
+            <a href="http://archive.org" target="_blank">Internet Archive</a>.
+          </div>
+        </div>
+      </section>
+
+      
+      <footer>
+          <div class="row">
+          <div class="col-3-single">
+              <span class="big-link" onclick="goTo('../index.html')">All Work</span>
+            </div>
+            <div class="col-3-single">
+              <span onclick="scrollToTop()" class="big-link">Top</span>
+            </div>
+            <div class="col-3-single">
+              <span class="big-link" onclick="goTo('illustrations.html')">Next</span>
+            </div>
+        </div>
+      </footer>
+    </div>
+    
+    <!--  many of us saidJavascript -->
+    <script src="../_js/plugins.min.js"></script>
+    <!-- Polyfill for object-fit CSS property for images and videos in IE/Edge -->
+<!--    <script src="js/objectFitPolyfill.min.js"></script>-->
+    <script src="../_js/subpage.js"></script>
+    <script src="../_js/stretchygrid.js"></script>
+  </body>
+  
+</html>

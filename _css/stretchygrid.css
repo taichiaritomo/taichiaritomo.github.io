@@ -1,0 +1,29 @@
+.algorithm-img {
+  width: 100%;
+}
+
+.example-img-container {
+  position: relative;
+  width: 500px;
+  margin: 16px auto;
+}
+
+.example-img {
+  width: 100%;
+}
+
+.example-img-2 {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.example-img-container:hover .example-img-2 {
+  opacity: 1;
+}
+
+.colophon {
+  text-align: center;
+}

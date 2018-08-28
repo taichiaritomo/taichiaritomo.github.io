@@ -1,0 +1,227 @@
+html {
+  background: #eeeeee;
+  background-position: top let;
+  padding: 32px 0;
+  min-width: 960px;
+/*  height: 100%;*/
+}
+
+/*
+html.flood {
+  background-image: url(../img/site/kissOptimized.gif);
+  background-position: center center;
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: 192px 192px;
+}
+*/
+
+#bg-gradient {
+  position: fixed;
+  top: 0;
+  left: -0%;
+  z-index: -1;
+  width: 100%;
+  min-height: 100%;
+}
+
+#bg-gradient.flood {
+  background-image: url(../_img/site/kissOptimized.gif);
+  background-position: center center;
+  background-size: 160px 160px;
+}
+
+/*
+#bg-gradient.slide {
+  left: -98%;
+}
+*/
+
+@font-face {
+    font-family: AuthenticSans;
+    src: url(../_fonts/AUTHENTIC-Sans.woff);
+}
+
+@font-face {
+  font-family: ManifontGrotesk;
+  src: url(../_fonts/manifontgroteskbold-webfont.woff);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: ManifontGrotesk;
+  src: url(../_fonts/manifontgroteskbook-webfont.woff);
+  font-weight: 400;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 0 0 10px #ff0;
+/*  color: #888;*/
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  font-family: AuthenticSans, 'Helvetica', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+#main {
+  opacity: 1;
+  transition: opacity 0.2s linear;
+}
+
+#main.disappear {
+  opacity: 0;
+}
+
+#masthead {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#info {
+  display: flex;
+  justify-content: space-between;
+}
+
+#links {
+  margin-top: -16px;
+}
+
+.col {
+  width: 288px;
+  padding: 0 16px;
+}
+
+#controls {
+  margin-top: 80px;
+  
+  display: flex;
+  justify-content: space-between;
+  
+  font-family: ManifontGrotesk;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#controls > div {
+  display: flex;
+  width: 288px;
+  padding: 0 16px;
+}
+
+#controls > div > div {
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+#category-control > div {
+  color: transparent;
+/*  -webkit-text-fill-color: #e0e0e0; */
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+/*   text-shadow: -0.5px -0.5px 0 #000,   0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;*/
+}
+
+#category-control > div:hover {
+  -webkit-text-fill-color: #888;
+}
+
+#category-control > div.selected:hover {
+  -webkit-text-fill-color: #888;
+}
+
+#category-control > div.selected:active {
+  -webkit-text-fill-color: none;
+  -webkit-text-stroke-color: #ffffff;
+}
+
+#category-control > div.selected {
+  -webkit-text-fill-color: #aaaaaa;
+  -webkit-text-stroke-width: 0;
+}
+
+#category-control > div:active {
+  text-shadow: 0 0 10px #000000;
+  color: none;
+  -webkit-text-fill-color: none;
+  -webkit-text-stroke-color: #ffffff;
+}
+
+#size-control > div:hover {
+  text-decoration: underline;
+  text-decoration-color: #888;
+}
+
+#work {
+  width: 100%;
+  margin-top: 80px;
+  
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 288px;
+  height: 288px;
+  overflow: hidden;
+  padding: 0 16px;
+}
+
+.item.clickable:hover {
+  text-shadow: 0 0 10px #ff0;
+}
+
+/*
+.item > img {
+  height: 128px;
+}
+*/
+
+.item > div > img {
+  height: 160px;
+}
+
+.item > .description {
+  padding-top: 16px;
+  clear:left;
+}
+
+.img {
+  height: 160px;
+  float: left;
+  box-shadow:inset 0px 0px 0px 1px #000;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/*
+#item_kiss_img.hide {
+  background-image: none;
+  background-color: #f2f2f2;
+}
+*/
+
+#colophon {
+  text-align: center;
+  color: #888;
+  padding: 0 16px;
+}
+
+#colophon a {
+  color: #888;
+}
+

@@ -31,14 +31,9 @@ function preloader() {
 var lookas_img = document.querySelector("#lookas-img");
 var lookas_img_index = 0;
 var interval_time = 250;
-//
-//setInterval(function() {
-//  lookas_img.src="../_img/lookas/overview/lookas_" + (lookas_img_index+1 < 10 ? "0" : "") + (lookas_img_index+1) + ".jpg"
-//  lookas_img_index = (lookas_img_index + 1) % 65;
-//}, 250);
 
 function updateImage() {
-  var t = (lookas_img_index == 64 ? 1500 : 300);
+  var t = (lookas_img_index == 64 || lookas_img_index == 35 ? 1500 : 250);
   setTimeout(function() {
     lookas_img.src="../img/lookas/overview/lookas_" + (lookas_img_index+1 < 10 ? "0" : "") + (lookas_img_index+1) + ".jpg"
     lookas_img_index = (lookas_img_index + 1) % 65;
@@ -47,10 +42,10 @@ function updateImage() {
 }
 
 
-var distance_img = document.querySelector("#distance-img");
-var distance_img_index = 0;
-
-setInterval(function() {
-  distance_img.src="../img/lookas/distance/distance_" + (distance_img_index+2) + ".png"
-  distance_img_index = (distance_img_index + 1) % 2;
-}, 1000);
+//var distance_img = document.querySelector("#distance-img");
+//var distance_img_index = 0;
+//
+//setInterval(function() {
+//  distance_img.src="../img/lookas/distance/distance_" + (distance_img_index+2) + ".png"
+//  distance_img_index = (distance_img_index + 1) % 2;
+//}, 1000);

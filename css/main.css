@@ -174,9 +174,10 @@ body {
 
 .item {
   width: 288px;
-  height: 288px;
+  height: 208px;
   overflow: hidden;
   padding: 0 16px;
+  margin-bottom: 80px;
 }
 
 .item.clickable:hover {

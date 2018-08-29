@@ -28,7 +28,7 @@
       <section id="section_Contents">
         <div class="header">
           <div id="my-name" onclick="goTo('../index.html')">
-            <span id="cross">&#x2715;</span><span id="name">Taichi Aritomo /</span>
+            <span id="cross">&#x2715;</span><span id="name"><a href="../index.html">Taichi Aritomo /</a></span>
           </div>
           <br><br>
           Selected Work at SoundCloud
@@ -41,11 +41,7 @@
           </div>
           <div class="col-3-double" id="contents">
             <div id="contents_placeholder">
-              <img src="../img/sc/contents_placeholder/box.svg"/>
-<!--
-              <div id="contents_placeholder_diagonal1"></div>
-              <div id="contents_placeholder_diagonal2"></div>
--->
+              <img src="../img/sc/contents_placeholder/placeholder.svg"/>
             </div>
             <div class="contents_row" onclick="goToSection('#section_RedesigningCheckout')">
               <span class="contents_number">1</span><br>
@@ -128,7 +124,7 @@
                 <div class="image-prompt">
                   <img src="../img/sc/checkout_preexisting.jpg"/>
                   the previous checkout page design
-                </div>, the billing information was downplayed visually and written in legal terms. From user tests we learned that people carefully read that information, concerned about how and when their card would be charged.
+                </div>, the billing information was downplayed visually and written in marketing or legal language. From user tests we learned that people carefully read that information, concerned about how and when their card would be charged.
               </span>
               <br><br>
               Ahead of the launch of SoundCloud Go+, we wanted to create a checkout system that would accommodate new variations in pricing and billing gracefully, while explaining them in clear, natural language.
@@ -302,9 +298,9 @@
         <div class="row">
           <div class="col-3-single">
             <h5>Retrospective</h5>
-            As a designer working on monetization, I struggled with the natural tension of thinking about user experience while fulfilling a tech corporation's need for revenue.
+            As a designer working on monetization, I struggled with the natural tension that arises between designing for user experience and designing to fulfill a tech corporation's revenue demands.
             <br><br>
-            There was a lot of pressure to incorporate selling into the user experience wherever possible, and it was challenging to balance those pressures with consideration for SoundCloud's everyday users. Over time, I became comfortable with thinking about selling in terms of appropriateness—how does selling relate to the context? Looking back, these projects taught me a lot about balancing the intentions of the user and the system (in this case, SoundCloud Inc.) in my design decisions.
+            There was a lot of pressure to incorporate selling into the user experience wherever possible. At first it was challenging to find a good balance and harder yet to argue for it. Over time I became more comfortable with painting the picture around a specific design decision, using the context to find an appropriate response to the intentions of the user and the system. There's a time and place for everything. 
           </div>
 
           <div class="col-3-single">
@@ -324,13 +320,23 @@
       <footer>
         <div class="row">
           <div class="col-3-single">
-              <span class="big-link" onclick="goTo('../index.html')">All Work</span>
+              <span class="big-link" onclick="goTo('../index.html')">
+                <a href="../index.html">
+                  All Work
+                </a>
+            </span>
             </div>
             <div class="col-3-single">
-              <span onclick="scrollToTop()" class="big-link">Top</span>
+              <span onclick="scrollToTop()" class="big-link">
+                Top
+              </span>
             </div>
             <div class="col-3-single">
-              <span class="big-link" onclick="goTo('lookas.html')">Next</span>
+              <span class="big-link" onclick="goTo('lookas.html')">
+                <a href="lookas.html">
+                  Next
+                </a>
+              </span>
             </div>
         </div>
       </footer>

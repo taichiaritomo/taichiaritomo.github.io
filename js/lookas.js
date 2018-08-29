@@ -17,6 +17,8 @@ window.onload = function () {
 function preloader() {
   // create object
   imageObj = new Image();
+  
+  imageObj.src="../img/lookas/distance/distance_3.png";
 
   // start preloading
   for(var i = 1; i <= 65; i++) 

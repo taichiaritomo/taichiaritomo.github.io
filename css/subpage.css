@@ -90,6 +90,10 @@ a:hover {
   background: rgba(255, 255, 0, 0.25);
 }
 
+.gray {
+  color: #888888;
+}
+
 h1 {
   font-size: 21px;
   line-height: 28px;

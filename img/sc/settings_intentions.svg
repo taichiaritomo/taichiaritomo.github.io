@@ -7,13 +7,13 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="SoundCloud-Copy" transform="translate(-558.000000, -2839.000000)">
             <g id="Group" transform="translate(558.000000, 2838.000000)">
-                <text id="Why-am-I-here?" font-family="ManifontGroteskBold, Manifont Grotesk" font-size="12" font-weight="bold" fill="#888888">
+                <text id="Why-am-I-here?" font-family="ManifontGroteskBold, ManifontGrotesk" font-size="12" font-weight="bold" fill="#888888">
                     <tspan x="0" y="11">Why am I here?</tspan>
                 </text>
-                <text id="Page-Content" font-family="ManifontGroteskBold, Manifont Grotesk" font-size="12" font-weight="bold" fill="#888888">
+                <text id="Page-Content" font-family="ManifontGroteskBold, ManifontGrotesk" font-size="12" font-weight="bold" fill="#888888">
                     <tspan x="288" y="11">Page Content</tspan>
                 </text>
-                <text id="I-want-to-start-a-su" font-family="ManifontGroteskBookItalic, Manifont Grotesk" font-size="12" font-style="italic" font-weight="300" line-spacing="16" fill="#000000">
+                <text id="I-want-to-start-a-su" font-family="ManifontGroteskBookItalic, ManifontGrotesk" font-size="12" font-style="italic" font-weight="300" line-spacing="16" fill="#000000">
                     <tspan x="0" y="44">I want to start a subscription…</tspan>
                     <tspan x="0" y="60"></tspan>
                     <tspan x="0" y="76">I want to know what I am paying for…</tspan>
@@ -25,7 +25,7 @@
                     <tspan x="0" y="172"></tspan>
                     <tspan x="0" y="188">I am looking for answers…</tspan>
                 </text>
-                <text id="Upsells-Product-brea" font-family="ManifontGroteskBook, Manifont Grotesk" font-size="12" font-weight="300" line-spacing="16" fill="#000000">
+                <text id="Upsells-Product-brea" font-family="ManifontGroteskBook, ManifontGrotesk" font-size="12" font-weight="300" line-spacing="16" fill="#000000">
                     <tspan x="288" y="42">Upsells</tspan>
                     <tspan x="288" y="58"></tspan>
                     <tspan x="288" y="74">Product breakdown</tspan>
@@ -37,16 +37,16 @@
                     <tspan x="288" y="170"></tspan>
                     <tspan x="288" y="186">Help links</tspan>
                 </text>
-                <text id="MIX" font-family="ManifontGroteskBold, Manifont Grotesk" font-size="12" font-weight="bold" line-spacing="16" fill="#FFAA7F">
+                <text id="MIX" font-family="ManifontGroteskBold, ManifontGrotesk" font-size="12" font-weight="bold" line-spacing="16" fill="#FFAA7F">
                     <tspan x="451" y="44">MIX</tspan>
                 </text>
-                <text id="MIX" font-family="ManifontGroteskBold, Manifont Grotesk" font-size="12" font-weight="bold" line-spacing="16" fill="#FFAA7F">
+                <text id="MIX" font-family="ManifontGroteskBold, ManifontGrotesk" font-size="12" font-weight="bold" line-spacing="16" fill="#FFAA7F">
                     <tspan x="451" y="156">MIX</tspan>
                 </text>
-                <text id="MIX" font-family="ManifontGroteskBold, Manifont Grotesk" font-size="12" font-weight="bold" line-spacing="16" fill="#FFAA7F">
+                <text id="MIX" font-family="ManifontGroteskBold, ManifontGrotesk" font-size="12" font-weight="bold" line-spacing="16" fill="#FFAA7F">
                     <tspan x="451" y="188">MIX</tspan>
                 </text>
-                <text id="GROUP-BY-PRODUCT" font-family="ManifontGroteskBold, Manifont Grotesk" font-size="12" font-weight="bold" line-spacing="16" fill="#FFAA7F">
+                <text id="GROUP-BY-PRODUCT" font-family="ManifontGroteskBold, ManifontGrotesk" font-size="12" font-weight="bold" line-spacing="16" fill="#FFAA7F">
                     <tspan x="451" y="93">GROUP BY</tspan>
                     <tspan x="451" y="109">PRODUCT</tspan>
                 </text>

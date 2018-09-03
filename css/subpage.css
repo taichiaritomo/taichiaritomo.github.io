@@ -6,7 +6,7 @@
 }
 
 @font-face {
-  font-family: ManifontGrotesk;
+  font-family: ManifontGroteskBold;
   src: url(../fonts/manifontgroteskbold-webfont.woff);
   font-weight: 600;
 }
@@ -15,6 +15,13 @@
   font-family: ManifontGrotesk;
   src: url(../fonts/manifontgroteskbook-webfont.woff);
   font-weight: 400;
+}
+
+@font-face {
+  font-family: ManifontGroteskBookItalic;
+  src: url(../fonts/manifontgroteskbookoitalic-webfont.woff);
+  font-weight: 400;
+  font-style: italic;
 }
 
 
@@ -102,18 +109,27 @@ h1 {
   font-weight: 400;
 }
 
+h2 {
+  font-family: ManifontGrotesk, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
 h3 {
   text-align: center;
-  font-family: ManifontGrotesk, sans-serif;
+  font-family: ManifontGroteskBold, sans-serif;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 21px;
+  line-height: 30px;
   margin-top: 16px;
   margin-bottom: 16px;
 }
 
 h4 {
-  font-family: ManifontGrotesk, sans-serif;
+  font-family: ManifontGroteskBold, sans-serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
@@ -125,10 +141,19 @@ h5 {
   text-align: left;
   font-size: 12px;
   line-height: 16px;
-  font-family: ManifontGrotesk, sans-serif;
+  font-family: ManifontGroteskBold, sans-serif;
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 16px;
+}
+
+h6 {
+  font-size: 12px;
+  line-height: 24px;
+  font-family: ManifontGrotesk, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  color: #888;
 }
 
 .caption {

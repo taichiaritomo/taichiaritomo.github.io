@@ -15,7 +15,7 @@
             <rect id="Rectangle-9-Copy-23" fill="#FF5500" opacity="0.5" x="454" y="311" width="32" height="32"></rect>
             <rect id="Rectangle-9-Copy-21" fill="#FF5500" opacity="0.5" x="422" y="231" width="32" height="32"></rect>
             <rect id="Rectangle-9-Copy-24" fill="#FF5500" opacity="0.5" x="486" y="376" width="32" height="32"></rect>
-            <g id="Group-2" transform="translate(334.000000, 0.000000)" fill="#000000" font-family="ManifontGroteskBook, Manifont Grotesk" font-size="12" font-weight="300" line-spacing="16" opacity="0.497544643">
+            <g id="Group-2" transform="translate(334.000000, 0.000000)" fill="#000000" font-family="ManifontGroteskBook, ManifontGrotesk" font-size="12" font-weight="300" line-spacing="16" opacity="0.497544643">
                 <text id="Free-trial" transform="translate(23.500000, 77.000000) rotate(-45.000000) translate(-23.500000, -77.000000) ">
                     <tspan x="-1" y="78">Free trial</tspan>
                 </text>
@@ -35,7 +35,7 @@
                     <tspan x="153" y="66">Region-specific</tspan>
                 </text>
             </g>
-            <text id="Subscription-Informa" opacity="0.497935268" font-family="ManifontGroteskBold, Manifont Grotesk" font-size="12" font-weight="bold" line-spacing="16" fill="#000000">
+            <text id="Subscription-Informa" opacity="0.497935268" font-family="ManifontGroteskBold, ManifontGrotesk" font-size="12" font-weight="bold" line-spacing="16" fill="#000000">
                 <tspan x="12" y="85">Subscription Information</tspan>
             </text>
             <rect id="Rectangle-9" stroke="#DDDDDD" x="0" y="103" width="518" height="32"></rect>

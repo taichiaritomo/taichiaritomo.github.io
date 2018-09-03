@@ -69,7 +69,7 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 960px;
-  font-family: AuthenticSans, 'Helvetica', sans-serif;
+  font-family: 'AuthenticSans', 'Helvetica', sans-serif;
   font-size: 12px;
   line-height: 16px;
 }
@@ -109,7 +109,7 @@ body {
   display: flex;
   justify-content: space-between;
   
-  font-family: ManifontGrotesk;
+  font-family: 'ManifontGrotesk', sans-serif;
   font-weight: 400;
   font-size: 24px;
 }

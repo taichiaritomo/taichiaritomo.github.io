@@ -105,12 +105,12 @@ h1 {
   font-size: 21px;
   line-height: 28px;
   margin: 0;
-  font-family: ManifontGrotesk, sans-serif;
+  font-family: 'ManifontGrotesk', sans-serif;
   font-weight: 400;
 }
 
 h2 {
-  font-family: ManifontGrotesk, sans-serif;
+  font-family: 'ManifontGrotesk', sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 30px;
@@ -120,7 +120,7 @@ h2 {
 
 h3 {
   text-align: center;
-  font-family: ManifontGroteskBold, sans-serif;
+  font-family: 'ManifontGroteskBold', sans-serif;
   font-weight: 600;
   font-size: 21px;
   line-height: 30px;
@@ -129,7 +129,7 @@ h3 {
 }
 
 h4 {
-  font-family: ManifontGroteskBold, sans-serif;
+  font-family: 'ManifontGroteskBold', sans-serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
@@ -141,7 +141,7 @@ h5 {
   text-align: left;
   font-size: 12px;
   line-height: 16px;
-  font-family: ManifontGroteskBold, sans-serif;
+  font-family: 'ManifontGroteskBold', sans-serif;
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 16px;
@@ -150,7 +150,7 @@ h5 {
 h6 {
   font-size: 12px;
   line-height: 24px;
-  font-family: ManifontGrotesk, sans-serif;
+  font-family: 'ManifontGrotesk', sans-serif;
   font-weight: 400;
   margin: 0;
   color: #888;
@@ -182,7 +182,7 @@ html {
 
 
 body {
-  font-family: AuthenticSans, 'Helvetica', sans-serif;
+  font-family: 'AuthenticSans', 'Helvetica', sans-serif;
   font-size: 12px;
   line-height: 16px;
 }
@@ -299,7 +299,7 @@ footer .col-3-single {
   text-align: center;
   font-size: 24px;
   line-height: 24px;
-  font-family: ManifontGrotesk;
+  font-family: 'ManifontGrotesk', sans-serif;
   
   color: transparent;
   -webkit-text-stroke-width: 0.5px;

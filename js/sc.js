@@ -55,26 +55,26 @@ function loadAnimation(i, offset) {
 // CHECKOUT
 
 checkout_variations = {
-  "Purchasing Go" : "../img/sc/checkout_variations/Go%20Purchase.svg",
-  "Purchasing Go+" : "../img/sc/checkout_variations/Go+%20Purchase.svg",
-//  "Purchasing Go, with free trial" : "../_img/sc/checkout_variations/Go%20Trial.svg",
-  "Purchasing Go+, with free trial" : "../img/sc/checkout_variations/Go+%20Trial.svg",
+  "Purchasing Go" : "../img/sc/checkout_variations/Go%20Purchase.png",
+  "Purchasing Go+" : "../img/sc/checkout_variations/Go+%20Purchase.png",
+//  "Purchasing Go, with free trial" : "../_img/sc/checkout_variations/Go%20Trial.png",
+  "Purchasing Go+, with free trial" : "../img/sc/checkout_variations/Go+%20Trial.png",
 //  "Purchasing Go, with Pro Unlimited Discount" :
-//  "../_img/sc/checkout_variations/Go%20Purchase,%20Pro%20Unlimited.svg",
+//  "../_img/sc/checkout_variations/Go%20Purchase,%20Pro%20Unlimited.png",
   "Purchasing Go+, with Pro Unlimited Discount" :
-  "../img/sc/checkout_variations/Go+%20Purchase,%20Pro%20Unlimited.svg",
+  "../img/sc/checkout_variations/Go+%20Purchase,%20Pro%20Unlimited.png",
   "Downgrading from Go+ to Go, Saved Credit Card" :
-  "../img/sc/checkout_variations/Go%20Downgrade,%20Saved%20Card.svg",
+  "../img/sc/checkout_variations/Go%20Downgrade,%20Saved%20Card.png",
   "Upgrading from Go to Go+, Saved Credit Card" :
-  "../img/sc/checkout_variations/Go+%20Upgrade,%20Saved%20Card.svg",
+  "../img/sc/checkout_variations/Go+%20Upgrade,%20Saved%20Card.png",
   "Downgrading from Go+ to Go, New Credit Card" :
-  "../img/sc/checkout_variations/Go%20Downgrade,%20New%20Card.svg",
+  "../img/sc/checkout_variations/Go%20Downgrade,%20New%20Card.png",
   "Upgrading from Go to Go+, New Credit Card" :
-  "../img/sc/checkout_variations/Go+%20Upgrade,%20New%20Card.svg"
+  "../img/sc/checkout_variations/Go+%20Upgrade,%20New%20Card.png"
 //  "Downgrading from Go+ to Go, Apple App Store" :
-//  "../_img/sc/checkout_variations/Go%20Downgrade,%20Apple%20Error.svg",
+//  "../_img/sc/checkout_variations/Go%20Downgrade,%20Apple%20Error.png",
 //  "Upgrading from Go to Go+, Apple App Store" :
-//  "../_img/sc/checkout_variations/Go+%20Upgrade,%20Apple%20Error.svg"
+//  "../_img/sc/checkout_variations/Go+%20Upgrade,%20Apple%20Error.png"
 }
 
 feature_checkout_final_img = document.querySelector("#checkout_final .big-image");

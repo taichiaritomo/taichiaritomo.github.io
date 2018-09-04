@@ -26,12 +26,6 @@ html.flood {
   min-height: 100%;
 }
 
-#bg-gradient.flood {
-  background-image: url(../img/site/kissOptimized.gif);
-  background-position: center center;
-  background-size: 160px 160px;
-}
-
 /*
 #bg-gradient.slide {
   left: -98%;
@@ -63,6 +57,10 @@ a {
 a:hover {
   text-shadow: 0 0 10px #ff0;
 /*  color: #888;*/
+}
+
+.gray {
+  color: #888;
 }
 
 body {
@@ -169,6 +167,7 @@ body {
   
   display: flex;
   justify-content: space-between;
+  align-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -207,6 +206,36 @@ body {
 
 .clickable {
   cursor: pointer;
+}
+
+.kiss_hover {
+  background-image: url(../img/site/kissOptimized.gif);
+  background-position: center center;
+  background-size: 400px 400px;
+  position: fixed;
+  left: 32px;
+  top: 32px;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+.kiss_hover:hover {
+  background: #eeeeee;
+}
+
+/*
+.kiss_hover:hover img {
+  outline: 25px solid #eeeeee;
+  outline-offset: -25px;
+}
+*/
+
+#bg-gradient.flood {
+  background-image: url(../img/site/kissOptimized.gif);
+  background-position: center center;
+  background-size: 400px 400px;
 }
 
 /*

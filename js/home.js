@@ -6,11 +6,11 @@ function offset(el) {
     var rect = el.getBoundingClientRect(),
     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+    return { top: rect.top + scrollTop + el.clientHeight/2, left: rect.left + scrollLeft + el.clientWidth/2 }
 }
 
 /* Kiss: Hover Flood Effect*/
-var kiss_img = document.querySelector('#item_kiss_img');
+var kiss_img = document.querySelector('.kiss_hover');
 var myHtml = document.querySelector('html');
 var bg = document.querySelector('#bg-gradient');
 kiss_img.addEventListener('mouseenter', function() {

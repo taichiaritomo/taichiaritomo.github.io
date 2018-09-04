@@ -208,7 +208,7 @@ body {
   cursor: pointer;
 }
 
-.kiss_hover {
+#kiss_hover {
   background-image: url(../img/site/kissOptimized.gif);
   background-position: center center;
   background-size: 400px 400px;
@@ -219,9 +219,10 @@ body {
   height: 64px;
   overflow: hidden;
   border-radius: 32px;
+  cursor: move;
 }
 
-.kiss_hover:hover {
+#kiss_hover:hover {
   background: #eeeeee;
 }
 

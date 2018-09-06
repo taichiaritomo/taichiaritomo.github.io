@@ -23,8 +23,8 @@ kiss_img.addEventListener('mouseleave', function() {
   bg.classList.remove('flood');
 });
 
-kiss_img.style.top = Math.random()*window.innerHeight + "px";
-kiss_img.style.left = Math.random()*window.innerWidth + "px";
+kiss_img.style.top = Math.random()*(window.innerHeight-64) + "px";
+kiss_img.style.left = Math.random()*(window.innerWidth-64) + "px";
 
 
 

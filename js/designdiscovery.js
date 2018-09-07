@@ -64,7 +64,7 @@ function checkHalfPast(elm) {
   var rect = elm.getBoundingClientRect();
   var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
   var elmHeight = rect.bottom - rect.top;
-  return (rect.top < (viewHeight - elmHeight)*0.6);
+  return (rect.top < (viewHeight - elmHeight)*0.7);
 }
 
 

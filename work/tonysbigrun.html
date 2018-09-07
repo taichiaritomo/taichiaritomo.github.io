@@ -1,0 +1,126 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Taichi Aritomo / Tony's Big Run</title>
+<!--    <meta name="description" content="Taichi Aritomo, Portfolio">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <link rel="apple-touch-icon" href="apple-touch-icon.png">-->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/normalize.min.css">
+    <link rel="stylesheet" href="../css/helper.min.css">
+    <link rel="stylesheet" href="../css/subpage.css">
+    <link rel="stylesheet" href="../css/tonysbigrun.css">
+
+</head>
+  
+  <body>
+        
+    <div id="main" class="disappear">
+      <div class="wrapper">
+        <section>
+          <div class="header">
+            <div id="my-name" onclick="goTo('../index.html')">
+              <span id="cross">&#x2715;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="name"><a href="../index.html">Taichi Aritomo /</a></span>
+            </div>
+            <br><br>
+            Tony's Big Run
+          </div>
+        </section>
+      </div>
+      
+      <section>
+        
+          <div class="row">
+            <div class="col-3-single">
+                In 2015, Tony had a goal of building up a running habit. We got close playing video games together, so, as a sort of silly birthday gift, I made an 8-bit-style progress tracker that was hooked up to his FitBit account.
+              <br><br>
+              Concept and planning was a collaboration with our friend Lawrence Wu. Tae Park contributed a couple cute icons. I did the design and development.<br><br>
+              <a href="https://taichi.pink/TonysBigRun/" target="_blank"><span class="big-link special">See the UI!</span></a>
+            </div>
+            <div class="col-3-double">
+              <div id="video-container">
+                <video id="video_tonysbigrun" data-object-fit="contain" preload="auto" loop muted playsinline>
+                  <source src="../img/tonysbigrun/vid.mp4" type="video/mp4" data-object-fit="contain">
+                  Your browser does not support playback for this html5 video.
+                </video>
+                <a class="full-box-link" href="https://taichi.pink/TonysBigRun/" target="_blank"></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+      <section id="section_icons">
+        <div class="blurb">
+           Illustrated icons for achievements and a Tony sprite with running animation.<br><br><em>Nice calves!</em>
+        </div>
+        <div id="icongrid">
+<!--          <div id="tonysprite"></div>-->
+          <img id="tonysprite" src="../img/tonysbigrun/sprites/tony0.png">
+          <img class="icon" id="icon1" src="../img/tonysbigrun/icons/bread.png">
+          <img class="icon" id="icon2" src="../img/tonysbigrun/icons/brick.png">
+          <img class="icon" id="icon3" src="../img/tonysbigrun/icons/broliccalf.png">
+          <img class="icon" id="icon4" src="../img/tonysbigrun/icons/brolicleg.png">
+          <img class="icon" id="icon5" src="../img/tonysbigrun/icons/fan.png">
+          <img class="icon" id="icon6" src="../img/tonysbigrun/icons/lolqueen.png">
+          <img class="icon" id="icon7" src="../img/tonysbigrun/icons/heart.png">
+          <img class="icon" id="icon8" src="../img/tonysbigrun/icons/first.png">
+          <img class="icon" id="icon9" src="../img/tonysbigrun/icons/mail.png">
+          <img class="icon" id="icon10" src="../img/tonysbigrun/icons/sonic.png">
+          <img class="icon" id="icon11" src="../img/tonysbigrun/icons/star.png">
+          <img class="icon" id="icon12" src="../img/tonysbigrun/icons/turd.png">
+          <img class="icon" id="icon13" src="../img/tonysbigrun/icons/shoe.png">
+        </div>
+      </section>
+      
+      <section id="architecture">
+        <div class="blurb">
+          <p>
+            They say that a habit takes six weeks to form, so we thought it would be helpful to keep track of weekly streaks. To do this, I wrote a server-side program that queried the FitBit API daily and saved his progress. The whole app was powered by a reactive Javascript framework called Meteor.
+          </p>
+        </div>
+      </section>
+      
+      <section>
+        <div class="wrapper">
+          <div class="colophon">
+            Big shout out to Tony Sheng, who patiently played League with scrubs like me.
+          </div>
+        </div>
+      </section>
+      
+      <footer>
+          <div class="row">
+          <div class="col-3-single">
+              <span class="big-link" onclick="goTo('../index.html')">
+                <a href="../index.html">
+                  All Work
+                </a>
+            </span>
+            </div>
+            <div class="col-3-single">
+              <span onclick="scrollToTop()" class="big-link">Top</span>
+            </div>
+            <div class="col-3-single">
+              <span class="big-link" onclick="goTo('illustrations.html')">
+                <a href="illustrations.html">
+                  Next
+                </a>
+              </span>
+            </div>
+        </div>
+      </footer>
+    </div>
+    
+    <!--  many of us saidJavascript -->
+    <script src="../js/plugins.min.js"></script>
+    <!-- Polyfill for object-fit CSS property for images and videos in IE/Edge -->
+    <script src="../js/objectFitPolyfill.min.js"></script>
+    <script src="../js/subpage.js"></script>
+    <script src="../js/tonysbigrun.js"></script>
+  </body>
+  
+</html>

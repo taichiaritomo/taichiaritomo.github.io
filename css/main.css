@@ -3,6 +3,7 @@ html {
   background-position: top let;
   padding: 32px 0;
   min-width: 960px;
+  min-height: 100vh;
 /*  height: 100%;*/
 }
 
@@ -201,7 +202,7 @@ body {
 .img {
   height: 160px;
   float: left;
-  box-shadow:inset 0px 0px 0px 1px #000;
+/*  box-shadow:inset 0px 0px 0px 1px #000;*/
 }
 
 .clickable {

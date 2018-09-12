@@ -28,15 +28,27 @@ function offset(el) {
 var kiss_img = document.querySelector('#kiss_hover');
 var myHtml = document.querySelector('html');
 var bg = document.querySelector('#bg-gradient');
-kiss_img.addEventListener('mouseenter', function() {
+
+
+if (Modernizr.touch) {
+  // for touchscreens
+  kiss_img.addEventListener('touchstart', floodKiss);
+  kiss_img.addEventListener('touchend', clearKiss);
+} else {
+  kiss_img.addEventListener('mouseenter', floodKiss);
+  kiss_img.addEventListener('mouseleave', clearKiss);
+}
+
+function floodKiss() {
   var myOffset = offset(kiss_img);
   bg.style.backgroundPosition = (myOffset.left) + 'px ' + (myOffset.top) + 'px';
   bg.classList.add('flood');
-});
-kiss_img.addEventListener('mouseleave', function() {
-  bg.style.backgroundPosition = 'top left';
+}
+
+function clearKiss() {
   bg.classList.remove('flood');
-});
+}
+
 
 //kiss_img.style.top = Math.random()*(window.innerHeight-64) + "px";
 //kiss_img.style.left = Math.random()*(window.innerWidth-64) + "px";

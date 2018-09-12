@@ -67,39 +67,7 @@ var showOnlyCategory = function(categoryName) {
   }
 }
 
-//var showAnyInCategory = function(categoryName) {
-//  for (var i = 0; i < items.length; i++) {
-//    var element = items[i];
-//    if (element.classList.contains(categoryName)) {
-//      var img = element.querySelector('img');
-//      img.style.visibility = "visible";
-//    }
-//  }
-//}
-//// Category: Interfaces
-//buttonInterfaces.addEventListener('click', function() {
-//  if (showItems.interfaces) {
-//    buttonInterfaces.classList.remove('selected');
-//    showOnlyCategory('graphics');
-//    showItems.interfaces = false;
-//  } else {
-//    buttonInterfaces.classList.add('selected');
-//    showAnyInCategory('interfaces');
-//    showItems.interfaces = true;
-//  }
-//});
-//// Category: Graphics
-//buttonGraphics.addEventListener('click', function() {
-//  if (showItems.graphics) {
-//    buttonGraphics.classList.remove('selected');
-//    showOnlyCategory('interfaces');
-//    showItems.graphics = false;
-//  } else {
-//    buttonGraphics.classList.add('selected');
-//    showAnyInCategory('graphics');
-//    showItems.graphics = true;
-//  }
-//});
+
 
 /****** Links ******/
 var goTo = function(page) {
@@ -112,6 +80,8 @@ var goTo = function(page) {
 }
 
 
+
+document.addEventListener("touchstart", function(){}, true);
 
 
 
@@ -159,4 +129,44 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+
+
+
+
+
+
+//var showAnyInCategory = function(categoryName) {
+//  for (var i = 0; i < items.length; i++) {
+//    var element = items[i];
+//    if (element.classList.contains(categoryName)) {
+//      var img = element.querySelector('img');
+//      img.style.visibility = "visible";
+//    }
+//  }
+//}
+//// Category: Interfaces
+//buttonInterfaces.addEventListener('click', function() {
+//  if (showItems.interfaces) {
+//    buttonInterfaces.classList.remove('selected');
+//    showOnlyCategory('graphics');
+//    showItems.interfaces = false;
+//  } else {
+//    buttonInterfaces.classList.add('selected');
+//    showAnyInCategory('interfaces');
+//    showItems.interfaces = true;
+//  }
+//});
+//// Category: Graphics
+//buttonGraphics.addEventListener('click', function() {
+//  if (showItems.graphics) {
+//    buttonGraphics.classList.remove('selected');
+//    showOnlyCategory('interfaces');
+//    showItems.graphics = false;
+//  } else {
+//    buttonGraphics.classList.add('selected');
+//    showAnyInCategory('graphics');
+//    showItems.graphics = true;
+//  }
+//});
   

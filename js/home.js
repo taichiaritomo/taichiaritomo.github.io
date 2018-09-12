@@ -105,10 +105,21 @@ function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
     /* if present, the header is where you move the DIV from:*/
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+    if (Modernizr.touch) {
+      // for touchscreens
+      document.getElementById(elmnt.id + "header").ontouchstart = dragMouseDown;
+    } else {
+      document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+    }
+    
   } else {
     /* otherwise, move the DIV from anywhere inside the DIV:*/
-    elmnt.onmousedown = dragMouseDown;
+    if (Modernizr.touch) {
+      // for touchscreens
+      elmnt.ontouchstart = dragMouseDown;
+    } else {
+      elmnt.onmousedown = dragMouseDown;
+    }
   }
 
   function dragMouseDown(e) {
@@ -117,9 +128,17 @@ function dragElement(elmnt) {
     // get the mouse cursor position at startup:
     pos3 = e.clientX;
     pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
+    
+    if (Modernizr.touch) {
+      // for touchscreens
+      document.ontouchend = closeDragElement;
+      // call a function whenever the cursor moves:
+      document.ontouchmove = elementDrag;
+    } else {
+      document.onmouseup = closeDragElement;
+      // call a function whenever the cursor moves:
+      document.onmousemove = elementDrag;
+    }
   }
 
   function elementDrag(e) {
@@ -136,9 +155,15 @@ function dragElement(elmnt) {
   }
 
   function closeDragElement() {
-    /* stop moving when mouse button is released:*/
-    document.onmouseup = null;
-    document.onmousemove = null;
+    if (Modernizr.touch) {
+      // for touchscreens
+      document.ontouchend = null;
+      document.ontouchmove = null;
+    } else {
+      /* stop moving when mouse button is released:*/
+      document.onmouseup = null;
+      document.onmousemove = null;
+    }
   }
 }
 

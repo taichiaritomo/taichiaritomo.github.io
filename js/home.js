@@ -1,5 +1,12 @@
 window.onload = function () {
+  
+  var circleWipe = document.querySelector("#circle-wipe");
+    circleWipe.classList.add("done");
+  
+  setTimeout(function() {
+    document.querySelector("#loading-container").style.display = "none";
     document.querySelector("#main").classList.remove("disappear");
+  }, 200);
 };
 
 function offset(el) {
@@ -23,9 +30,14 @@ kiss_img.addEventListener('mouseleave', function() {
   bg.classList.remove('flood');
 });
 
-kiss_img.style.top = Math.random()*(window.innerHeight-64) + "px";
-kiss_img.style.left = Math.random()*(window.innerWidth-64) + "px";
+//kiss_img.style.top = Math.random()*(window.innerHeight-64) + "px";
+//kiss_img.style.left = Math.random()*(window.innerWidth-64) + "px";
 
+
+var myEmail = document.querySelector("#email");
+myEmail.addEventListener("click", function() {
+  myEmail.innerHTML = "&#116;&#097;&#105;&#099;&#104;&#105;&#046;&#097;&#114;&#105;&#116;&#111;&#109;&#111;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;";
+})
 
 
 /****** Controls: Category Selector ******/

@@ -7,7 +7,6 @@
     <title>Taichi Aritomo</title>
     <meta name="description" content="Taichi Aritomo, Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--    <link rel="apple-touch-icon" href="apple-touch-icon.png">-->
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.min.css">
@@ -17,51 +16,43 @@
 </head>
     
 <body>
+  <div id="loading-container">
+    <div id="loading-marker">
+      <img src="img/loading-star.svg"/>
+      <div id="circle-wipe"></div>
+    </div>
+  </div>
+  
   <div id="bg-gradient"></div>
   <div id="main" class="disappear">
     <div draggable="true" id="kiss_hover"></div>
-    <div id="masthead">
-      <div class="col" id="name">Taichi Aritomo</div>
-      <div class="col" id="whoami">Graphics & Interfaces
-  <!--      <br>Cuteness and rigor.<br>How do tools limit creative outcomes?-->
-      </div>
-      <div class="col" id="education">B.A. Computer Science,<br>Rutgers University '18.<br>Good grades and behavior.</div>
-  <!--    <div class="col" id="education">B.A. Computer Science,<br>Rutgers University '18.<br>Good grades and behavior.</div>-->
-      <div class="col" id="links">  &#116;&#097;&#105;&#099;&#104;&#105;&#046;&#097;&#114;&#105;&#116;&#111;&#109;&#111;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
-        <br><a href="https://are.na/taichi-aritomo" target="_blank">are.na</a> · <a href="https://soundcloud.com/teecheeweewee" target="_blank">soundcloud</a>
-      </div>
-    </div>
+    <section id="masthead">
+<!--      <h1>Top Text</h1>-->
+      <p>
+        My name is <span class="expandable-term">Taichi<span class="expanded-term">太一</span></span>.
+        
+        I recently graduated from Rutgers University, where I studied <span class="expandable-term">computer science<span class="expanded-term">B.A. 2018. <em>Summa cum laude</em>.</span></span>.
+        
+        I'm particularly into <span class="expandable-term pointer">interfaces</span>, <span class="expandable-term pointer">slice-of-life comics</span>, <span class="expandable-term pointer">architecture history</span>, and <span class="expandable-term pointer">japanese electronica</span>.
+        
+        <br><br>
+        
+        <span id="email">email</span>
+        ·
+        <a href="https://are.na/taichi-aritomo/channels" target="_blank">are.na</a>
+        · 
+        <a href="https://soundcloud.com/teecheeweewee" target="_blank">soundcloud</a>
+        · 
+        <a href="https://www.goodreads.com/review/list/38386636-taichi-aritomo?utf8=✓&utf8=✓&title=taichi-aritomo&sort=date_started&order=d&per_page=infinite" target="_blank">goodreads</a>
+      </p>
+    </section>
 
-<!--
-    <div id="controls">
-      <div id="category-control">
-        <div id="category-control_interfaces" class="selected">interfaces</div>
-        <div id="category-control_graphics" class="selected">graphics</div>
-      </div>
-      <div id="size-control">
-        <div id="size-control_XS">XS</div>
-        <div id="size-control_XS" class="selected">M</div>
-        <div id="size-control_XS">XL</div>
-      </div>
-      <div id="blank-control">
-      </div>
-    </div>
--->
-
+    
+    
+    <section id="section_work">
+      
+    <h1>Efforts</h1>
     <div id="work">
-      
-      
-      
-<!--
-      <div class="item graphics" id="item_kiss">
-        <div class="img">
-          <img id="item_kiss_img" src="img/site/kissOptimized.gif" alt=""/>
-        </div>
-        <div class="description">
-          kiss. Animated pattern tile. 2017.
-        </div>
-      </div>
--->
       
       
       
@@ -72,7 +63,11 @@
         </div>
         <div class="description">
           <a href="work/sc.html">
-            $ound¢loud. Monetization & product design work from an internship. <span class="gray">2016</span>
+            $ound¢loud.<br>
+            Monetization and UI
+            design work from an<br>
+            internship.<br>
+            <span class="gray">2016</span>
           </a>
         </div>
       </div>
@@ -83,7 +78,8 @@
         </div>
         <div class="description">
           <a href="work/lookas.html">
-            look.as. A second set of eyes as you design information. <span class="gray">2017</span>
+            look.as.<br>
+            A second set of eyes as you design information.<br><span class="gray">2017</span>
           </a>
         </div>
       </div>
@@ -94,7 +90,10 @@
         </div>
         <div class="description">
           <a href="work/stretchygrid.html">
-             Stretchy Grid. An interface for manipulating grids, made with p5js. <span class="gray">2018</span>
+            Stretchy Grid.<br>
+            An interface for manipulating grids,<br>
+            made with p5.js<br>
+            <span class="gray">2018</span>
           </a>
         </div>
       </div>
@@ -106,7 +105,10 @@
         </div>
         <div class="description">
           <a href="work/slowtype.html">
-             GSD Design Discovery. Work from an introductory architecture course. <span class="gray">2018</span>
+            GSD Design Discovery.<br>
+            Work from an architecture<br>
+            summer-intensive.<br>
+            <span class="gray">2018</span>
           </a>
         </div>
       </div>
@@ -117,24 +119,13 @@
         </div>
         <div class="description">
           <a href="work/tonysbigrun.html">
-             Tony's Big Run. An 8-bit FitBit interface for a friend. <span class="gray">2015</span>
+             Tony's Big Run.<br>
+            An 8-bit FitBit<br>
+            journey for a friend.<br>
+            <span class="gray">2015</span>
           </a>
         </div>
       </div>
-      
-<!--
-      <div class="item interfaces clickable" id="item_deformgrid" onclick="goTo('work/slowpoetry.html')">
-        <div class="img clickable">
-          <img src="img/slowpoetry/preview.gif" alt=""/>
-          
-        </div>
-        <div class="description">
-          <a href="work/slowtype.html">
-             Slow Typography Experiments (WIP). 2018.
-          </a>
-        </div>
-      </div>
--->
       
       <div class="item graphics clickable" id="item_tedxrutgers" onclick="goTo('work/illustrations.html')">
         <div class="img clickable">
@@ -142,64 +133,26 @@
         </div>
         <div class="description">
           <a href="work/illustrations.html">
-             Illustrations & comics. <span class="gray">2017-2018</span>
+             Illustrations<br>
+            &<br> Comics.<br>
+            <span class="gray">2017-2018</span>
           </a>
         </div>
       </div>
-      
-<!--      <div class="item"></div>-->
-      
-<!--
-      <div class="item graphics clickable" id="item_tedxrutgers" onclick="goTo('http://taichi.pink/efcc-v2/index.html')">
-        <div class="img clickable">
-          <img src="img/efcc/preview.png" alt=""/>
-        </div>
-        <div class="description">
-          <a href="http://taichi.pink/efcc-v2/index.html">
-             Edgewater Family Care. Static website and illustrations for a local family clinic. <span class="gray">2015</span>
-          </a>
-        </div>
-      </div>
--->
-
-  <!--
-
-
-      
-
-      <div class="item interfaces graphics" id="item_deformgrid">
-        <img src="img/deform-grid_0.png" alt=""/>
-        <div class="description">Stretchy Grid 1. Because of regularity you know irregularity. A certain way to stretch grids and images, made with p5js. 2018.</div>
-      </div>
-
-      <div class="item graphics" id="item_tedxrutgers">
-        <img src="img/tedxrutgers/puddle.jpg" alt=""/>
-        <div class="description">TEDxRutgers. Graphic and print materials for a student-organized conference. 2016-2017.</div>
-      </div>
-
-      <div class="item graphics" id="item_comics">
-        <img src="img/comic.png" alt=""/>
-        <div class="description">Assorted comics. 2018.</div>
-      </div>
-
-      <div class="item graphics" id="item_japanday">
-        <img src="img/comic.png" alt=""/>
-        <div class="description">Japan Day Central Park. Trying to represent a culture for an art contest. 2017</div>
-      </div>
-
-      <div class="item interfaces graphics" id="item_tonysbigrun">
-        <img src="img/comic.png" alt=""/>
-        <div class="description">A fitness tracker for a friend. 2015.</div>
-      </div>
-  -->
-
     </div>
+    </section>
     
-    <div id="colophon">
-      Hand-built site.
-      Typefaces by <a href="http://authentic.website/sans" target="_blank">Authentic</a> and <a href="https://github.com/Interstices-/Manifont-Grotesk" target="_blank">Interstices</a>.
-      Tested by dear friends, Angela Liu & Lawrence Wu. 
+<!--
+    <section>
+      <h1>This website was made by hand. See more at:</h1>
+    </section>
+-->
+    
+    <section id="section_colophon">
+      <div id="colophon">
+      Typefaces by <a href="http://authentic.website/sans" target="_blank">Authentic</a> and <a href="https://github.com/Interstices-/Manifont-Grotesk" target="_blank">Interstices</a>. Site designed and hand-built by me. 
     </div>
+    </section>
   </div>
   
   

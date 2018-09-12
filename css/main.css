@@ -38,6 +38,7 @@ html.flood {
     src: url(../fonts/AUTHENTIC-Sans.woff);
 }
 
+/*
 @font-face {
   font-family: ManifontGrotesk;
   src: url(../fonts/manifontgroteskbold-webfont.woff);
@@ -48,6 +49,14 @@ html.flood {
   font-family: ManifontGrotesk;
   src: url(../fonts/manifontgroteskbook-webfont.woff);
   font-weight: 400;
+}
+*/
+
+@font-face {
+  font-family: ManifontGrotesk;
+  src: url(../fonts/manifontgroteskbolditalic-webfont.woff);
+  font-weight: 600;
+  font-style: italic;
 }
 
 a {
@@ -94,7 +103,9 @@ span.expandable-term:hover span.expanded-term {
 
 h1 {
   margin: 0;
-  font-family: 'ManifontGroteskBoldItalic', sans-serif;
+  font-family: 'ManifontGrotesk', sans-serif;
+  font-weight: 600;
+  font-style: italic;
   -webkit-text-fill-color: #eeeeee;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;

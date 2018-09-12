@@ -1,9 +1,9 @@
 html {
   background: #eeeeee;
   background-position: top let;
-  padding: 32px 0;
-  min-width: 960px;
-  min-height: 100vh;
+  padding: 16px 0;
+/*  min-width: 960px;*/
+/*  min-height: 100vh;*/
 /*  height: 100%;*/
 }
 
@@ -61,8 +61,114 @@ a:hover {
 }
 
 .gray {
-  color: #888;
+  color: #fff;
 }
+
+span.expandable-term {
+  background: #ffffff;
+  white-space: nowrap;
+  position: relative;
+  padding: 0 1px;
+  margin: 0 -1px;
+}
+
+span.expandable-term:hover {
+  color: #00f;
+}
+
+span.expanded-term {
+  display: none;
+  position: absolute;
+  top: -16px;
+  left: 0px;
+  min-width: 100%;
+  text-align: center;
+  background: #eeeeee;
+  padding: 0 1px;
+/*  font-size: 64px;*/
+}
+
+span.expandable-term:hover span.expanded-term {
+  display: block;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'ManifontGroteskBoldItalic', sans-serif;
+  -webkit-text-fill-color: #eeeeee;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+p {
+  margin-top: 16px;
+}
+
+
+
+
+#loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+#loading-marker {
+  width: 100%;
+  max-width: 512px;
+  position: relative;
+}
+
+#loading-marker img {
+  width: 100%;
+  transform-origin: center center;
+  animation: ROTATE45 4s infinite;
+  animation-timing-function: linear;
+  position: absolute;
+  top: 50%;
+  margin-top: -50%;
+  left: 50%;
+  margin-left: -50%;
+}
+
+#loading-marker #circle-wipe {
+  margin: 0 auto;
+  background: #eee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 0vw;
+  margin-left: 0vw;
+  width: 0vw;
+  height: 0vw;
+  border-radius: 100vw;
+  
+  box-shadow: 0 0 24 48 #eeeeee;
+  
+  transition: margin-top 0.1s ease-in, margin-left 0.1s ease-in, width 0.1s ease-in, height 0.1s ease-in;
+}
+
+#loading-marker #circle-wipe.done {
+  width: 512px;
+  height: 512px;
+  margin-left: -256px;
+  margin-top: -256px;
+}
+
+@keyframes ROTATE45 {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
 
 body {
   margin: 0 auto;
@@ -70,7 +176,8 @@ body {
   max-width: 960px;
   font-family: 'AuthenticSans', 'Helvetica', sans-serif;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.4;
+/*  line-height: 16px;*/
 }
 
 #main {
@@ -83,9 +190,11 @@ body {
 }
 
 #masthead {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  position: relative;
+}
+
+#email:hover {
+  text-shadow: 0 0 10px #ff0;
 }
 
 #info {
@@ -162,22 +271,30 @@ body {
   text-decoration-color: #888;
 }
 
+
+
+
+
+section {
+  padding: 0 16px;
+}
+
+#section_work {
+  margin-top: 64px;
+}
+
 #work {
   width: 100%;
-  margin-top: 80px;
-  
+  margin-top: 16px;
   display: flex;
-  justify-content: space-between;
+  justify-content:flex-start;
   align-content: flex-start;
   flex-wrap: wrap;
 }
 
 .item {
-  width: 288px;
-  height: 208px;
-  overflow: hidden;
-  padding: 0 16px;
-  margin-bottom: 80px;
+  margin-bottom: 64px;
+  margin-right: 64px;
 }
 
 .item.clickable:hover {
@@ -214,19 +331,18 @@ body {
   background-position: center center;
   background-size: 400px 400px;
   position: fixed;
-  left: 32px;
+  right: 32px;
   top: 32px;
   width: 64px;
   height: 64px;
   overflow: hidden;
   border-radius: 32px;
   cursor: move;
+  z-index: 100;
 }
 
 #kiss_hover:hover {
-  background-image: url(../img/me2.png);
-  background-size: 64px 64px;
-/*  background: #eeeeee;*/
+  background: #eeeeee;
 }
 
 /*
@@ -249,10 +365,13 @@ body {
 }
 */
 
+
+#section_colophon {
+  margin-top: 64px;
+}
+
 #colophon {
-  text-align: center;
   color: #888;
-  padding: 0 16px;
 }
 
 #colophon a {

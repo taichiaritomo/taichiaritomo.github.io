@@ -1,5 +1,13 @@
-window.onload = function () {
-  
+window.onpageshow = function () {
+  if (document.readyState === "complete")
+    showMain();
+};
+
+window.onload = function() {
+  showMain();
+}
+
+function showMain() {
   var circleWipe = document.querySelector("#circle-wipe");
     circleWipe.classList.add("done");
   
@@ -7,7 +15,7 @@ window.onload = function () {
     document.querySelector("#loading-container").style.display = "none";
     document.querySelector("#main").classList.remove("disappear");
   }, 200);
-};
+}
 
 function offset(el) {
     var rect = el.getBoundingClientRect(),

@@ -71,7 +71,7 @@ span.expanded-term {
 /*  font-size: 64px;*/
 }
 
-span.expandable-term:hover, span.expandable-term:active span.expanded-term {
+span.expandable-term:hover span.expanded-term, span.expandable-term:active span.expanded-term {
   display: block;
 }
 

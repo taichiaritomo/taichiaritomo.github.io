@@ -39,12 +39,17 @@ a:hover {
   color: #fff;
 }
 
+#masthead a {
+  display: inline-block;
+}
+
 span.expandable-term {
   background: #ffffff;
-  white-space: nowrap;
+  white-space:pre;
   position: relative;
   padding: 0 1px;
   margin: 0 -1px;
+  display: inline-block;
 }
 
 span.expandable-term:hover, span.expandable-term:active {
@@ -275,6 +280,7 @@ section {
 .item {
   margin-bottom: 64px;
   margin-right: 64px;
+/*  display: inline-block;*/
 }
 
 .item.clickable:hover, .item.clickable:active {
@@ -315,17 +321,29 @@ section {
   background-size: 400px 400px;
   position: fixed;
   right: 32px;
-  top: 32px;
+  bottom: 32px;
   width: 64px;
   height: 64px;
   overflow: hidden;
   border-radius: 32px;
   cursor: move;
   z-index: 100;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 9px;
+}
+
+#kiss_hover > div {
+  visibility: hidden;
 }
 
 .no-touch #kiss_hover:hover {
   background: #eeeeee;
+}
+
+.no-touch #kiss_hover:hover > div {
+  visibility: visible;
 }
 
 

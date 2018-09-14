@@ -25,9 +25,16 @@
   </div>
   
   <div id="bg-gradient"></div>
-  <div id="constellation-container"></div>
+  <svg id="constellation-container">
+  </svg>
   <div id="main" class="disappear">
-    <div draggable="true" id="kiss_hover"></div>
+    <div draggable="true" id="kiss_hover">
+      <div>
+        Kiss.<br>
+        animated pattern tile.<br>
+        2017.
+      </div>
+    </div>
     <section id="masthead">
 <!--      <h1>Top Text</h1>-->
       <p>
@@ -35,7 +42,7 @@
         
         I recently graduated from Rutgers University, where I studied <span class="expandable-term">computer science<span class="expanded-term">B.A. 2018. <em>Summa cum laude</em>.</span></span>.
         
-        I'm particularly into <span class="expandable-term pointer">interfaces</span>, <span class="expandable-term pointer">slice-of-life comics</span>, <span class="expandable-term pointer">architecture history</span>, and <span class="expandable-term pointer">japanese electronica</span>.
+        I'm particularly into <span id="interest_interfaces" class="expandable-term pointer constellation-key">interfaces</span>, <span id="interest_comics" class="expandable-term pointer constellation-key">slice-of-life comics</span>, <span id="interest_architecture" class="expandable-term pointer constellation-key">architecture history</span>, and <span id="interest_electronica" class="expandable-term pointer constellation-key">japanese electronica</span>.
         
         <br><br>
         
@@ -43,9 +50,9 @@
         ·
         <a href="https://are.na/taichi-aritomo/channels" target="_blank">are.na</a>
         · 
-        <a href="https://soundcloud.com/teecheeweewee" target="_blank">soundcloud</a>
+        <a id="link_soundcloud" href="https://soundcloud.com/teecheeweewee" target="_blank">soundcloud</a>
         · 
-        <a href="https://www.goodreads.com/review/list/38386636-taichi-aritomo?utf8=✓&utf8=✓&title=taichi-aritomo&sort=date_started&order=d&per_page=infinite" target="_blank">goodreads</a>
+        <a id="link_goodreads" href="https://www.goodreads.com/review/list/38386636-taichi-aritomo?utf8=✓&utf8=✓&title=taichi-aritomo&sort=date_started&order=d&per_page=infinite" target="_blank">goodreads</a>
       </p>
     </section>
 
@@ -59,8 +66,8 @@
       
       
 
-      <div class="item interfaces clickable" id="item_soundcloud"  onclick="goTo('work/sc.html')">
-        <div class="img clickable">
+      <div class="item interfaces clickable"  onclick="goTo('work/sc.html')">
+        <div class="img clickable" id="item_soundcloud">
           <img src="img/sc/settings_variations/subscription-settings_all.png" alt=""/>
         </div>
         <div class="description">
@@ -74,8 +81,8 @@
         </div>
       </div>
       
-      <div class="item interfaces clickable" id="item_lookas"  onclick="goTo('work/lookas.html')">
-        <div class="img clickable">
+      <div class="item interfaces clickable"  onclick="goTo('work/lookas.html')">
+        <div class="img clickable" id="item_lookas">
           <img src="img/lookas/overview/lookas_34.jpg" alt=""/>
         </div>
         <div class="description">
@@ -86,8 +93,8 @@
         </div>
       </div>
       
-      <div class="item interfaces graphics clickable" id="item_deformgrid" onclick="goTo('work/stretchygrid.html')">
-        <div class="img clickable">
+      <div class="item interfaces graphics clickable" onclick="goTo('work/stretchygrid.html')">
+        <div class="img clickable" id="item_deformgrid">
           <img src="img/stretchy-grid/preview.gif" alt=""/>
         </div>
         <div class="description">
@@ -100,13 +107,12 @@
         </div>
       </div>
       
-      <div class="item interfaces clickable" id="item_deformgrid" onclick="goTo('work/designdiscovery.html')">
-        <div class="img clickable">
+      <div class="item interfaces clickable" onclick="goTo('work/designdiscovery.html')">
+        <div class="img clickable" id="item_designdiscovery">
           <img src="img/designdiscovery/p2_1.png" alt=""/>
-          
         </div>
         <div class="description">
-          <a href="work/slowtype.html">
+          <a href="work/designdiscovery.html">
             GSD Design Discovery.<br>
             Work from an architecture<br>
             summer-intensive.<br>
@@ -115,8 +121,8 @@
         </div>
       </div>
       
-      <div class="item interfaces clickable" id="item_deformgrid" onclick="goTo('work/tonysbigrun.html')">
-        <div class="img clickable">
+      <div class="item interfaces clickable" onclick="goTo('work/tonysbigrun.html')">
+        <div class="img clickable" id="item_tonysbigrun">
           <img src="img/tonysbigrun/preview.png" alt=""/>
         </div>
         <div class="description">
@@ -129,8 +135,8 @@
         </div>
       </div>
       
-      <div class="item graphics clickable" id="item_tedxrutgers" onclick="goTo('work/illustrations.html')">
-        <div class="img clickable">
+      <div class="item graphics clickable" onclick="goTo('work/illustrations.html')">
+        <div class="img clickable" id="item_illustrations">
           <img src="img/tedxrutgers/puddle.jpg" alt=""/>
         </div>
         <div class="description">
@@ -185,6 +191,7 @@
   
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="js/home.js"></script>
+    <script src="js/constellation.js"></script>
 <!--    <script src="js/main.js"></script>-->
 </body>
 

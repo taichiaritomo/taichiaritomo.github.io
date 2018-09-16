@@ -22,6 +22,8 @@ var constellationContainer = document.querySelector("#constellation-container");
 // Draws constellation using key string as category.
 function mapConstellation(key) {
   
+  constellationContainer.style.height = document.body.scrollHeight + "px";
+  
   var elementArray = constellation_elements[key].elements;
 //  var constellationGroup = document.getElementById(constellation_elements[key].group);
 

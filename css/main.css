@@ -334,10 +334,12 @@ section {
   background-position: center center;
   background-size: 400px 400px;
   position: fixed;
+/*
   left: calc(50% - 32px);
   top: calc(50% - 32px);
-/*  right: 32px;*/
-/*  bottom: 32px;*/
+*/
+  right: 32px;
+  top: 32px;
   width: 64px;
   height: 64px;
   overflow: hidden;

@@ -133,7 +133,7 @@ function dragElement(elmnt) {
       // for touchscreens
       document.ontouchend = closeDragElement;
       // call a function whenever the cursor moves:
-      document.ontouchmove = elementDrag;
+      document.ontouchmove = elementTouchDrag;
     } else {
       document.onmouseup = closeDragElement;
       // call a function whenever the cursor moves:
@@ -149,6 +149,19 @@ function dragElement(elmnt) {
     pos2 = pos4 - e.clientY;
     pos3 = e.clientX;
     pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+  
+  function elementTouchDrag(e) {
+    e = e || windowevent;
+    e.preventDefault();
+    //calculate the new cursor position:
+    pos1 = pos3 - e.touches[0].clientX;
+    pos2 = pos4 - e.touches[0].clientY;
+    pos3 = e.touches[0].clientX;
+    pos4 = e.touches[0].clientY;
     // set the element's new position:
     elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
     elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";

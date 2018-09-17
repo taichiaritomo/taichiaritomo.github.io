@@ -291,6 +291,10 @@ section {
   -webkit-touch-callout: none;
 }
 
+.item.clickable:hover .img.clickable {
+  box-shadow: 0 0 10px #ff0;
+}
+
 /*
 .item > img {
   height: 128px;
@@ -342,7 +346,7 @@ section {
   display: flex;
   align-items: center;
   font-size: 9px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
 }
 
 #kiss_hover > div {

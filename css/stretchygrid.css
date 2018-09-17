@@ -1,3 +1,35 @@
+/*
+.feature-wrapper > div {
+  display:flex;
+  justify-content: center;
+}
+*/
+
+.feature-wrapper {
+  margin-bottom: 32px;
+}
+
+.feature-sub-wrapper {
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+  margin: 0 auto;
+}
+
+#video_stretchy-grid {
+  width: 100%    !important;
+  height: 100%   !important;
+  display: block;
+}
+
+.feature-sub-wrapper:hover {
+  box-shadow: 0 0 10px #ff0;
+}
+
+#row-algorithm {
+  margin-top: 64px;
+}
+
 .algorithm-img {
   width: 100%;
 }
@@ -5,7 +37,7 @@
 .example-img-container {
   position: relative;
   width: 512px;
-  margin: 16px auto;
+  margin: 32px auto;
 }
 
 .example-img {

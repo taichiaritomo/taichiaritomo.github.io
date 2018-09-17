@@ -1,11 +1,17 @@
 #lookas-img-container {
   width: 720px;
   margin: 0 auto;
+  position: relative;
+}
+
+#lookas-img-container:hover {
+  box-shadow: 0 0 10px #ff0;
 }
 
 #lookas-img {
   width: 100%;
   margin: 0 auto;
+  display: block;
 }
 
 #section_Distance #distance-img-captions {

@@ -1,8 +1,8 @@
 /* FONTS */
 
 @font-face {
-    font-family: AuthenticSans;
-    src: url(../fonts/AUTHENTIC-Sans.woff);
+  font-family: AuthenticSans;
+  src: url(../fonts/AUTHENTIC-Sans.woff);
 }
 
 @font-face {
@@ -78,7 +78,7 @@ a.fill-div-link {
   text-align: center;
   font-size: 24px;
   line-height: 24px;
-  font-family: ManifontGrotesk;
+  font-family: 'ManifontGrotesk';
   
   color: transparent;
   -webkit-text-stroke-width: 0.5px;
@@ -88,6 +88,7 @@ a.fill-div-link {
 }
 
 .big-link.special {
+  font-family: 'ManifontGroteskBoldItalic';
   -webkit-text-stroke-color: #0000ff;
 }
 
@@ -157,8 +158,8 @@ h4 {
 
 h5 {
   text-align: left;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 15px;
+  line-height: 20px;
   font-family: 'ManifontGroteskBold', sans-serif;
   font-weight: 600;
   margin-top: 0;
@@ -178,13 +179,11 @@ h6 {
   color: #888;
   font-size: 10px;
   line-height: 13px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  margin-top: 8px;
 }
 
 p {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin: 16px 0 0;
 }
 
 
@@ -219,7 +218,7 @@ body {
 section {
   width: 100%;
   margin: 0 auto;
-  padding: 32px 0;
+  padding: 64px 0;
 }
 
 .wrapper {
@@ -232,14 +231,14 @@ section {
   margin: 0 auto;
   width: 100%;
   max-width: 960px;
-  padding: 0 16px;
+  padding: 32px 16px 0;
   box-sizing: border-box;
 }
 
 .star {
   text-align: center;
   width: 100px;
-  margin: 0 auto;
+  margin: 0 auto 16px;
 }
 
 .row {
@@ -253,6 +252,10 @@ section {
   box-sizing: border-box;
 }
 
+section.project .row {
+  margin-top: 64px;
+}
+
 .blurb {
   margin: 0 auto;
   width: 100%;
@@ -263,13 +266,12 @@ section {
 .col-3-single {
   box-sizing: border-box;
   width: 288px;
-  padding: 16px;
-/*  margin-bottom: 16px;*/
+  padding: 0 16px;
 }
 
 .col-3-double {
   box-sizing: border-box;
-  padding: 16px;
+  padding: 0 16px;
   flex-basis: 576px;
   margin-left: calc((100% - 864px)/2);
   flex-grow: 1;
@@ -278,7 +280,6 @@ section {
 
 .big-image {
   width: 100%;
-/*  max-width: 576px;*/
   margin: 0 auto;
   height: auto;
 }
@@ -287,22 +288,14 @@ section {
   margin: 0 auto;
 }
 
-/*
-video {
-    width: 100%;
-    object-fit: contain;
-    max-height: 550px;
-}
-*/
-
 .colophon {
   text-align: center;
   padding: 0 16px;
+  margin: 64px 0 32px;
   color: #888888;
 }
 
 footer {
-/*  padding-bottom: 32px;*/
   text-align: center;
   border-top: 0.5px solid #000000;
 }

@@ -14,7 +14,7 @@
   display: block;
 }
 
-#section_Distance #distance-img-captions {
+#distance-img-captions {
   padding: 0 16px;
 }
 
@@ -52,4 +52,8 @@
 .feature-wrapper {
   width: 720px;
   margin: 0 auto;
+}
+
+.wrapper.feature {
+  margin: 64px auto;
 }

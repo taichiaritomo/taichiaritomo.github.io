@@ -1,9 +1,34 @@
-/*
-.feature-wrapper > div {
-  display:flex;
-  justify-content: center;
+section#landing {
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+/*  background: #fff;*/
 }
-*/
+
+section#landing > .wrapper {
+/*  z-index: 3;*/
+}
+
+section#landing > video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+section#landing > .row {
+  margin-top: 64px;
+  z-index: 3;
+}
+
+section#samples {
+  background: #eeeeee;
+  z-index: 100;
+  padding-bottom: 0;
+}
+
 
 .feature-wrapper {
   margin-bottom: 32px;

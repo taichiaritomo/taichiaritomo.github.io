@@ -162,7 +162,6 @@ body {
   font-family: 'AuthenticSans', 'Helvetica', sans-serif;
   font-size: 12px;
   line-height: 1.4;
-/*  line-height: 16px;*/
 }
 
 #main {
@@ -270,7 +269,7 @@ section {
 
 #work {
   width: 100%;
-  margin-top: 16px;
+  margin-top: 24px;
   display: flex;
   justify-content:flex-start;
   align-content: flex-start;
@@ -281,7 +280,6 @@ section {
   margin-bottom: 64px;
   margin-right: 64px;
   position: relative;
-/*  display: inline-block;*/
 }
 
 .item.clickable:hover, .item.clickable:active {
@@ -294,12 +292,6 @@ section {
 .item.clickable:hover .img.clickable {
   box-shadow: 0 0 10px #ff0;
 }
-
-/*
-.item > img {
-  height: 128px;
-}
-*/
 
 .item > div > img {
   height: 160px;

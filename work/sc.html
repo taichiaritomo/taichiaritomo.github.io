@@ -23,9 +23,6 @@
   <body>
     
     <div id="main" class="disappear">
-      
-      
-      <section id="section_Contents">
         <div class="header">
           <div id="my-name" onclick="goTo('../index.html')">
             <span id="cross">&#x2715;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="name"><a href="../index.html">Taichi Aritomo /</a></span>
@@ -33,6 +30,9 @@
           <br><br>
           Selected Work at SoundCloud
         </div>
+        
+        
+      <section id="section_Contents">
         <div class="row contents-summary">
           <div class="col-3-single">
             SoundCloud is an online music and audio platform that is used by independent and established creators.
@@ -40,9 +40,6 @@
             The work shown here is from an internship that I completed in 2016 on SoundCloud's Monetization team, working on product design across various points of SoundCloud's revenue base.
           </div>
           <div class="col-3-double" id="contents">
-            <div id="contents_placeholder">
-              <img src="../img/sc/contents_placeholder/placeholder.svg"/>
-            </div>
             <div class="contents_row" onclick="goToSection('#section_RedesigningCheckout')">
               <span class="contents_number">1</span><br>
               <span class="contents_label">A clearer checkout experience</span><br>
@@ -67,17 +64,9 @@
                 <img src="../img/sc/video-ad_preview.gif" id="contents_video-ads_preview"/>
               </div>
             </div>
-<!--
-            <div class="contents_row" onclick="goToSection('#section_WrappingUp')">
-              <span class="contents_number">4</span><br>
-              <span class="contents_label">Wrapping Up</span><br>
-              <span class="contents_label-gray">Thoughts & Acknowledgements</span>
-              <div class="contents_preview" id="contents_wrapping-up_preview">
-                <img src="../_img/sc/contents_placeholder/envelope.svg"/>
-                &#x2603;
-              </div>
+            <div id="contents_placeholder">
+              <img src="../img/sc/contents_placeholder/placeholder.svg"/>
             </div>
--->
           </div>
       </div>
       </section>
@@ -86,7 +75,7 @@
       
       
       
-      <section id="section_SubscriptionsIntro">
+      <section class="project" id="section_SubscriptionsIntro">
         <div class="star">✳︎</div>
         <div class="blurb" id="SubscriptionsOnSoundCloud">
           <h3>Subscriptions on SoundCloud</h3>
@@ -94,18 +83,16 @@
             <img class="feature-icon" src="../img/sc/tour/go-plus_animation.gif"/>
             <img class="feature-icon" src="../img/sc/tour/ad-free_animation.gif"/>
             <img class="feature-icon" src="../img/sc/tour/heart_animation.gif"/>
+            <div class="caption">Animations for a post-purchase tour</div>
           </div>
-          <div class="caption">Animations for a post-purchase tour</div>
-          <p>
             In 2016, SoundCloud launched SoundCloud Go, a subscription product that allows paying users to disable ads and download their favorite tracks. SoundCloud Go+ adds access to a library of licensed tracks provided by music labels, following a model similar to streaming services like Spotify.
-          </p>
         </div>
       </section>
       
       
       
       
-      <section id="section_RedesigningCheckout">
+      <section class="project" id="section_RedesigningCheckout">
         <div class="star">✳︎</div>
         <h3>Redesigning checkout for SoundCloud Go</h3>
         
@@ -165,7 +152,7 @@
       
       
       
-      <section id="section_ReorganizingSubscription">
+      <section class="project" id="section_ReorganizingSubscription">
         <div class="star">✳︎</div>
         <h3>Reorganizing subscription management</h3>
         
@@ -222,7 +209,7 @@
       
     
       
-      <section id="section_VideoAds">
+      <section id="section_VideoAds" class="project">
         <div class="star">✳︎</div>
         <h3>Video ads in the feed</h3>
         
@@ -298,9 +285,9 @@
         <div class="row">
           <div class="col-3-single">
             <h5>Retrospective</h5>
-            As a designer working on monetization, I struggled with the natural tension that arises between designing for user experience and designing to fulfill a tech corporation's revenue demands.
+            As a designer working on monetization, I struggled with the tension between designing for user experience and designing to fulfill a tech corporation's revenue demands.
             <br><br>
-            There was a lot of pressure to incorporate selling into the user experience wherever possible. At first it was challenging to find a good balance and harder yet to argue for it. Over time I became more comfortable with painting the picture around a specific design decision, using the context to find an appropriate response to the intentions of the user and the system. There's a time and place for everything. 
+            When I was stuck, I found it helpful to paint the picture around a design decision, using the context to find a response that appropriately balanced the intentions of the user and the system.
           </div>
 
           <div class="col-3-single">
@@ -311,8 +298,8 @@
           </div>
 
           <div class="col-3-single">
-            <h5>Next Up</h5>
-            The challenge of communicating using a limited set of visual styles got me interested in making design decisions based on visual perception. My next project, Look.as, is a research project that carries that interest further.
+            <h5>After SoundCloud</h5>
+            The challenge of communicating using a limited set of visual styles got me interested in making design decisions based on visual perception. Another project, <a onclick="goTo('lookas.html')" href="lookas.html">Look.as</a>, carried that interest further.
           </div>
         </div>
       </section>

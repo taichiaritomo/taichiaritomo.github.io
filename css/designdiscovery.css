@@ -15,15 +15,25 @@ body {
 }
 
 .project-info {
-  width: 50%;
+  width: 256px;
   position: absolute;
-  bottom: 16px;
+  bottom: 0;
   left: 16px;
+}
+
+.project-info .caption {
+  margin-top: 16px;
+}
+
+.project-info h2.pinkoutline {
+  color: #888;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffa0b0;
+  -webkit-text-fill-color: #fff;
 }
 
 .blurb {
   width: 288px;
-  padding: 16px;
   box-sizing: border-box;
   text-align: left;
 }
@@ -34,7 +44,7 @@ body {
 }
 
 #p2-sway {
-  padding: 64px 0;
+  padding: 0 0 64px;
 }
 
 #p2-gif {
@@ -102,7 +112,7 @@ body {
 }
 
 #p3 .project-info {
-  bottom: 128px;
+/*  bottom: 128px;*/
 }
 
 #p3-detail {

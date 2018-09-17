@@ -20,8 +20,13 @@
   <body>
         
     <div id="main" class="disappear">
-      <div class="wrapper">
-        <section>
+      <section id="landing">
+        <video id="video_stretchy-grid" preload="auto" loop muted playsinline>
+          <source src="../img/stretchy-grid/comp1.mp4" type="video/mp4" data-object-fit="contain">
+          Your browser does not support playback for this html5 video.
+        </video>
+        
+        <div class="wrapper">
           <div class="header">
             <div id="my-name" onclick="goTo('../index.html')">
               <span id="cross">&#x2715;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="name"><a href="../index.html">Taichi Aritomo /</a></span>
@@ -29,37 +34,23 @@
             <br><br>
             Stretchy Grid
           </div>
-        </section>
-      </div>
-      <section>
-        <div class="feature-wrapper">
-          <div class="feature-sub-wrapper">
-            <a class="fill-div-link" href="http://taichi.pink/deform-grid/" target="_blank"></a>
-            <video id="video_stretchy-grid" preload="auto" loop muted playsinline>
-                <source src="../img/stretchy-grid/comp1.mp4" type="video/mp4" data-object-fit="contain">
-                Your browser does not support playback for this html5 video.
-            </video>
-          </div>
         </div>
         
-          <div class="row">
+        <div class="row">
             <div class="col-3-single">
-              <p>
                 Grids are powerful, because they establish an initial state to which we can apply and measure changes.
-              </p>
-            </div>
-            <div class="col-3-single">
-              <p>
+                <br><br>
                 Using p5.js and HTML Canvas, I built an interface for manipulating a regular grid with points of "force".
-              </p>
-            </div>
-            <div class="col-3-single">
-              <p>
+                <br><br><br>
                 <a href="http://taichi.pink/deform-grid/" target="_blank"><span class="big-link special">Try it!</span></a>
-              </p>
             </div>
-          </div>
+        </div>
         
+      </section>
+      
+      
+      
+      <section id="samples">
         <div class="wrapper">
           <div class="example-img-container">
             <img class="example-img" src="../img/stretchy-grid/daikon-grid.jpg"/>
@@ -73,6 +64,13 @@
         
       
           <div class="row" id="row-algorithm">
+            
+            <div class="col-3-single">
+              <h5>Technical Information</h5>
+              You can switch between two algorithms that simulate competing forces.
+              <br><br>
+              The first algorithm applies the forces in order, making effects more predictable. The second algorithm applies the forces simultaneously, leading to unexpected results.
+            </div>
             <div class="col-3-single">
               <img class="algorithm-img" src="../img/stretchy-grid/hokkaido-sequential.jpg"/>
               <span class="caption">1. Sequential - Interpolating displacements</span>
@@ -81,23 +79,20 @@
               <img class="algorithm-img" src="../img/stretchy-grid/hokkaido-simultaneous.jpg"/>
               <span class="caption">2. Simultaneous - Summing displacements</span>
             </div>
-            <div class="col-3-single">
-              <h5>Technical Information</h5>
-              You can switch between two algorithms that simulate competing forces.
-              <br><br>
-              The first algorithm applies the forces in order, making effects more predictable. The second algorithm applies the forces simultaneously, leading to unexpected results.
-            </div>
+            
           </div>
-        </section>
-
-      <section>
+        
+        
         <div class="wrapper">
           <div class="colophon">
             Open License images from <a href="http://www1.nhk.or.jp/archives/creative/" target="_blank">NHK Creative Library</a> and
             <a href="http://archive.org" target="_blank">Internet Archive</a>.
           </div>
         </div>
-      </section>
+        </section>
+
+
+        
 
       
       <footer>

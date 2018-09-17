@@ -7,7 +7,7 @@
 /*  width: 100%;*/
   min-height: 400px;
   height: 80vh;
-  padding: 16px;
+  padding: 0 16px;
   display: flex;
   justify-content: center;
 }
@@ -28,6 +28,13 @@
 section .col-3-single {
   display: flex;
   align-items: flex-end;
+}
+
+section .col-3-double p {
+  text-align: center;
+}
+
+.row {
   color: #888888;
 }
 

@@ -10,6 +10,11 @@
 
 
 
+#main {
+  background: #ffffff;
+}
+
+
 
 
 /* CONTENTS MENU */
@@ -19,7 +24,7 @@
 }
 
 .contents-summary {
-  margin-bottom: 16px;
+/*  margin-bottom: 16px;*/
 }
 
 #contents {
@@ -92,37 +97,21 @@
 }
 
 #contents_placeholder {
-  width: 256px;
-  padding: 16px;
+  padding: 0 16px;
   height: 100%;
-/*  outline: 1px solid #000;*/
-/*  outline-offset: -1px;*/
-  overflow: hidden;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-#contents_placeholder_diagonal1 {
-  background: #000;
-  width: 400%;
-  height: 1px;
-  position: absolute;
-  top: 0;
-  left: -200%;
-  transform-origin: center;
-  transform: rotate(30deg);
+.contents_row:hover ~ #contents_placeholder {
+  display: none;
 }
 
-#contents_placeholder_diagonal2 {
-  background: #000;
-  width: 400%;
-  height: 1px;
-  position: absolute;
-  top: 0;
-  left: -100%;
-  transform-origin: center;
-  transform: rotate(-30deg);
+video {
+    width: 100%;
+    object-fit: contain;
+    max-height: 550px;
 }
 
 
@@ -141,19 +130,11 @@ h5.role {
 .row.fillHeight {
   align-items: center;
   min-height: 540px;
+  height: 70vh;
+/*
+  min-height: 540px;
   max-height: 80vh;
-}
-
-.row.contents-summary {
-  margin-top: 32px;
-}
-
-.row.project-summary {
-  margin-top: 48px;
-}
-
-.row.project-feature {
-  padding: 16px 0;
+*/
 }
 
 footer {
@@ -201,15 +182,17 @@ footer {
 /* ANIMATED ICONS */
 
 #feature-icon-container {
-  margin: 32px auto 0;
-  width: 176px;
+  margin: 32px auto 32px;
+  width: 240px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #feature-icon-container > img {
   width: 45px;
   height: 45px;
+  padding: 0 8px;
 }
 
 
@@ -231,7 +214,7 @@ footer {
 }
 
 #OrganizingIntentions > .col-3-double {
-/*  padding: 32px;*/
+  padding: 32px;
   background: #ffffff;
 }
 
@@ -270,10 +253,4 @@ footer {
 #section_WrappingUp .row {
   margin-top: 48px;
   margin-bottom: 32px;
-}
-
-video {
-    width: 100%;
-    object-fit: contain;
-    max-height: 550px;
 }

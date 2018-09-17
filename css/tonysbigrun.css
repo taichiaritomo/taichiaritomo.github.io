@@ -28,12 +28,18 @@ body {
   position: relative;
 }
 
+video {
+    width: 100%;
+    object-fit: contain;
+    max-height: 550px;
+}
+
 
 
 /* origin of icongrid will be at dynamically determined center point of section. */
 #icongrid {
   position: relative;
-  top: 96px;
+  top: 64px;
   width: 0;
 /*  top: 35%;*/
 /*  width: 100%;*/
@@ -85,4 +91,8 @@ body {
 .friend-sprite {
   width: 42px;
   height: 111px;
+}
+
+section#architecture {
+  padding-bottom: 0;
 }

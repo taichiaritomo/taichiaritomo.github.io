@@ -271,3 +271,9 @@ footer {
   margin-top: 48px;
   margin-bottom: 32px;
 }
+
+video {
+    width: 100%;
+    object-fit: contain;
+    max-height: 550px;
+}

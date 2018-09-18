@@ -19,8 +19,15 @@
 
 @font-face {
   font-family: ManifontGroteskBookItalic;
-  src: url(../fonts/manifontgroteskbookoitalic-webfont.woff);
+  src: url(../fonts/manifontgroteskbookitalic-webfont.woff);
   font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: ManifontGroteskBoldItalic;
+  src: url(../fonts/manifontgroteskbolditalic-webfont.woff);
+  font-weight: 600;
   font-style: italic;
 }
 

@@ -6,26 +6,26 @@
 }
 
 @font-face {
-  font-family: ManifontGroteskBold;
+  font-family: 'ManifontGroteskBold';
   src: url(../fonts/manifontgroteskbold-webfont.woff);
   font-weight: 600;
 }
 
 @font-face {
-  font-family: ManifontGrotesk;
+  font-family: 'ManifontGrotesk';
   src: url(../fonts/manifontgroteskbook-webfont.woff);
   font-weight: 400;
 }
 
 @font-face {
-  font-family: ManifontGroteskBookItalic;
+  font-family: 'ManifontGroteskBookItalic';
   src: url(../fonts/manifontgroteskbookitalic-webfont.woff);
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: ManifontGroteskBoldItalic;
+  font-family: 'ManifontGrotesk';
   src: url(../fonts/manifontgroteskbolditalic-webfont.woff);
   font-weight: 600;
   font-style: italic;
@@ -95,8 +95,10 @@ a.fill-div-link {
 }
 
 .big-link.special {
-  font-family: 'ManifontGroteskBoldItalic';
+  font-family: 'ManifontGrotesk';
   -webkit-text-stroke-color: #0000ff;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .big-link:hover {

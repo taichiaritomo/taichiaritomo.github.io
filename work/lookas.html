@@ -39,12 +39,12 @@
         <div class="row">
           <div class="col-3-single">
             <p>
-              In a seminar at Rutgers University, I researched the potential of using computation to inform design decisions based on visual perception instead of aesthetics.
+              In a seminar at Rutgers University, I researched the potential of using computation to inform <em>design decisions based on visual perception instead of aesthetics</em>.
             </p>
           </div>
           <div class="col-3-single">
             <p>
-              I created a simple design tool that doesn't assume any value-systems about "good design". It just uses a computer-vision algorithm to highlight areas that are likely to attract visual attention.
+              I created a simple tool that doesn't assume any value-systems about "good design". It just uses a computer-vision algorithm to highlight areas that are likely to attract visual attention.
               <br><br>
             </p>
           </div>
@@ -85,17 +85,27 @@
             <p>
               The tool was built with HTML Canvas, Javascript, and Quill, a WYSIWYG text-editor API. It uses the Spectral Residual algorithm, a fast but accurate algorithm that uses spectral analysis to simulate human visual attention.
             </p>
-          </div>
-          <div class="col-3-single">
-            <br>
             <p>
               To make calculations fast enough for real-time updates, I implemented a Fast-Fourier Transform algorithm that was optimized for calculations specific to spectral analysis. The adjustable <em>viewing distance</em> is simulated by controlling the sample size of the image.
             </p>
           </div>
           <div class="col-3-single">
-            <br>
+            <h5>Testing & Early Conclusions</h5>
             <p>
-               Built with HTML Canvas, Javascript, and Quill, a WYSIWYG text-editor API.
+              In a small experiment, ten users were asked to design a notice with perceptual feedback, and ten were asked to design the same notice without perceptual feedback. It was difficult to see if there were any obvious differences in their resulting designs, and only some users said it had changed how they approached design.
+            </p>
+            <p>
+              The experiment prompt was probably too open-ended to draw any isolated differences. Other feedback from the experiments guided me to change how the perceptual feedback was represented.
+            </p>
+            
+          </div>
+          <div class="col-3-single">
+            <h5>Future Work</h5>
+            <p>
+              My next step for this project is to create a very simple web application that accepts any image source and scans it to provide perceptual feedback. If it were to download an image from a URL at regular intervals, then it could fit into a design workflow that involves exporting to a cloud-based folder.
+            </p>
+            <p>
+              I would then try this workflow in some graphic exercises, such as the Architectural Lobby's <em><a href="http://kerningforacause.us/" target="_blank">Kerning for a Cause</a></em> competition.
             </p>
           </div>
         </div>

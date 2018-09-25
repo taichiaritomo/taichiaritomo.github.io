@@ -287,6 +287,15 @@ section.project .row {
   width: 100%;
 }
 
+.col-3-double.left {
+  margin-left: 0;
+  flex-grow: 0;
+}
+
+.col-3-single.right {
+/*  margin-left: calc((100%-864px)/2);*/
+}
+
 .big-image {
   width: 100%;
   margin: 0 auto;

@@ -28,6 +28,7 @@
   <svg id="constellation-container">
   </svg>
   <div id="main" class="disappear">
+<!--
     <div draggable="true" id="kiss_hover">
       <div>
         Kiss.<br>
@@ -35,6 +36,7 @@
         2017.
       </div>
     </div>
+-->
     <section id="masthead">
       <h1>Hiya ~</h1>
       <p>
@@ -63,6 +65,16 @@
     <h1>Efforts</h1>
     <div id="work">
       
+      <div class="item graphics" id="item_kiss">
+        <div class="img">
+<!--          <img id="item_kiss_img" src="img/site/kissOptimized.gif" alt=""/>-->
+        </div>
+        <div class="description">kiss.<br>
+          Animated pattern tile.
+        <br><span class="gray">2017</span>
+        </div>
+      </div>
+      
       <div class="item interfaces clickable"  onclick="goTo('work/lookas.html')">
         <div class="img clickable" id="item_lookas">
           <img src="img/lookas/overview/lookas_34.jpg" alt=""/>
@@ -82,10 +94,23 @@
         <div class="description">
           <a href="work/sc.html">
             $ound¢loud.<br>
-            Monetization and UI
-            design work from an<br>
+            UI design work from an<br>
             internship.<br>
             <span class="gray">2016</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="item interfaces graphics clickable" onclick="goTo('work/stretchygrid.html')">
+        <div class="img clickable" id="item_deformgrid">
+          <img src="img/stretchy-grid/preview2.png" alt=""/>
+        </div>
+        <div class="description">
+          <a href="work/stretchygrid.html">
+            Stretchy Grid.<br>
+            An interface for manipulating grids,<br>
+            made with p5.js<br>
+            <span class="gray">2018</span>
           </a>
         </div>
       </div>
@@ -116,20 +141,6 @@
         </div>
       </div>
       
-      <div class="item interfaces graphics clickable" onclick="goTo('work/stretchygrid.html')">
-        <div class="img clickable" id="item_deformgrid">
-          <img src="img/stretchy-grid/preview2.png" alt=""/>
-        </div>
-        <div class="description">
-          <a href="work/stretchygrid.html">
-            Stretchy Grid.<br>
-            An interface for manipulating grids,<br>
-            made with p5.js<br>
-            <span class="gray">2018</span>
-          </a>
-        </div>
-      </div>
-      
       <div class="item graphics clickable" onclick="goTo('work/illustrations.html')">
         <div class="img clickable" id="item_illustrations">
           <img src="img/tedxrutgers/puddle.jpg" alt=""/>
@@ -142,8 +153,6 @@
           </a>
         </div>
       </div>
-      
-      
       
       <div class="item interfaces clickable" onclick="goTo('work/designdiscovery.html')">
         <div class="img clickable" id="item_designdiscovery">

@@ -25,7 +25,22 @@ function offset(el) {
 }
 
 /* Kiss: Hover Flood Effect*/
-var kiss_img = document.querySelector('#kiss_hover');
+//var kiss_img = document.querySelector('#item_kiss_img');
+//var myHtml = document.querySelector('html');
+//var bg = document.querySelector('#bg-gradient');
+//kiss_img.addEventListener('mouseenter', function() {
+//  var myOffset = offset(kiss_img);
+//  bg.style.backgroundPosition = (myOffset.left) + 'px ' + (myOffset.top) + 'px';
+//  bg.classList.add('flood');
+//});
+//kiss_img.addEventListener('mouseleave', function() {
+//  bg.style.backgroundPosition = 'top left';
+//  bg.classList.remove('flood');
+//})
+
+
+
+var kiss_img = document.querySelector('#item_kiss .img');
 var myHtml = document.querySelector('html');
 var bg = document.querySelector('#bg-gradient');
 
@@ -99,7 +114,7 @@ document.addEventListener("touchstart", function(){}, true);
 
 
 //Make the DIV element draggagle:
-dragElement(document.getElementById("kiss_hover"));
+//dragElement(document.getElementById("kiss_hover"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;

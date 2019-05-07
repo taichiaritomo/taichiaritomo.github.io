@@ -37,6 +37,13 @@ bigwindow.querySelectorAll('a').forEach( element => {
 	});
 });
 
+
+// document.querySelectorAll('#email').forEach( element => {
+// 	element.addEventListener('click', e => {
+// 		element.innerHTML = "&#116;&#097;&#105;&#099;&#104;&#105;&#046;&#097;&#114;&#105;&#116;&#111;&#109;&#111;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;";
+// 	});
+// });
+
 // document.querySelectorAll('main').forEach( element => {
 // 	element.classList.add('hidden');
 // 	setTimeout(()=>{

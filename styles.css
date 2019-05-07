@@ -194,6 +194,7 @@ main .content-wrapper p a {
   text-decoration: none;
   border-bottom: 1px dotted;
   color: inherit;
+  cursor: pointer;
 }
 main .content-wrapper p a:hover {
   border-bottom: 1px solid;

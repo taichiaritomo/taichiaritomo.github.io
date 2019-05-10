@@ -18,7 +18,7 @@ bigwindow.parentNode.appendChild(shadow);
 // Pointer's shadow
 let pointershadow = new Image(18, 19);
 pointershadow.classList.add('pointer-shadow')
-pointershadow.src = 'pointer.png';
+pointershadow.src = window.location.origin + '/pointer.png';
 shadow.appendChild(pointershadow);
 
 // Show pointer's shadow when hovering over big window
@@ -35,6 +35,14 @@ bigwindow.querySelectorAll('a').forEach( element => {
 	element.addEventListener('mouseout', e => {
 		shadow.querySelector('.link-'+element.dataset.linkIndex).classList.remove('hover');
 	});
+});
+
+// Shuffle a list of elements
+document.querySelectorAll('.sketches .content-wrapper').forEach( wrapperElement => {
+	console.log('helo');
+	for (var i = wrapperElement.children.length; i >= 0; i--) {
+    wrapperElement.appendChild(wrapperElement.children[Math.random() * i | 0]);
+	}
 });
 
 

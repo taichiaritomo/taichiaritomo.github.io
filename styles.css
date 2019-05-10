@@ -73,6 +73,7 @@ body {
   margin: -20px;
 }
 .my-big-window:hover ~ .my-big-window.shadow .pointer-shadow {
+  background: url(pointer.png);
   opacity: 1;
 }
 .my-big-window .img-wrapper {
@@ -242,7 +243,6 @@ main.sketches .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: row-reverse;
 }
 main.sketches .content-wrapper .sketch {
   margin: 2em;

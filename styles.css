@@ -83,7 +83,8 @@ body {
 }
 .my-big-window .img-wrapper img.cover {
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   opacity: 0.5;
 }
 

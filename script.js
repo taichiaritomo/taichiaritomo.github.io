@@ -39,7 +39,7 @@ bigwindow.querySelectorAll('a').forEach( element => {
 
 // Shuffle a list of elements
 document.querySelectorAll('.sketches .content-wrapper').forEach( wrapperElement => {
-	console.log('helo');
+	// console.log('helo');
 	for (var i = wrapperElement.children.length; i >= 0; i--) {
     wrapperElement.appendChild(wrapperElement.children[Math.random() * i | 0]);
 	}

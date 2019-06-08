@@ -24,7 +24,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  margin: 2em;
+  margin: 1em;
   font-size: 8px;
 }
 
@@ -32,9 +32,11 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 2em;
+  margin: 1em;
   width: 50vh;
   height: 50vh;
+  max-width: calc(100vw - 2em);
+  max-height: calc(100vw - 2em);
   border: 1px solid;
 }
 .my-big-window::before, .my-big-window::after {
@@ -184,9 +186,9 @@ main.visible {
   transition: opacity 1s;
 }
 main .content-wrapper {
-  padding: 4em 2em;
+  padding: 4em 1em;
   pointer-events: auto;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 main .content-wrapper .content {
   max-width: 24em;
@@ -212,7 +214,7 @@ main .content-wrapper figure a {
   display: block;
 }
 main .content-wrapper figure a:hover {
-  outline: 2em solid #F6BF9C;
+  outline: 1em solid #F6BF9C;
 }
 main .content-wrapper figure figcaption {
   position: relative;
@@ -231,26 +233,84 @@ main.info .content-wrapper {
   background: #fbff97;
 }
 
-main.sketches::before {
+main.examples-main::before {
   background: linear-gradient(to bottom, rgba(255, 217, 227, 0), #ffd9e3);
 }
-main.sketches::after {
+main.examples-main::after {
   background: linear-gradient(to top, rgba(255, 217, 227, 0), #ffd9e3);
 }
-main.sketches .content-wrapper {
-  padding: 0;
+main.examples-main .examples {
+  min-height: 70vh;
+  padding: 0.5em;
+  pointer-events: auto;
   background: #ffd9e3;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  align-content: flex-start;
 }
-main.sketches .content-wrapper .sketch {
-  margin: 2em;
-  max-width: 12em;
+main.examples-main .examples .block {
+  height: 168px;
+  margin: 0.5em;
+  overflow: hidden;
 }
-main.sketches .content-wrapper .sketch img {
-  width: 100%;
+main.examples-main .examples .block.image a {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  vertical-align: top;
+  line-height: 25px;
+}
+main.examples-main .examples .block.image a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14.88%;
+  height: 25px;
+  pointer-events: none;
+  background: url(arrow.svg);
+  background-size: 100% 100%;
+  opacity: 0;
+  transition: opacity 0.05s;
+}
+main.examples-main .examples .block.image img {
+  height: 100%;
+}
+main.examples-main .examples .block.image.show-arrow a:after {
+  opacity: 1;
+}
+main.examples-main .examples .block.non-image {
+  width: 168px;
+  font-size: 1em;
+  color: #ffd9e3;
+  background: url(checker.svg);
+  position: relative;
+}
+main.examples-main .examples .block.non-image p {
+  width: 168px;
+  margin: 0;
+  padding: 0.5em;
+}
+main.examples-main .examples .block.non-image:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  background: #ffd9e3;
+  cursor: text;
+  opacity: 1;
+  transition: opacity 0.05s linear;
+}
+main.examples-main .examples.mouseover-on-voids .block.non-image:before {
+  opacity: 0;
+}
+main.examples-main .examples.mousedown-on-voids .block.non-image {
+  background: black;
 }
 
 main.friends::before {

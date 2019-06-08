@@ -1,4 +1,5 @@
 // Constants
+$outer-margin: 1em
 $info-color-1: rgba(251, 255, 151, 1)
 $info-color-0: rgba(251, 255, 151, 0)
 $sketches-color-1: rgba(255, 217, 227, 1)
@@ -23,6 +24,23 @@ $friends-color-0: rgba(61, 251, 178, 0)
 	display: flex
 	justify-content: center
 	align-items: center
+// Produce a faded background. $color-0 is the 0-opacity version of $color-1
+=gradientEdges( $color-0, $color-1 )
+	&::before
+		background: linear-gradient(to bottom, $color-0, $color-1)
+	&::after
+		background: linear-gradient(to top, $color-0, $color-1)
+=dottedBorder
+	/*Horizontal*/
+	background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%)
+	background-position: bottom
+	background-size: 3px 1px
+	background-repeat: repeat-x
+	/*Vertical*/
+	background-image: linear-gradient(black 33%, rgba(255,255,255,0) 0%)
+	background-position: right
+	background-size: 1px 3px
+	background-repeat: repeat-y
 
 // Global
 *
@@ -42,16 +60,18 @@ body
 	position: absolute
 	bottom: 0
 	left: 0
-	margin: 2em
+	margin: $outer-margin
 	font-size: 8px
 
 .my-big-window
 	position: absolute
 	top: 0
 	right: 0
-	margin: 2em
+	margin: $outer-margin
 	width: 50vh
 	height: 50vh
+	max-width: calc(100vw - #{2*$outer-margin})
+	max-height: calc(100vw - #{2*$outer-margin})
 	border: 1px solid
 	&::before, &::after
 		content: ""
@@ -101,7 +121,6 @@ body
 		margin-left: -7px // pointer finger
 	.quadrant a:hover
 		background: lightbeige
-	
 nav.my-big-window
 	display: flex
 	flex-wrap: wrap
@@ -148,7 +167,6 @@ nav.my-big-window
 			font-style: italic
 	&:hover .labels
 		opacity: 0
-
 main
 	position: relative
 	margin: 70vh 0 0
@@ -165,9 +183,9 @@ main
 		opacity: 1
 		transition: opacity 1s
 	.content-wrapper
-		padding: 4em 2em
+		padding: 4em $outer-margin
 		pointer-events: auto
-		min-height: 100vh
+		min-height: 70vh
 		.content
 			max-width: 24em
 			margin: 0 auto
@@ -186,39 +204,87 @@ main
 			a
 				display: block
 				&:hover
-					outline: 2em solid #F6BF9C
+					outline: $outer-margin solid #F6BF9C
 			figcaption
 				position: relative
 				margin-top: 0.5em
 				font-size: 0.6666em
 				z-index: 10
 main.info
-	&::before
-		background: linear-gradient(to bottom, $info-color-0, $info-color-1)
-	&::after
-		background: linear-gradient(to top, $info-color-0, $info-color-1)
+	+gradientEdges($info-color-0, $info-color-1)
 	.content-wrapper
 		background: $info-color-1
-main.sketches
-	&::before
-		background: linear-gradient(to bottom, $sketches-color-0, $sketches-color-1)
-	&::after
-		background: linear-gradient(to top, $sketches-color-0, $sketches-color-1)
-	.content-wrapper
-		padding: 0
+main.examples-main
+	+gradientEdges($sketches-color-0, $sketches-color-1)
+	.examples
+		min-height: 70vh
+		padding: 0.5*$outer-margin
+		pointer-events: auto
 		background: $sketches-color-1
-		+flexcenter
+		display: flex
 		flex-wrap: wrap
-		.sketch
-			margin: 2em
-			max-width: 12em
-			img
-				width: 100%
+		align-content: flex-start
+		.block
+			// height: 25vh
+			height: 168px
+			margin: 0.5*$outer-margin
+			overflow: hidden
+			&.image
+				a
+					position: relative
+					top: 0
+					left: 0
+					width: auto
+					height: 100%
+					vertical-align: top
+					line-height: 25px
+					// display: block
+					&:after
+						content: ""
+						position: absolute
+						top: 0
+						right: 0
+						width:  14.88% // ~one-seventh
+						height: 25px   // ~one-seventh~
+						pointer-events: none
+						background: url(arrow.svg)
+						background-size: 100% 100%
+						opacity: 0
+						transition: opacity 0.05s
+				img
+					height: 100%
+				&.show-arrow a:after
+					opacity: 1
+			&.non-image
+				// width: 25vh
+				width: 168px
+				font-size: 1em
+				color: $sketches-color-1
+				background: url(checker.svg)
+				position: relative
+				p
+					width: 168px
+					margin: 0
+					padding: 0.5*$outer-margin
+				&:before
+					content: ""
+					display: block
+					position: absolute
+					top: 1px
+					left: 1px
+					width: calc(100% - 2px)
+					height: calc(100% - 2px)
+					background: $sketches-color-1
+					cursor: text
+					opacity: 1
+					transition: opacity 0.05s linear
+	.examples.mouseover-on-voids .block.non-image:before
+		// background: none
+		opacity: 0
+	.examples.mousedown-on-voids .block.non-image
+		background: black
 main.friends
-	&::before
-		background: linear-gradient(to bottom, $friends-color-0, $friends-color-1)
-	&::after
-		background: linear-gradient(to top, $friends-color-0, $friends-color-1)
+	+gradientEdges($friends-color-0, $friends-color-1)
 	.content-wrapper
 		background: $friends-color-1
 	

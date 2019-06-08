@@ -284,7 +284,6 @@ main.examples-main .examples .block.image.show-arrow a:after {
 main.examples-main .examples .block.non-image {
   width: 168px;
   font-size: 1em;
-  color: #ffd9e3;
   background: url(checker.svg);
   position: relative;
 }
@@ -292,6 +291,7 @@ main.examples-main .examples .block.non-image p {
   width: 168px;
   margin: 0;
   padding: 0.5em;
+  color: transparent;
 }
 main.examples-main .examples .block.non-image:before {
   content: "";

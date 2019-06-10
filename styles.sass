@@ -225,64 +225,87 @@ main.examples-main
 		flex-wrap: wrap
 		align-content: flex-start
 		.block
-			// height: 25vh
-			height: 168px
 			margin: 0.5*$outer-margin
 			overflow: hidden
+			&.split
+				display: none
 			&.image
+				height: 168px
+				img
+					height: 100%
 				a
 					position: relative
 					top: 0
 					left: 0
-					width: auto
 					height: 100%
 					vertical-align: top
 					line-height: 25px
-					// display: block
+					// link arrow follows aspect ratio
 					&:after
 						content: ""
 						position: absolute
 						top: 0
 						right: 0
-						width:  14.88% // ~one-seventh
-						height: 25px   // ~one-seventh~
+						width: 14.88% // ~one-seventh
+						height: 25px  // ~one-seventh
 						pointer-events: none
 						background: url(arrow.svg)
 						background-size: 100% 100%
 						opacity: 0
 						transition: opacity 0.05s
-				img
-					height: 100%
 				&.show-arrow a:after
 					opacity: 1
 			&.non-image
-				// width: 25vh
 				width: 168px
-				font-size: 1em
+				height: 168px
 				background: url(checker.svg)
-				position: relative
-				p
-					width: 168px
-					margin: 0
-					padding: 0.5*$outer-margin
-					color: transparent
 				&:before
 					content: ""
 					display: block
-					position: absolute
-					top: 1px
-					left: 1px
-					width: calc(100% - 2px)
+					margin: 1px
+					width: calc(100% - 2px) 
 					height: calc(100% - 2px)
 					background: $sketches-color-1
-					cursor: text
 					opacity: 1
 					transition: opacity 0.05s linear
+			&.non-image.main
+				.content
+					display: none
+	.examples.open
+		// .block.image
+		// 	margin: $outer-margin 0.5*$outer-margin
+		// 	&.right-end
+		// 		margin: 0 0.5*$outer-margin $outer-margin
+		.block.non-image
+			display: initial
+			// &.left-end
+			// 	height: calc(168px + #{$outer-margin})
+			// 	margin: $outer-margin 0.5*$outer-margin 0
+			// 	align-self: flex-start
+			// 	&:before
+			// 		opacity: 0
+			// &.right-end
+			// 	height: calc(168px + #{$outer-margin})
+			// 	margin: 0 0.5*$outer-margin $outer-margin
+			// 	align-self: flex-end
+			// 	&:before
+			// 		opacity: 0
+			&.main
+				width: calc(100% - #{$outer-margin})
+				height: auto
+				margin: 0.5*$outer-margin
+				padding: 1px
+				&:before
+					display: none
+				.content
+					width: 100%
+					padding: $outer-margin
+					background: $sketches-color-1
+					display: block
+					p
+						margin: 0
 	.examples.mouseover-on-voids .block.non-image:before
-		// background: none
 		opacity: 0
-	.examples.mousedown-on-voids .block.non-image
-		background: black
 main.friends
 	+gradientEdges($friends-color-0, $friends-color-1)
 	.content-wrapper

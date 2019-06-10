@@ -230,6 +230,7 @@ main.examples-main
 		background: $sketches-color-1
 		display: flex
 		flex-wrap: wrap
+		align-items: center
 		align-content: flex-start
 		.block
 			margin: 0.5*$outer-margin
@@ -263,20 +264,33 @@ main.examples-main
 				&.show-arrow a:after
 					opacity: 1
 			&.non-image
+				position: relative
 				width: 168px
-				height: 168px
-				background: url(checker.svg)
-				background-position: 0 0
+				height: 72px
 				cursor: zoom-in
 				a
 					border-bottom: 1px solid
-					
 				&:before
 					content: ""
 					display: block
-					margin: 1px
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					z-index: 0
+					width: 100%
+					height: 4px
+					background: url(checker.svg)
+				&:after
+					content: ""
+					display: block
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					z-index: 0
 					width: calc(100% - 2px) 
-					height: calc(100% - 2px)
+					height: 2px
 					background: $sketches-color-1
 					opacity: 1
 					transition: opacity 0.1s linear
@@ -288,8 +302,10 @@ main.examples-main
 			display: initial
 			cursor: text
 			&.left-end, &.right-end
+				margin-top: calc(#{(168 - 72) / 2}px + #{$outer-margin})
+				margin-bottom: calc(#{(168 - 72) / 2}px + #{$outer-margin}) 
 				cursor: zoom-out
-				&:before
+				&:after
 					opacity: 0
 			&.main
 				width: calc(100% - #{$outer-margin})
@@ -297,15 +313,20 @@ main.examples-main
 				margin: 0.5*$outer-margin
 				padding: 1px
 				&:before
-					display: none
+					height: 100%
+				&:after
+					opacity: 0
+				// &:before
+				// 	display: none
 				.content
 					width: 100%
 					padding: $outer-margin
 					display: block
 					p
 						margin: 0
-	.examples.mouseover-on-voids .block.non-image:before
-		opacity: 0
+	.examples.mouseover-on-voids .block.non-image
+		&:after
+			opacity: 0
 	// .examples.mouseover-on-voids .block.non-image
 	// 	&.left-end, &.right-end
 	// 		background-position: 1px 0

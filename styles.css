@@ -256,6 +256,7 @@ main.examples-main .examples {
   background: #ffd9e3;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   align-content: flex-start;
 }
 main.examples-main .examples .block {
@@ -296,10 +297,9 @@ main.examples-main .examples .block.image.show-arrow a:after {
   opacity: 1;
 }
 main.examples-main .examples .block.non-image {
+  position: relative;
   width: 168px;
-  height: 168px;
-  background: url(checker.svg);
-  background-position: 0 0;
+  height: 72px;
   cursor: zoom-in;
 }
 main.examples-main .examples .block.non-image a {
@@ -308,9 +308,25 @@ main.examples-main .examples .block.non-image a {
 main.examples-main .examples .block.non-image:before {
   content: "";
   display: block;
-  margin: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 100%;
+  height: 4px;
+  background: url(checker.svg);
+}
+main.examples-main .examples .block.non-image:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
   width: calc(100% - 2px);
-  height: calc(100% - 2px);
+  height: 2px;
   background: #ffd9e3;
   opacity: 1;
   transition: opacity 0.1s linear;
@@ -323,9 +339,11 @@ main.examples-main .examples.open .block.non-image {
   cursor: text;
 }
 main.examples-main .examples.open .block.non-image.left-end, main.examples-main .examples.open .block.non-image.right-end {
+  margin-top: calc(48px + 1em);
+  margin-bottom: calc(48px + 1em);
   cursor: zoom-out;
 }
-main.examples-main .examples.open .block.non-image.left-end:before, main.examples-main .examples.open .block.non-image.right-end:before {
+main.examples-main .examples.open .block.non-image.left-end:after, main.examples-main .examples.open .block.non-image.right-end:after {
   opacity: 0;
 }
 main.examples-main .examples.open .block.non-image.main {
@@ -335,7 +353,10 @@ main.examples-main .examples.open .block.non-image.main {
   padding: 1px;
 }
 main.examples-main .examples.open .block.non-image.main:before {
-  display: none;
+  height: 100%;
+}
+main.examples-main .examples.open .block.non-image.main:after {
+  opacity: 0;
 }
 main.examples-main .examples.open .block.non-image.main .content {
   width: 100%;
@@ -345,7 +366,7 @@ main.examples-main .examples.open .block.non-image.main .content {
 main.examples-main .examples.open .block.non-image.main .content p {
   margin: 0;
 }
-main.examples-main .examples.mouseover-on-voids .block.non-image:before {
+main.examples-main .examples.mouseover-on-voids .block.non-image:after {
   opacity: 0;
 }
 

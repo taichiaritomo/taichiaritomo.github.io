@@ -249,15 +249,22 @@ main.examples-main .examples {
   align-content: flex-start;
 }
 main.examples-main .examples .block {
-  height: 168px;
   margin: 0.5em;
   overflow: hidden;
+}
+main.examples-main .examples .block.split {
+  display: none;
+}
+main.examples-main .examples .block.image {
+  height: 168px;
+}
+main.examples-main .examples .block.image img {
+  height: 100%;
 }
 main.examples-main .examples .block.image a {
   position: relative;
   top: 0;
   left: 0;
-  width: auto;
   height: 100%;
   vertical-align: top;
   line-height: 25px;
@@ -275,42 +282,50 @@ main.examples-main .examples .block.image a:after {
   opacity: 0;
   transition: opacity 0.05s;
 }
-main.examples-main .examples .block.image img {
-  height: 100%;
-}
 main.examples-main .examples .block.image.show-arrow a:after {
   opacity: 1;
 }
 main.examples-main .examples .block.non-image {
   width: 168px;
-  font-size: 1em;
-  color: #ffd9e3;
+  height: 168px;
   background: url(checker.svg);
-  position: relative;
-}
-main.examples-main .examples .block.non-image p {
-  width: 168px;
-  margin: 0;
-  padding: 0.5em;
 }
 main.examples-main .examples .block.non-image:before {
   content: "";
   display: block;
-  position: absolute;
-  top: 1px;
-  left: 1px;
+  margin: 1px;
   width: calc(100% - 2px);
   height: calc(100% - 2px);
   background: #ffd9e3;
-  cursor: text;
   opacity: 1;
   transition: opacity 0.05s linear;
 }
+main.examples-main .examples .block.non-image.main .content {
+  display: none;
+}
+main.examples-main .examples.open .block.non-image {
+  display: initial;
+}
+main.examples-main .examples.open .block.non-image.main {
+  width: calc(100% - 1em);
+  height: auto;
+  margin: 0.5em;
+  padding: 1px;
+}
+main.examples-main .examples.open .block.non-image.main:before {
+  display: none;
+}
+main.examples-main .examples.open .block.non-image.main .content {
+  width: 100%;
+  padding: 1em;
+  background: #ffd9e3;
+  display: block;
+}
+main.examples-main .examples.open .block.non-image.main .content p {
+  margin: 0;
+}
 main.examples-main .examples.mouseover-on-voids .block.non-image:before {
   opacity: 0;
-}
-main.examples-main .examples.mousedown-on-voids .block.non-image {
-  background: black;
 }
 
 main.friends::before {

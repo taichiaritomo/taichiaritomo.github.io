@@ -56,6 +56,12 @@ body
 	font-weight: 100
 	line-height: 1.333
 	overflow-x: hidden // accounts for non-auto-hide scrollbars that count toward 100vw but are excluded from body width
+a
+	color: inherit
+	text-decoration: none
+	border-bottom: 1px dotted
+	&:hover
+		border-bottom: 1px solid
 .time
 	position: absolute
 	bottom: 0
@@ -91,6 +97,7 @@ body
 		+topleft
 		+fullsize
 		z-index: 10
+		border: none
 	.cursor-detection-zone
 		+topleft
 		+fullsize
@@ -183,11 +190,11 @@ main
 		opacity: 1
 		transition: opacity 1s
 	.content-wrapper
-		padding: 4em $outer-margin
+		padding: $outer-margin
 		pointer-events: auto
 		min-height: 70vh
 		.content
-			max-width: 24em
+			max-width: 18em
 			margin: 0 auto
 		p a
 			text-decoration: none
@@ -252,13 +259,15 @@ main.examples-main
 						background: url(arrow.svg)
 						background-size: 100% 100%
 						opacity: 0
-						transition: opacity 0.05s
+						transition: opacity 0.1s
 				&.show-arrow a:after
 					opacity: 1
 			&.non-image
 				width: 168px
 				height: 168px
 				background: url(checker.svg)
+				background-position: 0 0
+				cursor: zoom-in
 				&:before
 					content: ""
 					display: block
@@ -267,29 +276,18 @@ main.examples-main
 					height: calc(100% - 2px)
 					background: $sketches-color-1
 					opacity: 1
-					transition: opacity 0.05s linear
+					transition: opacity 0.1s linear
 			&.non-image.main
 				.content
 					display: none
 	.examples.open
-		// .block.image
-		// 	margin: $outer-margin 0.5*$outer-margin
-		// 	&.right-end
-		// 		margin: 0 0.5*$outer-margin $outer-margin
 		.block.non-image
 			display: initial
-			// &.left-end
-			// 	height: calc(168px + #{$outer-margin})
-			// 	margin: $outer-margin 0.5*$outer-margin 0
-			// 	align-self: flex-start
-			// 	&:before
-			// 		opacity: 0
-			// &.right-end
-			// 	height: calc(168px + #{$outer-margin})
-			// 	margin: 0 0.5*$outer-margin $outer-margin
-			// 	align-self: flex-end
-			// 	&:before
-			// 		opacity: 0
+			cursor: text
+			&.left-end, &.right-end
+				cursor: zoom-out
+				&:before
+					opacity: 0
 			&.main
 				width: calc(100% - #{$outer-margin})
 				height: auto
@@ -300,12 +298,14 @@ main.examples-main
 				.content
 					width: 100%
 					padding: $outer-margin
-					background: $sketches-color-1
 					display: block
 					p
 						margin: 0
 	.examples.mouseover-on-voids .block.non-image:before
 		opacity: 0
+	// .examples.mouseover-on-voids .block.non-image
+	// 	&.left-end, &.right-end
+	// 		background-position: 1px 0
 main.friends
 	+gradientEdges($friends-color-0, $friends-color-1)
 	.content-wrapper

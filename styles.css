@@ -20,6 +20,15 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+a:hover {
+  border-bottom: 1px solid;
+}
+
 .time {
   position: absolute;
   bottom: 0;
@@ -63,6 +72,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 10;
+  border: none;
 }
 .my-big-window .cursor-detection-zone {
   position: absolute;
@@ -186,12 +196,12 @@ main.visible {
   transition: opacity 1s;
 }
 main .content-wrapper {
-  padding: 4em 1em;
+  padding: 1em;
   pointer-events: auto;
   min-height: 70vh;
 }
 main .content-wrapper .content {
-  max-width: 24em;
+  max-width: 18em;
   margin: 0 auto;
 }
 main .content-wrapper p a {
@@ -280,7 +290,7 @@ main.examples-main .examples .block.image a:after {
   background: url(arrow.svg);
   background-size: 100% 100%;
   opacity: 0;
-  transition: opacity 0.05s;
+  transition: opacity 0.1s;
 }
 main.examples-main .examples .block.image.show-arrow a:after {
   opacity: 1;
@@ -289,6 +299,8 @@ main.examples-main .examples .block.non-image {
   width: 168px;
   height: 168px;
   background: url(checker.svg);
+  background-position: 0 0;
+  cursor: zoom-in;
 }
 main.examples-main .examples .block.non-image:before {
   content: "";
@@ -298,13 +310,20 @@ main.examples-main .examples .block.non-image:before {
   height: calc(100% - 2px);
   background: #ffd9e3;
   opacity: 1;
-  transition: opacity 0.05s linear;
+  transition: opacity 0.1s linear;
 }
 main.examples-main .examples .block.non-image.main .content {
   display: none;
 }
 main.examples-main .examples.open .block.non-image {
   display: initial;
+  cursor: text;
+}
+main.examples-main .examples.open .block.non-image.left-end, main.examples-main .examples.open .block.non-image.right-end {
+  cursor: zoom-out;
+}
+main.examples-main .examples.open .block.non-image.left-end:before, main.examples-main .examples.open .block.non-image.right-end:before {
+  opacity: 0;
 }
 main.examples-main .examples.open .block.non-image.main {
   width: calc(100% - 1em);
@@ -318,7 +337,6 @@ main.examples-main .examples.open .block.non-image.main:before {
 main.examples-main .examples.open .block.non-image.main .content {
   width: 100%;
   padding: 1em;
-  background: #ffd9e3;
   display: block;
 }
 main.examples-main .examples.open .block.non-image.main .content p {

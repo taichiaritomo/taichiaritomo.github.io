@@ -302,9 +302,6 @@ main.examples-main .examples .block.non-image {
   background-position: 0 0;
   cursor: zoom-in;
 }
-main.examples-main .examples .block.non-image a {
-  border-bottom: 1px solid;
-}
 main.examples-main .examples .block.non-image:before {
   content: "";
   display: block;
@@ -341,6 +338,7 @@ main.examples-main .examples.open .block.non-image.main .content {
   width: 100%;
   padding: 1em;
   display: block;
+  background: #ffd9e3;
 }
 main.examples-main .examples.open .block.non-image.main .content p {
   margin: 0;

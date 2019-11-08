@@ -1,0 +1,212 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Taichi Aritomo</title>
+    <meta name="description" content="Taichi Aritomo, Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/helper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/constellation.css">
+
+</head>
+    
+<body>
+  <div id="loading-container">
+    <div id="loading-marker">
+      <img src="img/loading-star.svg"/>
+      <div id="circle-wipe"></div>
+    </div>
+  </div>
+  
+  <div id="bg-gradient"></div>
+  <svg id="constellation-container">
+  </svg>
+  <div id="main" class="disappear">
+<!--
+    <div draggable="true" id="kiss_hover">
+      <div>
+        Kiss.<br>
+        animated pattern tile.<br>
+        2017.
+      </div>
+    </div>
+-->
+    <section id="masthead">
+      <h1>Hiya ~</h1>
+      <p>
+        My name is <span class="expandable-term">Taichi<span class="expanded-term">太一</span></span>.
+        
+        I'm a designer and recent graduate of Rutgers University, where I studied <span class="expandable-term">computer science<span class="expanded-term">B.A. 2018. <em>Summa cum laude</em>.</span></span>.
+        
+        I'm happiest when I'm making <span id="interest_interfaces" class="expandable-term pointer constellation-key">interfaces</span>, listening to <span id="interest_electronica" class="expandable-term pointer constellation-key">japanese electronica</span>, and reading <span id="interest_comics" class="expandable-term pointer constellation-key">slice-of-life comics</span> or <span id="interest_architecture" class="expandable-term pointer constellation-key">architecture history</span>.
+        
+        <br><br>
+        
+        <span id="email">email</span>
+        ·
+        <a href="https://are.na/taichi-aritomo/channels" target="_blank">are.na</a>
+        · 
+        <a id="link_soundcloud" href="https://soundcloud.com/teecheeweewee" target="_blank">soundcloud</a>
+        · 
+        <a id="link_goodreads" href="https://www.goodreads.com/review/list/38386636-taichi-aritomo?utf8=✓&utf8=✓&title=taichi-aritomo&sort=date_started&order=d&per_page=infinite" target="_blank">goodreads</a>
+      </p>
+    </section>
+
+    
+    
+    <section id="section_work">
+      
+    <h1>Efforts</h1>
+    <div id="work">
+      
+      <div class="item graphics" id="item_kiss">
+        <div class="img">
+<!--          <img id="item_kiss_img" src="img/site/kissOptimized.gif" alt=""/>-->
+        </div>
+        <div class="description">kiss.<br>
+          Animated pattern tile.
+        <br><span class="gray">2017</span>
+        </div>
+      </div>
+      
+      <div class="item interfaces clickable"  onclick="goTo('work/lookas.html')">
+        <div class="img clickable" id="item_lookas">
+          <img src="img/lookas/overview/lookas_34.jpg" alt=""/>
+        </div>
+        <div class="description">
+          <a href="work/lookas.html">
+            look.as.<br>
+            A second set of eyes as you design information.<br><span class="gray">2017</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="item interfaces clickable"  onclick="goTo('work/sc.html')">
+        <div class="img clickable" id="item_soundcloud">
+          <img src="img/sc/settings_variations/subscription-settings_all.png" alt=""/>
+        </div>
+        <div class="description">
+          <a href="work/sc.html">
+            $ound¢loud.<br>
+            UI design work from an<br>
+            internship.<br>
+            <span class="gray">2016</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="item interfaces graphics clickable" onclick="goTo('work/stretchygrid.html')">
+        <div class="img clickable" id="item_deformgrid">
+          <img src="img/stretchy-grid/preview2.png" alt=""/>
+        </div>
+        <div class="description">
+          <a href="work/stretchygrid.html">
+            Stretchy Grid.<br>
+            An interface for manipulating grids,<br>
+            made with p5.js<br>
+            <span class="gray">2018</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="item interfaces clickable">
+        <div class="img clickable" id="item_digitalmiracles">
+          <img src="img/digital-miracles/preview.png" alt=""/>
+        </div>
+        <div class="description">
+            digital miracles!<br>
+            A little web design / development<br> practice.<br><span class="gray">2015-2018</span>
+          </a>
+        </div>
+        <a href="http://digitalmiracles.taichi.pink" target="_blank"></a>
+      </div>
+      
+      <div class="item interfaces clickable" onclick="goTo('work/tonysbigrun.html')">
+        <div class="img clickable" id="item_tonysbigrun">
+          <img src="img/tonysbigrun/preview.png" alt=""/>
+        </div>
+        <div class="description">
+          <a href="work/tonysbigrun.html">
+             Tony's Big Run.<br>
+            An 8-bit FitBit<br>
+            journey for a friend.<br>
+            <span class="gray">2015</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="item graphics clickable" onclick="goTo('work/illustrations.html')">
+        <div class="img clickable" id="item_illustrations">
+          <img src="img/tedxrutgers/puddle.jpg" alt=""/>
+        </div>
+        <div class="description">
+          <a href="work/illustrations.html">
+             Illustrations<br>
+            &<br> Comics.<br>
+            <span class="gray">2017-2018</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="item interfaces clickable" onclick="goTo('work/designdiscovery.html')">
+        <div class="img clickable" id="item_designdiscovery">
+          <img src="img/designdiscovery/p2_1.png" alt=""/>
+        </div>
+        <div class="description">
+          <a href="work/designdiscovery.html">
+            GSD Design Discovery.<br>
+            Work from an architecture<br>
+            summer-intensive.<br>
+            <span class="gray">2018</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    </section>
+    
+    <section id="section_colophon">
+      <div id="colophon">
+      Typefaces by <a href="http://authentic.website/sans" target="_blank">Authentic</a> and <a href="https://github.com/Interstices-/Manifont-Grotesk" target="_blank">Interstices</a>. Hand-made site by me! Updated Sep 2018.
+    </div>
+    </section>
+  </div>
+  
+  
+    
+  
+        
+        
+        
+        
+    <!-- CARD -->
+<!--
+    <div class="card" id="retail-chain-reactions">
+        <div class="card-title"><span class="gray">powered by</span></div>
+        <div class="card-feature" id="">
+            <img class="card-feature-image"
+                 src="../img/helloworld.png"
+                 style="max-height: 202px;"/>
+        </div>
+        <div class="card-options" id=""></div>
+        <div class="card-info" id=""></div>
+    </div>    
+-->
+    
+    <!-- Javascript -->
+    <script src="js/plugins.min.js"></script>
+    <!-- Polyfill for object-fit CSS property for images and videos in IE/Edge -->
+    <script src="js/objectFitPolyfill.min.js"></script>
+  
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/constellation.js"></script>
+<!--    <script src="js/main.js"></script>-->
+</body>
+
+</html>

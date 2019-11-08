@@ -1,0 +1,98 @@
+html {
+}
+
+body {
+  background: #eeeeee;
+}
+
+#main {
+  background: #ffffff;
+}
+
+#section_icons {
+  background: #080024;
+  height: 480px;
+  width: 100vw;
+  min-width: 960px;
+  margin: 0;
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#section_icons .blurb {
+  width: 240px;
+}
+
+#video-container {
+  position: relative;
+}
+
+video {
+    width: 100%;
+    object-fit: contain;
+    max-height: 550px;
+}
+
+
+
+/* origin of icongrid will be at dynamically determined center point of section. */
+#icongrid {
+  position: relative;
+  top: 64px;
+  width: 0;
+/*  top: 35%;*/
+/*  width: 100%;*/
+}
+
+#tonysprite {
+/*
+  background-image: url("../img/tonysbigrun/sprites/tony0.png");
+  background-size: 42px 111px;
+*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -21px;
+  margin-top: -55.5px;
+  width: 42px;
+  height: 111px;
+}
+
+.icon {
+  height: 75px;
+  width: 75px;
+  position: absolute;
+  margin-left: -37.5px;
+  margin-top: -37.5px;
+  
+/*  -webkit-transform: scale(0, 0);*/
+  transform: scale(0, 0);
+/*  -webkit-transform-origin: center, center;*/
+  transform-origin: center, center;
+/*  transition: transform 0.25s cubic-bezier(.87,-.41,.19,1.44);*/
+/*  -webkit-transition: transform 0.125s ease-in;*/
+  transition: transform 0.125s ease-in;
+}
+
+.icon.popped {
+/*  -webkit-transform: scale(1, 1);*/
+  transform: scale(1, 1);
+}
+
+.friend-sprite.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.friend-sprite {
+  width: 42px;
+  height: 111px;
+}
+
+section#architecture {
+/*  padding-bottom: 0;*/
+}

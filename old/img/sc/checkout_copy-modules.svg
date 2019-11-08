@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="572px" height="447px" viewBox="0 0 572 447" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3-Copy" transform="translate(4.000000, 4.000000)">
+            <rect id="Rectangle-9-Copy-5" fill="#FF5500" opacity="0.5" x="326" y="103" width="192" height="32"></rect>
+            <rect id="Rectangle-9-Copy-18" fill="#FF5500" opacity="0.5" x="326" y="263" width="192" height="48"></rect>
+            <rect id="Rectangle-9-Copy-15" fill="#FF5500" opacity="0.5" x="326" y="343" width="192" height="32"></rect>
+            <rect id="Rectangle-9-Copy-19" fill="#FF5500" opacity="0.5" x="326" y="407" width="192" height="32"></rect>
+            <rect id="Rectangle-9-Copy-7" fill="#FF5500" opacity="0.5" x="326" y="135" width="64" height="48"></rect>
+            <rect id="Rectangle-9-Copy-9" fill="#FF5500" opacity="0.5" x="390" y="183" width="32" height="48"></rect>
+            <rect id="Rectangle-9-Copy-23" fill="#FF5500" opacity="0.5" x="454" y="311" width="32" height="32"></rect>
+            <rect id="Rectangle-9-Copy-21" fill="#FF5500" opacity="0.5" x="422" y="231" width="32" height="32"></rect>
+            <rect id="Rectangle-9-Copy-24" fill="#FF5500" opacity="0.5" x="486" y="376" width="32" height="32"></rect>
+            <g id="Group-2" transform="translate(334.000000, 0.000000)" fill="#000000" font-family="ManifontGroteskBook, ManifontGrotesk" font-size="12" font-weight="300" line-spacing="16" opacity="0.497544643">
+                <text id="Free-trial" transform="translate(23.500000, 77.000000) rotate(-45.000000) translate(-23.500000, -77.000000) ">
+                    <tspan x="-1" y="78">Free trial</tspan>
+                </text>
+                <text id="Creator-discount" transform="translate(165.500000, 62.000000) rotate(-45.000000) translate(-165.500000, -62.000000) ">
+                    <tspan x="120" y="63">Creator discount</tspan>
+                </text>
+                <text id="Promotion" transform="translate(122.000000, 75.000000) rotate(-45.000000) translate(-122.000000, -75.000000) ">
+                    <tspan x="94" y="76">Promotion</tspan>
+                </text>
+                <text id="Downgrade:-Go+-to-Go" transform="translate(82.000000, 50.000000) rotate(-45.000000) translate(-82.000000, -50.000000) ">
+                    <tspan x="20" y="51">Downgrade: Go+ to Go</tspan>
+                </text>
+                <text id="Upgrade:-Go-to-Go+" transform="translate(108.000000, 56.000000) rotate(-45.000000) translate(-108.000000, -56.000000) ">
+                    <tspan x="54" y="57">Upgrade: Go to Go+</tspan>
+                </text>
+                <text id="Region-specific" transform="translate(195.000000, 65.000000) rotate(-45.000000) translate(-195.000000, -65.000000) ">
+                    <tspan x="153" y="66">Region-specific</tspan>
+                </text>
+            </g>
+            <text id="Subscription-Informa" opacity="0.497935268" font-family="ManifontGroteskBold, ManifontGrotesk" font-size="12" font-weight="bold" line-spacing="16" fill="#000000">
+                <tspan x="12" y="85">Subscription Information</tspan>
+            </text>
+            <rect id="Rectangle-9" stroke="#DDDDDD" x="0" y="103" width="518" height="32"></rect>
+            <rect id="Rectangle-9-Copy-11" stroke="#DDDDDD" x="0" y="183" width="518" height="48"></rect>
+            <rect id="Rectangle-9-Copy-13" stroke="#DDDDDD" x="0" y="263" width="518" height="48"></rect>
+            <rect id="Rectangle-9-Copy-14" stroke="#DDDDDD" x="0" y="343" width="518" height="32"></rect>
+            <rect id="Rectangle-9-Copy-16" stroke="#DDDDDD" x="0" y="407" width="518" height="32"></rect>
+            <rect id="Rectangle-9-Copy-12" stroke="#DDDDDD" x="0" y="103" width="326" height="336"></rect>
+            <rect id="Rectangle-9-Copy-17" stroke="#DDDDDD" x="358" y="103" width="32" height="336"></rect>
+            <rect id="Rectangle-9-Copy-20" stroke="#DDDDDD" x="422" y="103" width="32" height="336"></rect>
+            <rect id="Rectangle-9-Copy-22" stroke="#DDDDDD" x="486" y="103" width="32" height="336"></rect>
+            <text id="PRODUCT-BREAKDOWN-Yo" font-family="Inconsolata" font-size="12" font-weight="400" line-spacing="16" fill="#000000">
+                <tspan x="12" y="121">PRODUCT BREAKDOWN</tspan>
+                <tspan x="12" y="153">Your card won’t be charged until your trial/</tspan>
+                <tspan x="12" y="169">current subscription ends on Mon. DD, YYYY.</tspan>
+                <tspan x="12" y="201">You will be credited for your current plan, </tspan>
+                <tspan x="12" y="217">and your new plan will start right away.</tspan>
+                <tspan x="12" y="249">Starting from Mon. DD, YYYY…</tspan>
+                <tspan x="12" y="281">Your subscription will automatically renew </tspan>
+                <tspan x="12" y="297">every XX days at a rate of $X.XX a month.</tspan>
+                <tspan x="12" y="329">…since you have SoundCloud Pro Unlimited.</tspan>
+                <tspan x="12" y="361">You can cancel any time.</tspan>
+                <tspan x="12" y="393">WILDCARD</tspan>
+                <tspan x="12" y="425">Billed now: $X.XX</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,165 @@
+body {
+  background: #eeeeee;
+}
+
+#main {
+  background: #ffffff;
+}
+
+.row {
+  position: relative;
+}
+
+.large-img {
+  width: 100%;
+}
+
+.project-info {
+  width: 256px;
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.project-info .caption {
+  margin-top: 16px;
+}
+
+.project-info h2.pinkoutline {
+  color: #888;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffa0b0;
+  -webkit-text-fill-color: #fff;
+}
+
+.blurb {
+  width: 288px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.blurb p {
+  background: white;
+/*  outline: 16px #ffffff solid;*/
+}
+
+#p2-sway {
+  padding: 0 0 64px;
+}
+
+#p2-gif {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#p2-crystals {
+  position: relative;
+  height: 288px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: url(../img/designdiscovery/p2_3.png);
+  background-position: center center;
+  background-size: 116px 55px;
+}
+
+#p2-quinary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  transition-delay: 0s;
+  
+  background: url(../img/designdiscovery/p2_4.png);
+  background-position: center center;
+  background-size: 290px 275px;
+}
+
+#p2-crystals .blurb {
+  background: white;
+  padding: 2px 16px;
+/*  outline: 16px black solid;*/
+/*  outline-offset: */
+}
+
+#p2-crystals > .blurb {
+  opacity: 1;
+  transition: opacity 0.3s linear;
+  transition-delay: 0.3s;
+}
+
+#p2-crystals.state2 > .blurb {
+  opacity: 0;
+  transition-delay: 0s;
+}
+
+#p2-crystals.state2 #p2-quinary  {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+#p3 {
+  margin-top: 128px;
+  padding: 0;
+  position: relative;
+}
+
+#p3 .project-info {
+/*  bottom: 128px;*/
+}
+
+#p3-detail {
+  margin-top: 128px;
+  text-align: center;
+  background: #f6f6f7;
+}
+
+#p3-detail-model {
+  max-width: 960px;
+  object-fit: cover;
+}
+
+
+#p3-detail .wrapper {
+  position: relative;
+}
+
+#p3-detail .wrapper .description {
+  width: 50%;
+  position: absolute;
+  left: 16px;
+  top:0;
+  text-align: left;
+}
+
+.col-2-single {
+  width: 50%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+#p3-plan {
+  background: white;
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+/*  max-height: 600px;*/
+/*  overflow: hidden;*/
+}
+
+#p3-plan-drawing {
+  max-width: 1280px;
+  width: 100%;
+/*  object-fit: cover;*/
+}
+
+footer {
+  background: #ffffff;
+}

@@ -13,10 +13,10 @@ body {
   min-height: 100vh;
   background: #f0f0f0;
   background: whitesmoke;
-  font-size: 24px;
+  font-size: 21px;
   font-family: "Authentic Sans";
   font-weight: 100;
-  line-height: 1.333;
+  line-height: 1.5;
   overflow-x: hidden;
 }
 
@@ -201,7 +201,7 @@ main .content-wrapper {
   min-height: 70vh;
 }
 main .content-wrapper .content {
-  max-width: 18em;
+  max-width: 24em;
   margin: 0 auto;
 }
 main .content-wrapper p a {
@@ -213,8 +213,13 @@ main .content-wrapper p a {
 main .content-wrapper p a:hover {
   border-bottom: 1px solid;
 }
+main .content-wrapper p.footnote {
+  font-size: 0.5em;
+}
 main .content-wrapper figure {
   margin: 0;
+  margin-top: 1.4em;
+  margin-bottom: 1.4em;
 }
 main .content-wrapper figure img {
   display: block;

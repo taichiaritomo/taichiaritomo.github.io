@@ -51,10 +51,10 @@ body
 	min-height: 100vh
 	background: #f0f0f0
 	background: rgb(245, 245, 245)
-	font-size: 24px
+	font-size: 21px
 	font-family: 'Authentic Sans'
 	font-weight: 100
-	line-height: 1.333
+	line-height: 1.5
 	overflow-x: hidden // accounts for non-auto-hide scrollbars that count toward 100vw but are excluded from body width
 a
 	color: inherit
@@ -194,7 +194,7 @@ main
 		pointer-events: auto
 		min-height: 70vh
 		.content
-			max-width: 18em
+			max-width: 24em
 			margin: 0 auto
 		p a
 			text-decoration: none
@@ -203,8 +203,13 @@ main
 			cursor: pointer
 			&:hover
 				border-bottom: 1px solid
+		p.footnote
+			// font-family: 'Times', 'Times New Roman', serif
+			font-size: 0.5em
 		figure
 			margin: 0
+			margin-top: 1.4em
+			margin-bottom: 1.4em
 			img
 				display: block
 				max-width: 100%

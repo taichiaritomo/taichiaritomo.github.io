@@ -204,7 +204,7 @@ main
 			&:hover
 				border-bottom: 1px solid
 		p.footnote
-			font-size: 0.5em
+			font-size: 0.66em
 		hr
 			border: none
 			border-bottom: 1px dotted black
@@ -302,10 +302,14 @@ main.examples-main
 			cursor: text
 			&.left-end, &.right-end
 				cursor: zoom-out
+				padding: 0
 				&:before
-					opacity: 0
+					margin: 0
+					width: 100%
+					height: 100%
+					// opacity: 1
 			&.main
-				width: calc(100% - #{$outer-margin})
+				width: calc(100% - #{$outer-margin}) !important
 				height: auto
 				margin: 0.5*$outer-margin
 				padding: 1px

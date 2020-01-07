@@ -214,7 +214,7 @@ main .content-wrapper p a:hover {
   border-bottom: 1px solid;
 }
 main .content-wrapper p.footnote {
-  font-size: 0.5em;
+  font-size: 0.66em;
 }
 main .content-wrapper hr {
   border: none;
@@ -338,12 +338,15 @@ main.examples-main .examples.open .block.non-image {
 }
 main.examples-main .examples.open .block.non-image.left-end, main.examples-main .examples.open .block.non-image.right-end {
   cursor: zoom-out;
+  padding: 0;
 }
 main.examples-main .examples.open .block.non-image.left-end:before, main.examples-main .examples.open .block.non-image.right-end:before {
-  opacity: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 main.examples-main .examples.open .block.non-image.main {
-  width: calc(100% - 1em);
+  width: calc(100% - 1em) !important;
   height: auto;
   margin: 0.5em;
   padding: 1px;

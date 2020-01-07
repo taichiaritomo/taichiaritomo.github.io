@@ -216,6 +216,18 @@ main .content-wrapper p a:hover {
 main .content-wrapper p.footnote {
   font-size: 0.5em;
 }
+main .content-wrapper hr {
+  border: none;
+  border-bottom: 1px dotted black;
+}
+main .content-wrapper .keychain {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px dotted black;
+  border-radius: 1em;
+  display: inline-block;
+  background: #f0f0f0;
+}
 main .content-wrapper figure {
   margin: 0;
   margin-top: 1.4em;

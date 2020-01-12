@@ -79,11 +79,17 @@ h1, h2, h3
 	top: 0
 	right: 0
 	margin: $outer-margin
-	width: 50vh
-	height: 50vh
-	max-width: calc(100vw - #{2*$outer-margin})
-	max-height: calc(100vw - #{2*$outer-margin})
+	width: 50vmin
+	height: 50vmin
+	max-width: calc(100vmin - #{2*$outer-margin})
+	max-height: calc(100vmin - #{2*$outer-margin})
 	border: 1px solid
+	@media only screen and (max-width: 480px)
+		top: 2*$outer-margin
+		width: 75vw
+		height: 75vw
+		max-width: calc(100vmin - #{2*$outer-margin})
+		max-height: calc(100vmin - #{2*$outer-margin})
 	&::before, &::after
 		content: ""
 		position: absolute
@@ -122,8 +128,8 @@ h1, h2, h3
 			object-fit: cover
 			opacity: 0.5
 .my-big-window.shadow
-	transform-origin: 100% 100%
-	transform: translateY(50%) scaleY(0.33) rotateX(180deg) skew(20deg)
+	transform-origin: 100% 50vh
+	transform: translateY(60%) scaleY(0.33) rotateX(180deg) skew(20deg)
 	overflow: hidden
 	filter: blur(6px)
 	.pointer-shadow

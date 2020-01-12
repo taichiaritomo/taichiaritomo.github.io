@@ -56,6 +56,8 @@ body
 	font-weight: 100
 	line-height: 1.5
 	overflow-x: hidden // accounts for non-auto-hide scrollbars that count toward 100vw but are excluded from body width
+	@media only screen and (max-width: 480px)
+		font-size: 18px
 a
 	color: inherit
 	text-decoration: none
@@ -284,17 +286,17 @@ main.examples-main
 						flex-basis: 100%
 						margin-bottom: 1em
 					td.place
-						flex-basis: 80%
+						flex-basis: 67%
 						flex-shrink: 1
 						font-size: 0.66em
 					td.year
-						flex-basis: 20%
+						flex-basis: 33%
 						font-size: 0.66em
 						align-self: flex-end
 
 	.examples
 		min-height: 70vh
-		padding: 0.5*$outer-margin
+		padding: 2*$outer-margin 0.5*$outer-margin
 		pointer-events: auto
 		background: $sketches-color-1
 		display: flex

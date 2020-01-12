@@ -19,6 +19,11 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
 }
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 18px;
+  }
+}
 
 a {
   color: inherit;
@@ -322,19 +327,19 @@ main.examples-main .examples-table table tr td.year {
     margin-bottom: 1em;
   }
   main.examples-main .examples-table table tr td.place {
-    flex-basis: 80%;
+    flex-basis: 67%;
     flex-shrink: 1;
     font-size: 0.66em;
   }
   main.examples-main .examples-table table tr td.year {
-    flex-basis: 20%;
+    flex-basis: 33%;
     font-size: 0.66em;
     align-self: flex-end;
   }
 }
 main.examples-main .examples {
   min-height: 70vh;
-  padding: 0.5em;
+  padding: 2em 0.5em;
   pointer-events: auto;
   background: #ffd9e3;
   display: flex;

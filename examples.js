@@ -316,14 +316,14 @@ examples.addEventListener('mouseover', e => {
   if (e.target.classList.contains('non-image')) {
     examples.classList.add('mouseover-on-voids');
   }
-  else if (e.target.matches('img') && e.target.parentElement.matches('a')) {
-    let blockElement = e.target.closest('.block');
-    blockElement.classList.add('show-arrow');
+  // else if (e.target.matches('img') && e.target.parentElement.matches('a')) {
+  //   let blockElement = e.target.closest('.block');
+  //   blockElement.classList.add('show-arrow');
 
-    // get right-end and tell it to show arrow
-    let rightEnd = document.getElementById('right-end-'+blockElement.dataset.index);
-    if (rightEnd) rightEnd.classList.add('show-arrow');
-  }
+  //   // get right-end and tell it to show arrow
+  //   let rightEnd = document.getElementById('right-end-'+blockElement.dataset.index);
+  //   if (rightEnd) rightEnd.classList.add('show-arrow');
+  // }
 });
 
 // Hover effects for linked images
@@ -331,14 +331,14 @@ examples.addEventListener('mouseout', e => {
   if (e.target.classList.contains('non-image')) {
     examples.classList.remove('mouseover-on-voids');
   }
-  else if (e.target.matches('img') && e.target.parentElement.matches('a')) {
-    let blockElement = e.target.closest('.block');
-    blockElement.classList.remove('show-arrow');
+  // else if (e.target.matches('img') && e.target.parentElement.matches('a')) {
+  //   let blockElement = e.target.closest('.block');
+  //   blockElement.classList.remove('show-arrow');
 
-    // get right-end and tell it to hide arrow
-    let rightEnd = document.getElementById('right-end-'+blockElement.dataset.index);
-    if (rightEnd) rightEnd.classList.remove('show-arrow');
-  }
+  //   // get right-end and tell it to hide arrow
+  //   let rightEnd = document.getElementById('right-end-'+blockElement.dataset.index);
+  //   if (rightEnd) rightEnd.classList.remove('show-arrow');
+  // }
 });
 
 examples.addEventListener('click', e => {

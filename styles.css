@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
   background: #f0f0f0;
   background: whitesmoke;
-  font-size: 21px;
+  font-size: 24px;
   font-family: "Authentic Sans";
   font-weight: 100;
   line-height: 1.5;
@@ -27,6 +27,11 @@ a {
 }
 a:hover {
   border-bottom: 1px solid;
+}
+
+h1, h2, h3 {
+  font-weight: inherit;
+  font-size: inherit;
 }
 
 .time {
@@ -54,14 +59,14 @@ a:hover {
   background: black;
 }
 .my-big-window::before {
-  top: calc(50% - 1px);
+  top: 50%;
   left: 0;
   width: 100%;
   height: 1px;
 }
 .my-big-window::after {
   top: 0;
-  left: calc(50% - 1px);
+  left: 50%;
   width: 1px;
   height: 100%;
 }
@@ -266,6 +271,67 @@ main.examples-main::before {
 main.examples-main::after {
   background: linear-gradient(to top, rgba(255, 217, 227, 0), #ffd9e3);
 }
+main.examples-main .summary {
+  width: 100%;
+  margin-top: 2em;
+  padding: 0 0.5em;
+}
+main.examples-main .summary h2 {
+  margin: 0;
+}
+main.examples-main .examples-table {
+  padding: 0.5em;
+  pointer-events: auto;
+  background: #ffd9e3;
+}
+main.examples-main .examples-table table {
+  width: 100%;
+  padding: 0.5em;
+}
+main.examples-main .examples-table table tr {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  padding: 1em 0;
+  font-size: 0.75em;
+}
+main.examples-main .examples-table table tr:last-child {
+  border-bottom: 1px solid black;
+}
+main.examples-main .examples-table table tr td.title {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  padding-right: 1em;
+}
+main.examples-main .examples-table table tr td.place {
+  flex-basis: 50%;
+  flex-shrink: 1;
+  font-size: 0.66em;
+}
+main.examples-main .examples-table table tr td.year {
+  text-align: right;
+  flex-basis: 12em;
+  font-size: 0.66em;
+}
+@media only screen and (max-width: 600px) {
+  main.examples-main .examples-table table tr {
+    flex-wrap: wrap;
+  }
+  main.examples-main .examples-table table tr td.title {
+    flex-basis: 100%;
+    margin-bottom: 1em;
+  }
+  main.examples-main .examples-table table tr td.place {
+    flex-basis: 80%;
+    flex-shrink: 1;
+    font-size: 0.66em;
+  }
+  main.examples-main .examples-table table tr td.year {
+    flex-basis: 20%;
+    font-size: 0.66em;
+    align-self: flex-end;
+  }
+}
 main.examples-main .examples {
   min-height: 70vh;
   padding: 0.5em;
@@ -283,7 +349,7 @@ main.examples-main .examples .block.split {
   display: none;
 }
 main.examples-main .examples .block.image {
-  height: 168px;
+  height: 120px;
 }
 main.examples-main .examples .block.image img {
   height: 100%;
@@ -295,29 +361,21 @@ main.examples-main .examples .block.image a {
   height: 100%;
   vertical-align: top;
   line-height: 25px;
+  display: block;
+  border: 1px dotted black;
 }
-main.examples-main .examples .block.image a:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 14.88%;
-  height: 25px;
-  pointer-events: none;
-  background: url(arrow.svg);
-  background-size: 100% 100%;
-  opacity: 0;
-  transition: opacity 0.1s;
-}
-main.examples-main .examples .block.image.show-arrow a:after {
-  opacity: 1;
+main.examples-main .examples .block.image a:hover {
+  border: 1px solid black;
 }
 main.examples-main .examples .block.non-image {
-  width: 168px;
-  height: 168px;
+  width: 120px;
+  height: 120px;
   background: url(checker.svg);
   background-position: 0 0;
   cursor: zoom-in;
+}
+main.examples-main .examples .block.non-image span.context {
+  font-size: 0.75em;
 }
 main.examples-main .examples .block.non-image:before {
   content: "";
@@ -331,6 +389,7 @@ main.examples-main .examples .block.non-image:before {
 }
 main.examples-main .examples .block.non-image.main .content {
   display: none;
+  font-size: 0.75em;
 }
 main.examples-main .examples.open .block.non-image {
   display: initial;
@@ -346,7 +405,7 @@ main.examples-main .examples.open .block.non-image.left-end:before, main.example
   height: 100%;
 }
 main.examples-main .examples.open .block.non-image.main {
-  width: calc(100% - 1em) !important;
+  width: calc(100% - 1em);
   height: auto;
   margin: 0.5em;
   padding: 1px;
@@ -359,9 +418,6 @@ main.examples-main .examples.open .block.non-image.main .content {
   padding: 1em;
   display: block;
   background: #ffd9e3;
-}
-main.examples-main .examples.open .block.non-image.main .content p {
-  margin: 0;
 }
 main.examples-main .examples.mouseover-on-voids .block.non-image:before {
   opacity: 0;

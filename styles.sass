@@ -51,7 +51,7 @@ body
 	min-height: 100vh
 	background: #f0f0f0
 	background: rgb(245, 245, 245)
-	font-size: 21px
+	font-size: 24px
 	font-family: 'Authentic Sans'
 	font-weight: 100
 	line-height: 1.5
@@ -62,6 +62,9 @@ a
 	border-bottom: 1px dotted
 	&:hover
 		border-bottom: 1px solid
+h1, h2, h3
+	font-weight: inherit
+	font-size: inherit
 .time
 	position: absolute
 	bottom: 0
@@ -84,13 +87,13 @@ a
 		position: absolute
 		background: black
 	&::before
-		top: calc(50% - 1px)
+		top: 50%
 		left: 0
 		width: 100%
 		height: 1px
 	&::after
 		top: 0
-		left: calc(50% - 1px)
+		left: 50%
 		width: 1px
 		height: 100%
 	& > a
@@ -237,6 +240,58 @@ main.info
 		background: $info-color-1
 main.examples-main
 	+gradientEdges($sketches-color-0, $sketches-color-1)
+
+	.summary
+			width: 100%
+			margin-top: 2*$outer-margin
+			padding: 0 0.5em
+			h2
+				margin: 0
+
+	.examples-table
+		padding: 0.5*$outer-margin
+		pointer-events: auto
+		background: $sketches-color-1
+		
+		table
+			width: 100%
+			padding: 0.5*$outer-margin
+			tr
+				display: flex
+				justify-content: space-between
+				border-top: 1px solid black
+				padding: $outer-margin 0
+				font-size: 0.75em
+				&:last-child
+					border-bottom: 1px solid black
+				td.title
+					flex-basis: 50%
+					flex-shrink: 0
+					padding-right: 1em
+				td.place
+					flex-basis: 50%
+					flex-shrink: 1
+					font-size: 0.66em
+				td.year
+					text-align: right
+					flex-basis: 12em
+					font-size: 0.66em
+				
+			@media only screen and (max-width: 600px)
+				tr
+					flex-wrap: wrap
+					td.title
+						flex-basis: 100%
+						margin-bottom: 1em
+					td.place
+						flex-basis: 80%
+						flex-shrink: 1
+						font-size: 0.66em
+					td.year
+						flex-basis: 20%
+						font-size: 0.66em
+						align-self: flex-end
+
 	.examples
 		min-height: 70vh
 		padding: 0.5*$outer-margin
@@ -245,13 +300,14 @@ main.examples-main
 		display: flex
 		flex-wrap: wrap
 		align-content: flex-start
+		
 		.block
 			margin: 0.5*$outer-margin
 			overflow: hidden
 			&.split
 				display: none
 			&.image
-				height: 168px
+				height: 120px
 				img
 					height: 100%
 				a
@@ -261,29 +317,21 @@ main.examples-main
 					height: 100%
 					vertical-align: top
 					line-height: 25px
-					// link arrow follows aspect ratio
-					&:after
-						content: ""
-						position: absolute
-						top: 0
-						right: 0
-						width: 14.88% // ~one-seventh
-						height: 25px  // ~one-seventh
-						pointer-events: none
-						background: url(arrow.svg)
-						background-size: 100% 100%
-						opacity: 0
-						transition: opacity 0.1s
-				&.show-arrow a:after
-					opacity: 1
+					display: block
+					border: 1px dotted black
+					&:hover
+						border: 1px solid black
+			
 			&.non-image
-				width: 168px
-				height: 168px
+				width: 120px
+				height: 120px
 				background: url(checker.svg)
 				background-position: 0 0
 				cursor: zoom-in
 				// a
 				// 	border-bottom: 1px solid
+				span.context
+					font-size: 0.75em
 				&:before
 					content: ""
 					display: block
@@ -296,11 +344,22 @@ main.examples-main
 			&.non-image.main
 				.content
 					display: none
+					font-size: 0.75em
+
 	.examples.open
+		.block.image
+			// width: 100% !important
+			// height: auto !important
+			// img
+			// 	max-width: 100%
+			// 	max-height: 100vh
+			// 	zoom: 50%
+
 		.block.non-image
 			display: initial
 			cursor: text
 			&.left-end, &.right-end
+				// display: none
 				cursor: zoom-out
 				padding: 0
 				&:before
@@ -309,7 +368,8 @@ main.examples-main
 					height: 100%
 					// opacity: 1
 			&.main
-				width: calc(100% - #{$outer-margin}) !important
+				width: calc(100% - #{$outer-margin})
+				// max-width: 500px
 				height: auto
 				margin: 0.5*$outer-margin
 				padding: 1px
@@ -320,8 +380,8 @@ main.examples-main
 					padding: $outer-margin
 					display: block
 					background: $sketches-color-1
-					p
-						margin: 0
+					// p
+					// 	margin: 1.5em 0
 	.examples.mouseover-on-voids .block.non-image:before
 		opacity: 0
 	// .examples.mouseover-on-voids .block.non-image

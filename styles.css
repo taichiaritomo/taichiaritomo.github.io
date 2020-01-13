@@ -240,7 +240,7 @@ main .content-wrapper hr {
   border-bottom: 1px dotted black;
 }
 main .content-wrapper .keychain {
-  margin: 2em 0 1em;
+  margin: 0 0 1em;
   padding: 1.25em 1.5em;
   border: 1px dotted black;
   border-radius: 1em;

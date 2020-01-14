@@ -335,12 +335,12 @@ main.examples-main .examples-table table tr td.year {
     margin-bottom: 1em;
   }
   main.examples-main .examples-table table tr td.place {
-    flex-basis: 67%;
+    flex-basis: calc(100% - 6em);
     flex-shrink: 1;
     font-size: 0.66em;
   }
   main.examples-main .examples-table table tr td.year {
-    flex-basis: 33%;
+    flex-basis: 6em;
     font-size: 0.66em;
     align-self: flex-end;
   }

@@ -60,7 +60,6 @@ h1, h2, h3 {
 }
 @media only screen and (max-width: 480px) {
   .my-big-window {
-    top: 2em;
     width: 75vw;
     height: 75vw;
     max-width: calc(100vmin - 2em);

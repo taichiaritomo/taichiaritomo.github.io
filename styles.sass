@@ -1,5 +1,6 @@
 // Constants
 $outer-margin: 1em
+$background-color: rgb(245, 245, 245)
 $info-color-1: rgba(251, 255, 151, 1)
 $info-color-0: rgba(251, 255, 151, 0)
 $sketches-color-1: rgba(255, 217, 227, 1)
@@ -49,8 +50,7 @@ body
 	margin: 0
 	min-width: 100vw
 	min-height: 100vh
-	background: #f0f0f0
-	background: rgb(245, 245, 245)
+	background: $background-color
 	font-size: 24px
 	font-family: 'Authentic Sans'
 	font-weight: 100
@@ -137,6 +137,7 @@ h1, h2, h3
 		opacity: 0
 		margin-top: -2px
 		margin-left: -7px // pointer finger
+		z-index: 11
 	.quadrant a:hover
 		background: lightbeige
 nav.my-big-window
@@ -153,6 +154,8 @@ nav.my-big-window
 		border-right: 1px solid
 		display: flex
 		flex-direction: column
+		z-index: 1
+		pointer-events: none
 		a, .current
 			width: 100%
 			flex-basis: 100%
@@ -160,10 +163,14 @@ nav.my-big-window
 			border-bottom: 1px solid
 			color: inherit
 			text-decoration: none
+			background: $background-color
+			pointer-events: all
 			&:last-child
 				border-bottom: none
-		a.hover, a:hover
-			background: beige
+	a.back-link
+		z-index: 0
+	a.hover, a:hover
+		background: beige
 	.labels
 		position: absolute
 		bottom: 100%

@@ -16,9 +16,10 @@ shadow.querySelectorAll('img').forEach( element => { element.remove(); }); // re
 bigwindow.parentNode.appendChild(shadow);
 
 // Pointer's shadow
-let pointershadow = new Image(18, 19);
-pointershadow.classList.add('pointer-shadow')
-pointershadow.src = window.location.origin + '/pointer.png';
+// let pointershadow = new Image(18, 19);
+pointershadow = document.createElement('div');
+pointershadow.classList.add('pointer-shadow');
+// pointershadow.src = window.location.origin + '/pointer.png';
 shadow.appendChild(pointershadow);
 
 // Show pointer's shadow when hovering over big window
